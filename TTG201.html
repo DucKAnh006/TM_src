@@ -1,0 +1,2379 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz TTG201</title>
+<style>
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; color: #333; padding: 20px; max-width: 900px; margin: 0 auto; }
+    h1 { text-align: center; color: #2c3e50; }
+    h2 { color: #34495e; border-bottom: 2px solid #bdc3c7; padding-bottom: 5px; margin-top: 30px;}
+    .question-card { background: #fff; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+    .question { font-size: 1.1em; font-weight: bold; margin-bottom: 10px; }
+    .options { list-style-type: none; padding: 0; }
+    .options li { margin-bottom: 8px; padding: 8px; background: #ecf0f1; border-radius: 4px; }
+    .btn-show { background-color: #3498db; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; font-size: 0.9em; margin-top: 10px; transition: background 0.3s; }
+    .btn-show:hover { background-color: #2980b9; }
+    .answer { display: none; margin-top: 15px; padding: 10px; background: #e8f8f5; border-left: 4px solid #1abc9c; color: #16a085; font-weight: bold; }
+    .intro { text-align: center; font-style: italic; color: #7f8c8d; margin-bottom: 20px; }
+    .btn-back { display: inline-block; margin-bottom: 20px; text-decoration: none; background: #34495e; color: white; padding: 10px 20px; border-radius: 8px; font-weight: bold; transition: background 0.3s, transform 0.2s; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    .btn-back:hover { background: #2c3e50; transform: translateY(-2px); }
+</style>
+<script>
+    function toggleAnswer(btn) {
+        var answer = btn.nextElementSibling;
+        if (answer.style.display === "none" || answer.style.display === "") {
+            answer.style.display = "block";
+            btn.textContent = "Ẩn đáp án";
+        } else {
+            answer.style.display = "none";
+            btn.textContent = "Hiện đáp án";
+        }
+    }
+</script>
+</head>
+<body>
+<div style="max-width: 900px; margin: 0 auto; padding-top: 10px;">
+    <a href="index.html" class="btn-back">quay lại</a>
+</div>
+<h1>Quiz TTG201</h1>
+<h2>Chapter 1:</h2>
+<div class='question-card'><div class='question'>1. Which term is defined as the time left over after work, sleep, and personal obligations are completed?</div><ul class='options'>
+<li>A. Recreation</li>
+<li>B. Leisure</li>
+<li>C. Tourism</li>
+<li>D. Occupation</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>2. What is the variety of activities undertaken specifically during leisure time?</div><ul class='options'>
+<li>A. Labor</li>
+<li>B. Travel</li>
+<li>C. Recreation</li>
+<li>D. Business</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>3. How is "Tourism" generally distinguished from other forms of recreation?</div><ul class='options'>
+<li>A. It only involves staying at home.</li>
+<li>B. It involves a stay away from home for one night or more.</li>
+<li>C. It never includes business travel.</li>
+<li>D. It is only for people with no jobs.</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>4. According to the UNWTO, "Tourism" refers to activities of persons staying outside their usual environment for not more than:</div><ul class='options'>
+<li>A. Six months</li>
+<li>B. One consecutive year</li>
+<li>C. Two years</li>
+<li>D. One month</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>5. Which spatial scale involves identifying a country’s transport networks and tourist regions?</div><ul class='options'>
+<li>A. Global scale</li>
+<li>B. Local scale</li>
+<li>C. National scale</li>
+<li>D. Regional scale</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>6. The assessment of tourism resources in just a specific part of a country is conducted at the:</div><ul class='options'>
+<li>A. Continental scale</li>
+<li>B. Regional scale</li>
+<li>C. Local scale</li>
+<li>D. Global scale</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>7. In Leiper’s tourism system, the places of origin where tourists start their journey are called:</div><ul class='options'>
+<li>A. Receiving areas</li>
+<li>B. Transit routes</li>
+<li>C. Tourist-generating areas</li>
+<li>D. Destination regions</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>8. Which component of the tourism system represents the routes travelled between the origin and the destination?</div><ul class='options'>
+<li>A. Tourist-generating areas</li>
+<li>B. Transit routes</li>
+<li>C. Destination regions</li>
+<li>D. Cultural environments</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>9. Which factor is mainly concerned with the stage of economic development and affluence in the generating area?</div><ul class='options'>
+<li>A. Pull factors</li>
+<li>B. Push factors</li>
+<li>C. Geographical factors</li>
+<li>D. Environmental factors</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>10. What are "Pull factors" in the context of spatial interaction in tourism?</div><ul class='options'>
+<li>A. Levels of mobility in the home country.</li>
+<li>B. Accessibility and attractions of the destination area.</li>
+<li>C. Holiday entitlement of the workers.</li>
+<li>D. Economic recession in the origin area.</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>11. What type of tourism involves residents of a particular country travelling within their own country?</div><ul class='options'>
+<li>A. International tourism</li>
+<li>B. Outbound tourism</li>
+<li>C. Inbound tourism</li>
+<li>D. Domestic tourism</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>D</div></div>
+<div class='question-card'><div class='question'>12. "Inbound tourism" is defined as:</div><ul class='options'>
+<li>A. Residents travelling to other countries.</li>
+<li>B. Non-residents travelling in a given country.</li>
+<li>C. Travel focused only on the countryside.</li>
+<li>D. Travel for business purposes only.</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>13. What is a key characteristic of "International tourism" compared to domestic tourism?</div><ul class='options'>
+<li>A. It never requires a passport.</li>
+<li>B. Tourists must cross national borders and may use different currencies.</li>
+<li>C. It only involves short-distance travel.</li>
+<li>D. It does not involve staying overnight.</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>14. Which form of tourism is focused specifically on towns and cities?</div><ul class='options'>
+<li>A. Rural tourism</li>
+<li>B. Heritage tourism</li>
+<li>C. Urban tourism</li>
+<li>D. Ecotourism</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>15. What is the focus of "Dark tourism"?</div><ul class='options'>
+<li>A. Nature and wildlife.</li>
+<li>B. Tangible aspects of history.</li>
+<li>C. Places where tragic events have occurred.</li>
+<li>D. Holistic approaches to beauty and fitness.</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>16. Tourism based on nature is known as:</div><ul class='options'>
+<li>A. Cultural tourism</li>
+<li>B. Faith-based tourism</li>
+<li>C. Ecotourism</li>
+<li>D. Sport tourism</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>17. Which type of tourism is motivated by visiting places regarded as sacred?</div><ul class='options'>
+<li>A. Dark tourism</li>
+<li>B. Faith-based tourism</li>
+<li>C. Wellness tourism</li>
+<li>D. Heritage tourism</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>18. "MICE" tourism is a major component of which category?</div><ul class='options'>
+<li>A. Holiday tourism</li>
+<li>B. Common-interest tourism</li>
+<li>C. Business and professional tourism</li>
+<li>D. Rural tourism</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>19. Which category includes people travelling to visit friends and relatives (VFR)?</div><ul class='options'>
+<li>A. Holiday tourism</li>
+<li>B. Business tourism</li>
+<li>C. Common-interest tourism</li>
+<li>D. Dark tourism</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>20. Which of the following is NOT a main characteristic of tourism resources?</div><ul class='options'>
+<li>A. They are tangible features.</li>
+<li>B. They are used exclusively by tourists.</li>
+<li>C. They are perishable.</li>
+<li>D. They are often shared with the local population.</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>21. What does it mean that tourism resources are "perishable"?</div><ul class='options'>
+<li>A. They can be stored in a warehouse.</li>
+<li>B. If a hotel room is not sold for a night, that opportunity is lost forever.</li>
+<li>C. They are always made of food.</li>
+<li>D. They last forever without maintenance.</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>22. Physical resources at a global scale include which landforms?</div><ul class='options'>
+<li>A. Only museums and galleries.</li>
+<li>B. Mountains, plateaus, and low land plains.</li>
+<li>C. Only shopping malls.</li>
+<li>D. Only airports.</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>23. Which of the following is considered a cultural resource for tourism?</div><ul class='options'>
+<li>A. A mountain range.</li>
+<li>B. Creative industries like arts, culture, and entertainment.</li>
+<li>C. The local climate.</li>
+<li>D. Low land plains.</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>24. How does climate directly influence the tourist industry?</div><ul class='options'>
+<li>A. It has no impact on tourist choices.</li>
+<li>B. Pleasant conditions can attract tourists and help the industry progress.</li>
+<li>C. It only affects indoor activities.</li>
+<li>D. It only impacts business tourism.</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>25. According to the sources, what is a significant impact of climate change on tourism?</div><ul class='options'>
+<li>A. It makes all destinations equally attractive.</li>
+<li>B. It defines the length and quality of the tourism season.</li>
+<li>C. It completely eliminates the need for travel.</li>
+<li>D. It only affects urban tourism.</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>26. Which type of tourism involves travel for medical treatment or fitness and mindfulness?</div><ul class='options'>
+<li>A. Sport tourism</li>
+<li>B. Health and wellness tourism</li>
+<li>C. Dark tourism</li>
+<li>D. Rural tourism</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>27. Travel to experience the tangible aspects of a country's history is called:</div><ul class='options'>
+<li>A. Cultural tourism</li>
+<li>B. Heritage tourism</li>
+<li>C. Ecotourism</li>
+<li>D. Faith-based tourism</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>28. The location of particular attractions and the configuration of holiday resorts are studied at the:</div><ul class='options'>
+<li>A. Global scale</li>
+<li>B. National scale</li>
+<li>C. Local scale</li>
+<li>D. Continental scale</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>29. Affluence and holiday entitlement in a tourist-generating area are examples of:</div><ul class='options'>
+<li>A. Pull factors</li>
+<li>B. Environmental factors</li>
+<li>C. Push factors</li>
+<li>D. Transit factors</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>30. In Leiper’s model, the broader environments that influence the tourism system include:</div><ul class='options'>
+<li>A. Only the weather.</li>
+<li>B. Physical, cultural, social, economic, political, and technological contexts.</li>
+<li>C. Only the transit routes.</li>
+<li>D. Only the hotels and restaurants.</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>1. Which continent remains the world's leading tourism destination in terms of international arrivals?</div><ul class='options'>
+<li>A. Asia</li>
+<li>B. North America</li>
+<li>C. Europe</li>
+<li>D. Africa</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>2. What has been a major facilitator for intra-European travel by eliminating currency exchange?</div><ul class='options'>
+<li>A. The Schengen Agreement</li>
+<li>B. The Euro</li>
+<li>C. The Nordic Council</li>
+<li>D. The European Travel Commission</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>3. Which mountain range is famously known as the "playground of Europe" for both summer and winter sports?</div><ul class='options'>
+<li>A. The Pyrenees</li>
+<li>B. The Balkans</li>
+<li>C. The Alps</li>
+<li>D. The Carpathians</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>4. Which sea is the primary focus for "sun, sea, and sand" tourism in Southern Europe?</div><ul class='options'>
+<li>A. The Baltic Sea</li>
+<li>B. The North Sea</li>
+<li>C. The Mediterranean Sea</li>
+<li>D. The Caspian Sea</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>5. Which region is characterized by fjords, a rugged coastline, and a strong Viking heritage?</div><ul class='options'>
+<li>A. The Iberian Peninsula</li>
+<li>B. Scandinavia</li>
+<li>C. The Balkans</li>
+<li>D. The British Isles</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>6. The "Schengen Agreement" primarily affects tourism by:</div><ul class='options'>
+<li>A. Creating a common currency.</li>
+<li>B. Allowing border-free travel between participating countries.</li>
+<li>C. Regulating airline prices.</li>
+<li>D. Funding heritage sites.</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>7. Which organization promotes cooperation specifically among Northern European (Nordic) countries?</div><ul class='options'>
+<li>A. The European Union</li>
+<li>B. The Nordic Council</li>
+<li>C. PATA</li>
+<li>D. ASEAN</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>8. The rise of "short-city breaks" in Europe has been significantly boosted by the growth of:</div><ul class='options'>
+<li>A. High-speed rail and low-cost carriers (LCCs).</li>
+<li>B. Transatlantic cruises.</li>
+<li>C. Traditional travel agencies.</li>
+<li>D. Luxury coach tours.</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>A</div></div>
+<div class='question-card'><div class='question'>9. Which geographical feature forms a natural border between Spain and France?</div><ul class='options'>
+<li>A. The Alps</li>
+<li>B. The Apennines</li>
+<li>C. The Pyrenees</li>
+<li>D. The Urals</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>10. Which European region is most famous for its "white nights" (midnight sun) during the summer?</div><ul class='options'>
+<li>A. Southern Europe</li>
+<li>B. Western Europe</li>
+<li>C. Northern Europe (Arctic Circle areas)</li>
+<li>D. Central Europe</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>11. Which transport network connects major cities like London, Paris, and Amsterdam via high-speed trains?</div><ul class='options'>
+<li>A. The Interstate System</li>
+<li>B. The Eurostar/Thalys network</li>
+<li>C. The Silk Road</li>
+<li>D. The Orient Express</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>12. Seasonality is a major challenge for Mediterranean resorts because:</div><ul class='options'>
+<li>A. It is too cold in the summer.</li>
+<li>B. Demand is heavily concentrated in the summer months.</li>
+<li>C. There is no infrastructure for tourists.</li>
+<li>D. Tourists only visit in the winter for skiing.</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>13. Which city is considered the administrative "capital" of the European Union, attracting significant business tourism?</div><ul class='options'>
+<li>A. Rome</li>
+<li>B. Madrid</li>
+<li>C. Brussels</li>
+<li>D. Athens</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>14. The "Blue Flag" award is highly valued in European tourism for what?</div><ul class='options'>
+<li>A. Airline safety</li>
+<li>B. Hotel luxury ratings</li>
+<li>C. Beach cleanliness and environmental management</li>
+<li>D. Mountain climbing difficulty</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>15. Which country is consistently ranked as the most visited country in the world?</div><ul class='options'>
+<li>A. Germany</li>
+<li>B. Italy</li>
+<li>C. France</li>
+<li>D. Spain</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>16. Which sea lies between Central Europe and Scandinavia and is known for its cruise circuits?</div><ul class='options'>
+<li>A. The Adriatic Sea</li>
+<li>B. The Baltic Sea</li>
+<li>C. The Black Sea</li>
+<li>D. The Red Sea</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>17. Which mountain range runs down the center of the Italian peninsula?</div><ul class='options'>
+<li>A. The Alps</li>
+<li>B. The Pyrenees</li>
+<li>C. The Apennines</li>
+<li>D. The Balkans</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>18. Which country is famous for its landscape of canals, windmills, and reclaimed land (polders)?</div><ul class='options'>
+<li>A. Switzerland</li>
+<li>B. The Netherlands</li>
+<li>C. Austria</li>
+<li>D. Portugal</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>19. "Outbound tourism" in Europe refers to:</div><ul class='options'>
+<li>A. Residents of a European country traveling to another country.</li>
+<li>B. Domestic travel within the same city.</li>
+<li>C. Foreigners visiting a European city.</li>
+<li>D. Virtual tours of European landmarks.</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>A</div></div>
+<div class='question-card'><div class='question'>20. The "Benelux" group includes which three countries?</div><ul class='options'>
+<li>A. Belgium, Netherlands, Luxembourg</li>
+<li>B. Britain, Norway, Luxembourg</li>
+<li>C. Bulgaria, Estonia, Latvia</li>
+<li>D. Belarus, Netherlands, Luxembourg</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>A</div></div>
+<div class='question-card'><div class='question'>21. What is a key demographic trend currently influencing European tourism markets?</div><ul class='options'>
+<li>A. A rapidly decreasing elderly population.</li>
+<li>B. An aging population with high "silver" travel demand.</li>
+<li>C. A complete stop in international travel.</li>
+<li>D. Tourism limited only to teenagers.</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>22. Which river is a major corridor for river cruising through Germany, Austria, and Hungary?</div><ul class='options'>
+<li>A. The Thames</li>
+<li>B. The Danube</li>
+<li>C. The Seine</li>
+<li>D. The Tiber</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>23. Which island group in the Atlantic belongs to Portugal and is known for volcanic landscapes and wellness tourism?</div><ul class='options'>
+<li>A. The Canary Islands</li>
+<li>B. The Azores and Madeira</li>
+<li>C. The Balearic Islands</li>
+<li>D. The Greek Islands</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>24. Southern Europe (Italy, Greece, Spain) is primarily known for what combination of tourism resources?</div><ul class='options'>
+<li>A. Tropical rainforests and safaris.</li>
+<li>B. Classical heritage and Mediterranean climate.</li>
+<li>C. High-tech modern cities only.</li>
+<li>D. Desert landscapes and sand dunes.</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>25. The term "Low-Cost Carrier" (LCC) is best exemplified in Europe by airlines like:</div><ul class='options'>
+<li>A. Emirates</li>
+<li>B. Ryanair and EasyJet</li>
+<li>C. Singapore Airlines</li>
+<li>D. Qantas</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>26. Which country in Europe has a strong Moorish (Islamic) architectural influence, especially in its southern regions?</div><ul class='options'>
+<li>A. Norway</li>
+<li>B. Spain</li>
+<li>C. Ireland</li>
+<li>D. Poland</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>27. Central Europe's tourism is often characterized by:</div><ul class='options'>
+<li>A. Island hopping.</li>
+<li>B. Cultural and historic cities like Prague, Vienna, and Budapest.</li>
+<li>C. Desert expeditions.</li>
+<li>D. Tropical beach resorts.</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>28. What is the main reason for the high level of "intra-regional" travel in Europe?</div><ul class='options'>
+<li>A. Long distances between countries.</li>
+<li>B. High costs of travel.</li>
+<li>C. Geographical proximity and excellent transport links.</li>
+<li>D. Lack of diverse cultures.</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>29. Which region is home to the "Black Forest" (Schwarzwald), a major natural tourism resource?</div><ul class='options'>
+<li>A. Southern England</li>
+<li>B. Southwestern Germany</li>
+<li>C. Northern Russia</li>
+<li>D. Western France</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>30. The European Travel Commission (ETC) primarily works to:</div><ul class='options'>
+<li>A. Fly airplanes.</li>
+<li>B. Promote Europe as a tourism destination in long-haul markets.</li>
+<li>C. Build new hotels.</li>
+<li>D. Issue passports to citizens.</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>1. Asia accounts for approximately what percentage of the world's population?</div><ul class='options'>
+<li>A. 40 per cent</li>
+<li>B. 50 per cent</li>
+<li>C. 60 per cent</li>
+<li>D. 70 per cent</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>2. Which organization was joined by many Asian governments to promote travel to the region more effectively?</div><ul class='options'>
+<li>A. ASEAN</li>
+<li>B. PATA</li>
+<li>C. UNWTO</li>
+<li>D. EU</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>3. The Indian sub-continent's northern mountain rampart includes which mountain range to the east?</div><ul class='options'>
+<li>A. Hindu Kush</li>
+<li>B. Karakoram</li>
+<li>C. Pamirs</li>
+<li>D. Himalayas</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>D</div></div>
+<div class='question-card'><div class='question'>4. Which three great rivers flow through the Northern Plains of South Asia?</div><ul class='options'>
+<li>A. Indus, Ganges, and Brahmaputra</li>
+<li>B. Mekong, Red River, and Chao Phraya</li>
+<li>C. Yangtze, Yellow River, and Pearl River</li>
+<li>D. Tigris, Euphrates, and Nile</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>A</div></div>
+<div class='question-card'><div class='question'>5. The great plateau of volcanic rocks in Peninsular India is known as the:</div><ul class='options'>
+<li>A. Tibetan Plateau</li>
+<li>B. Deccan</li>
+<li>C. Western Ghats</li>
+<li>D. Central Highlands</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>6. Which South Asian destinations have developed tourism industries based primarily on beach resources?</div><ul class='options'>
+<li>A. Shimla and Murree</li>
+<li>B. Goa, Sri Lanka, and the Maldives</li>
+<li>C. Delhi and Mumbai</li>
+<li>D. Nuwara Eliya and Ootacamund</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>7. What is a major component of South Asia's tourist appeal for Western tourists?</div><ul class='options'>
+<li>A. Modern high-tech cities</li>
+<li>B. Street life, bustling markets, and colorful festivals</li>
+<li>C. Winter sports facilities</li>
+<li>D. Universal theme parks</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>8. In South Asia, the summer capital of British India which still retains colonial architecture is:</div><ul class='options'>
+<li>A. Murree</li>
+<li>B. Ootacamund</li>
+<li>C. Shimla</li>
+<li>D. Nuwara Eliya</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>9. Nuwara Eliya is a colonial-era hill resort located in which country?</div><ul class='options'>
+<li>A. Pakistan</li>
+<li>B. India</li>
+<li>C. Sri Lanka</li>
+<li>D. Nepal</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>10. Which country accounts for over half of all tourist arrivals and two-thirds of receipts in South Asia?</div><ul class='options'>
+<li>A. Pakistan</li>
+<li>B. Sri Lanka</li>
+<li>C. Republic of India</li>
+<li>D. Maldives</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>11. In which destination is a policy of tourist segregation from local communities implemented?</div><ul class='options'>
+<li>A. Goa</li>
+<li>B. The Maldives</li>
+<li>C. Kerala</li>
+<li>D. Mumbai</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>12. What has helped East Asia overcome the "friction of distance" from major markets in Europe and North America?</div><ul class='options'>
+<li>A. New high-speed rail links</li>
+<li>B. Improved air transport</li>
+<li>C. Trans-continental highways</li>
+<li>D. Growing cruise lines</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>13. Which country is currently the dominant force in outbound tourism to the rest of the world?</div><ul class='options'>
+<li>A. Japan</li>
+<li>B. South Korea</li>
+<li>C. China</li>
+<li>D. Singapore</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>14. Most countries in East Asia have adopted Western technology while:</div><ul class='options'>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>KhÃ´ng cÃ³ Ä‘Ã¡p Ã¡n</div></div>
+<div class='question-card'><div class='question'>15. A. Sacrificing their cultural identity.</div><ul class='options'>
+<li>B. Maintaining their cultural identity based on older civilizations and religions.</li>
+<li>C. Converting entirely to Western religions.</li>
+<li>D. Ignoring their traditional festivals.</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>15. What type of airlines are currently encouraging tourism within the Southeast Asian region?</div><ul class='options'>
+<li>A. Traditional flag carriers</li>
+<li>B. Luxury private charters</li>
+<li>C. Low-cost (budget) carriers</li>
+<li>D. Cargo airlines</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>16. Which community plays a significant role in the economic life of most countries in Southeast Asia?</div><ul class='options'>
+<li>A. Ethnic Japanese</li>
+<li>B. Ethnic Chinese</li>
+<li>C. Ethnic Indians</li>
+<li>D. Ethnic Europeans</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>17. What is the main objective of the Association of Southeast Asian Nations (ASEAN)?</div><ul class='options'>
+<li>A. To promote military alliances</li>
+<li>B. To promote economic integration across the region</li>
+<li>C. To ban international tourism</li>
+<li>D. To regulate global airfares</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>18. What has ASEAN been less effective at coping with in the region?</div><ul class='options'>
+<li>A. Economic growth</li>
+<li>B. Joint tourism promotion</li>
+<li>C. Environmental issues and severe pollution</li>
+<li>D. Attracting foreign exchange</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>19. In Southeast Asia, the timing of the rainy season in coastal areas depends on exposure to:</div><ul class='options'>
+<li>A. The Gulf Stream</li>
+<li>B. The Monsoon winds</li>
+<li>C. Arctic air masses</li>
+<li>D. Trade winds</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>20. Beach resort developments in Southeast Asia have sometimes been criticized for their impact on:</div><ul class='options'>
+<li>A. Global stock markets</li>
+<li>B. Local communities</li>
+<li>C. International airline schedules</li>
+<li>D. High-speed rail networks</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>21. Why are golf courses in Southeast Asian resorts often a point of concern?</div><ul class='options'>
+<li>A. They attract too many tourists.</li>
+<li>B. They make excessive demands on land and water supplies.</li>
+<li>C. They are too expensive to build.</li>
+<li>D. Tourists do not like playing golf in the tropics.</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>22. The Far East/Northeast Asia climate is characterized by:</div><ul class='options'>
+<li>A. Constant heat and humidity all year.</li>
+<li>B. Four well-defined seasons.</li>
+<li>C. No rainfall.</li>
+<li>D. Permanent snow and ice.</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>23. When are the best times for visiting the Far East/Northeast Asia?</div><ul class='options'>
+<li>A. Winter and Summer</li>
+<li>B. Spring and Autumn</li>
+<li>C. Only during the monsoon</li>
+<li>D. December and January</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>24. Which two countries in the Far East have long been important for business and cultural tourism?</div><ul class='options'>
+<li>A. Laos and Cambodia</li>
+<li>B. Japan and South Korea</li>
+<li>C. Mongolia and Myanmar</li>
+<li>D. Pakistan and Bangladesh</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>25. In the Far East, domestic tourism is now:</div><ul class='options'>
+<li>A. Non-existent.</li>
+<li>B. As significant as international tourism.</li>
+<li>C. Limited only to the wealthy class.</li>
+<li>D. Discouraged by governments.</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>26. Which country emerged as a "formidable competitor" for the world travel market since the 1990s?</div><ul class='options'>
+<li>A. Japan</li>
+<li>B. Thailand</li>
+<li>C. China</li>
+<li>D. India</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>27. Cultural tourism in the Far East offers many attractions such as:</div><ul class='options'>
+<li>A. Desert safaris</li>
+<li>B. Historic cities, temples, and landscapes</li>
+<li>C. Arctic wildlife viewing</li>
+<li>D. Massive cattle ranches</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>28. The Far East/Northeast Asia includes lands around which two bodies of water?</div><ul class='options'>
+<li>A. Red Sea and Dead Sea</li>
+<li>B. East China Sea and the Sea of Japan</li>
+<li>C. Caspian Sea and Black Sea</li>
+<li>D. Mediterranean Sea and Baltic Sea</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>29. PATA stands for:</div><ul class='options'>
+<li>A. Pacific Asia Travel Association</li>
+<li>B. Pan Asian Tourism Agency</li>
+<li>C. Pacific Area Transport Authority</li>
+<li>D. People’s Asian Tourism Association</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>A</div></div>
+<div class='question-card'><div class='question'>30. In Southeast Asia, the rainy season is characterized by:</div><ul class='options'>
+<li>A. Constant drizzle for months.</li>
+<li>B. Frequent but brief torrential downpours.</li>
+<li>C. Occasional light mist.</li>
+<li>D. No rain at all for half the year.</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>1. Geographically, which countries are included in North America?</div><ul class='options'>
+<li>A. Canada, the U.S., and Mexico</li>
+<li>B. Canada and the U.S. only</li>
+<li>C. The U.S., Mexico, and Brazil</li>
+<li>D. Brazil, Argentina, and Chile</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>A</div></div>
+<div class='question-card'><div class='question'>2. Which language is notably dominant in the Canadian province of Québec?</div><ul class='options'>
+<li>A. Spanish</li>
+<li>B. French</li>
+<li>C. Portuguese</li>
+<li>D. German</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>3. Which mountain chains dominate the western part of North America?</div><ul class='options'>
+<li>A. The Appalachians</li>
+<li>B. The Rockies and the Sierra Nevada</li>
+<li>C. The Alps</li>
+<li>D. The Pyrenees</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>4. Which geographical feature is known as the "agricultural heart of America"?</div><ul class='options'>
+<li>A. The Great Plains</li>
+<li>B. The Central Lowlands</li>
+<li>C. The Appalachian Mountains</li>
+<li>D. The Rocky Mountains</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>5. In the eastern U.S., which mountains rarely exceed a height of 5,000 feet?</div><ul class='options'>
+<li>A. The Rockies</li>
+<li>B. The Sierra Nevada</li>
+<li>C. The Appalachian Mountains</li>
+<li>D. The Coast Mountains</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>6. Which country was the first in the world to designate a system of national parks, starting with Yellowstone in 1872?</div><ul class='options'>
+<li>A. Canada</li>
+<li>B. Mexico</li>
+<li>C. The USA</li>
+<li>D. Brazil</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>7. What is a major constraint on the demand for tourism among Americans of working age?</div><ul class='options'>
+<li>A. High cost of travel</li>
+<li>B. Lack of transport</li>
+<li>C. Limited leisure time</li>
+<li>D. Lack of attractions</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>8. Over half of all outbound tourism from the United States is directed to which two countries?</div><ul class='options'>
+<li>A. UK and Italy</li>
+<li>B. Japan and China</li>
+<li>C. Canada and Mexico</li>
+<li>D. Brazil and Argentina</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>9. Approximately what percentage of Americans owned passports according to the sources?</div><ul class='options'>
+<li>A. 80 per cent</li>
+<li>B. 45 per cent</li>
+<li>C. 10 per cent</li>
+<li>D. 95 per cent</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>10. Which three states account for almost 75 percent of foreign tourist arrivals in the USA?</div><ul class='options'>
+<li>A. Texas, Arizona, and Nevada</li>
+<li>B. New York, California, and Florida</li>
+<li>C. Washington, Oregon, and Idaho</li>
+<li>D. Maine, Vermont, and New Hampshire</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>11. Which mode of transport is dominant for all types of journeys in the USA?</div><ul class='options'>
+<li>A. Domestic air services</li>
+<li>B. Public trains</li>
+<li>C. The private car</li>
+<li>D. Long-distance buses</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>12. Why has the promotion and development of tourism generally been weak at the national level in the USA?</div><ul class='options'>
+<li>A. Lack of funding only</li>
+<li>B. Belief in free enterprise and division of responsibilities between federal and state governments</li>
+<li>C. No interest in foreign tourists</li>
+<li>D. Too many languages spoken</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>13. Which body coordinates the policies and programs of federal agencies affecting tourism in the USA?</div><ul class='options'>
+<li>A. US Travel Association (USTA)</li>
+<li>B. Tourism Policy Council (TPC)</li>
+<li>C. National Park Service</li>
+<li>D. Department of Commerce</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>14. How does Canada's population compare to that of the USA?</div><ul class='options'>
+<li>A. It is larger than the USA</li>
+<li>B. It is equal to the USA</li>
+<li>C. It is only a tenth of the USA's population</li>
+<li>D. It is half of the USA's population</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>15. Where do most foreign visitors to Canada concentrate their attention?</div><ul class='options'>
+<li>A. The central prairies</li>
+<li>B. The northern tundra</li>
+<li>C. Vancouver, the Rockies, Toronto, or Montréal</li>
+<li>D. The eastern coastline only</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>16. What factor partly explains why Canadians have a high propensity to travel outside their country in winter?</div><ul class='options'>
+<li>A. Cheap flights only</li>
+<li>B. The harsh Canadian winter</li>
+<li>C. Lack of domestic attractions</li>
+<li>D. Mandatory vacation laws</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>17. What percentage of Canada’s foreign tourist arrivals come from the USA?</div><ul class='options'>
+<li>A. 10 per cent</li>
+<li>B. 50 per cent</li>
+<li>C. 70 per cent</li>
+<li>D. 90 per cent</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>18. What are the popular holiday homes in Canada often called?</div><ul class='options'>
+<li>A. Villas</li>
+<li>B. Bungalows</li>
+<li>C. Cabins or cottages</li>
+<li>D. Apartments</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>19. Marketing for Canadian tourism is carried out by which commission, now branded as ‘Destination Canada’?</div><ul class='options'>
+<li>A. US Travel Association</li>
+<li>B. Canadian Tourism Commission (CTC)</li>
+<li>C. Ministry of Sport</li>
+<li>D. Embratur</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>20. When is the best time for visiting the Caribbean?</div><ul class='options'>
+<li>A. May through August</li>
+<li>B. September through November</li>
+<li>C. December through April</li>
+<li>D. July and August</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>21. The Caribbean has maintained its position as the world’s most popular destination for which type of tourism?</div><ul class='options'>
+<li>A. Skiing</li>
+<li>B. Cruising</li>
+<li>C. Desert safaris</li>
+<li>D. High-speed rail tours</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>22. Which two mega-cities in Latin America have over 20 million inhabitants?</div><ul class='options'>
+<li>A. Rio de Janeiro and Buenos Aires</li>
+<li>B. Lima and Bogotá</li>
+<li>C. São Paulo and Mexico City</li>
+<li>D. Santiago and Caracas</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>23. Wealthier socio-economic groups in Latin America often prefer to travel to which destination instead of holidaying in their own countries?</div><ul class='options'>
+<li>A. Africa</li>
+<li>B. The USA</li>
+<li>C. Antarctica</li>
+<li>D. Central Asia</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>24. Mexico’s appeal to North Americans is based on its sunny winter climate and:</div><ul class='options'>
+<li>A. Its high-tech industries</li>
+<li>B. The cultural contrasts it offers to the USA</li>
+<li>C. Its cold mountain peaks</li>
+<li>D. Its vast wheat fields</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>25. Mexico's tourism industry is highly dependent on which two markets?</div><ul class='options'>
+<li>A. European and Asian</li>
+<li>B. US and Canadian</li>
+<li>C. African and Australian</li>
+<li>D. Russian and Brazilian</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>26. Approximately what percentage of foreign tourists arrive in Mexico by air?</div><ul class='options'>
+<li>A. 10 per cent</li>
+<li>B. 25 per cent</li>
+<li>C. 50 per cent</li>
+<li>D. 90 per cent</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>27. Which funding agency has the Mexican federal government used for tourism development?</div><ul class='options'>
+<li>A. FONATUR</li>
+<li>B. Embratur</li>
+<li>C. ASEAN</li>
+<li>D. PATA</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>A</div></div>
+<div class='question-card'><div class='question'>28. Brazilians are essentially the result of a fusion of which three cultures?</div><ul class='options'>
+<li>A. British, French, and German</li>
+<li>B. Japanese, Chinese, and Korean</li>
+<li>C. Portuguese, African, and Amerindian</li>
+<li>D. Spanish, Italian, and Greek</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>29. When does the greatest tourist activity take place in most of Brazil?</div><ul class='options'>
+<li>A. During the winter snow season</li>
+<li>B. During the months of Carnival</li>
+<li>C. Only in the month of May</li>
+<li>D. During the rainy autumn</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>30. Before 2003, tourism development in Brazil was the responsibility of which federal agency?</div><ul class='options'>
+<li>A. CTC</li>
+<li>B. Embratur</li>
+<li>C. FONATUR</li>
+<li>D. USTA</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>1. What is the total length of Vietnam’s coastline?</div><ul class='options'>
+<li>A. 2,067 km</li>
+<li>B. 3,260 km</li>
+<li>C. 1,400 km</li>
+<li>D. 4,500 km</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>2. Which country does Vietnam border to the North?</div><ul class='options'>
+<li>A. Laos</li>
+<li>B. Cambodia</li>
+<li>C. Thailand</li>
+<li>D. China</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>D</div></div>
+<div class='question-card'><div class='question'>3. What is the approximate land area of Vietnam according to the source?</div><ul class='options'>
+<li>A. 1 million km2</li>
+<li>B. 329,297 km2</li>
+<li>C. 95,388 km2</li>
+<li>D. 51,456 km2</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>4. Where is the northernmost point of Vietnam located?</div><ul class='options'>
+<li>A. Dat Mui, Ca Mau</li>
+<li>B. Mui Doi, Khanh Hoa</li>
+<li>C. Lung Cu, Ha Giang</li>
+<li>D. A Pa Chai, Dien Bien</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>5. Which province contains the westernmost point of Vietnam at the border junction of Vietnam, Laos, and China?</div><ul class='options'>
+<li>A. Lai Chau</li>
+<li>B. Dien Bien</li>
+<li>C. Son La</li>
+<li>D. Lao Cai</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>6. According to Leiper’s tourism system adapted for Vietnam, how many subsystems make up the tourism territory system?</div><ul class='options'>
+<li>A. 3</li>
+<li>B. 4</li>
+<li>C. 5</li>
+<li>D. 6</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>7. Which subsystem in the tourism system includes hotels, restaurants, and entertainment centers?</div><ul class='options'>
+<li>A. Tourist subsystem</li>
+<li>B. Tourism resource subsystem</li>
+<li>C. Technical facility and infrastructure subsystem</li>
+<li>D. Management subsystem</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>8. The 2017 Law on Tourism defines "Natural tourism resources" as including which elements?</div><ul class='options'>
+<li>A. Only festivals and history.</li>
+<li>B. Landscapes, geological factors, climate, and ecosystems.</li>
+<li>C. Only man-made theme parks.</li>
+<li>D. Only airports and roads.</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>9. Which type of terrain is categorized as "special" in Vietnam's natural resources?</div><ul class='options'>
+<li>A. Plains</li>
+<li>B. Hills</li>
+<li>C. Karst (limestone)</li>
+<li>D. Mountains</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>10. What is the average temperature range for Vietnam’s tropical monsoon climate?</div><ul class='options'>
+<li>A. 15°C - 20°C</li>
+<li>B. 23°C - 27°C</li>
+<li>C. 30°C - 35°C</li>
+<li>D. 10°C - 15°C</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>11. The Hai Van Pass (Bach Ma Range) serves as a climatic boundary. What is the climate characteristic of the region from this pass to the North?</div><ul class='options'>
+<li>A. Tropical monsoon with a cold winter and four seasons.</li>
+<li>B. Equatorial monsoon with two seasons (rainy and dry).</li>
+<li>C. Desert climate.</li>
+<li>D. Polar climate.</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>A</div></div>
+<div class='question-card'><div class='question'>12. For every 1,000m increase in altitude, the temperature in Vietnam typically drops by:</div><ul class='options'>
+<li>A. 1 - 2°C</li>
+<li>B. 5 - 6°C</li>
+<li>C. 10°C</li>
+<li>D. 0.5°C</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>13. Which of the following is a UNESCO World Natural Heritage site in Vietnam?</div><ul class='options'>
+<li>A. Hoi An Ancient Town</li>
+<li>B. Ha Long Bay</li>
+<li>C. Hue Imperial City</li>
+<li>D. My Son Sanctuary</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>14. According to IUCN categories, what is the primary purpose of a "National Park" (Type II)?</div><ul class='options'>
+<li>A. Strictly for scientific research only.</li>
+<li>B. Protecting ecosystems and providing recreation.</li>
+<li>C. Managing industrial resources.</li>
+<li>D. Urban development.</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>15. "Human tourism resources" (Humanistic resources) include which of the following?</div><ul class='options'>
+<li>A. Caves and waterfalls.</li>
+<li>B. Historical relics, festivals, and traditional crafts.</li>
+<li>C. Climate and humidity.</li>
+<li>D. Soil and water.</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>16. Which city is home to the UNESCO-recognized Imperial Citadel of Thang Long?</div><ul class='options'>
+<li>A. Hue</li>
+<li>B. Ho Chi Minh City</li>
+<li>C. Hanoi</li>
+<li>D. Da Nang</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>17. My Son Sanctuary is a famous relic belonging to which ancient civilization?</div><ul class='options'>
+<li>A. Khmer</li>
+<li>B. Champa</li>
+<li>C. Han</li>
+<li>D. Dai Viet</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>18. How many ethnic groups are there in Vietnam?</div><ul class='options'>
+<li>A. 45</li>
+<li>B. 54</li>
+<li>C. 64</li>
+<li>D. 31</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>19. Which cultural element was recognized by UNESCO as an Intangible Cultural Heritage of Humanity in 2005?</div><ul class='options'>
+<li>A. Ha Long Bay</li>
+<li>B. The Space of Gong Culture in the Central Highlands</li>
+<li>C. Phong Nha - Ke Bang</li>
+<li>D. The Woodblocks of the Nguyen Dynasty</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>20. Which of the following is an intangible cultural heritage of Vietnam?</div><ul class='options'>
+<li>A. One Pillar Pagoda</li>
+<li>B. Nha Nhac (Hue Court Music)</li>
+<li>C. Citadel of the Ho Dynasty</li>
+<li>D. Trang An Landscape Complex</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>21. What is the length of the main North-South railway line between Hanoi and Ho Chi Minh City?</div><ul class='options'>
+<li>A. 102 km</li>
+<li>B. 293 km</li>
+<li>C. 1,726 km</li>
+<li>D. 3,260 km</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>22. How many international airports does Vietnam currently have according to the source?</div><ul class='options'>
+<li>A. 5</li>
+<li>B. 10</li>
+<li>C. 13</li>
+<li>D. 23</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>23. Which airport is located in the southern part of Vietnam and serves as a major international gateway?</div><ul class='options'>
+<li>A. Noi Bai</li>
+<li>B. Cat Bi</li>
+<li>C. Tan Son Nhất</li>
+<li>D. Van Don</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>24. The Red River water transport system in the North has approximately how many kilometers of navigable routes?</div><ul class='options'>
+<li>A. 11,000 km</li>
+<li>B. 2,500 km</li>
+<li>C. 4,500 km</li>
+<li>D. 1,726 km</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>25. Which province is home to the southernmost point of mainland Vietnam at xom Mui, Dat Mui?</div><ul class='options'>
+<li>A. Kien Giang</li>
+<li>B. Ca Mau</li>
+<li>C. Bac Lieu</li>
+<li>D. Soc Trang</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>26. In the classification of tourism by "purpose of visit," which category includes visiting friends and relatives (VFR)?</div><ul class='options'>
+<li>A. Holiday tourism</li>
+<li>B. Common-interest tourism</li>
+<li>C. Business tourism</li>
+<li>D. Ecotourism</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>27. Which of the following is considered a tangible human tourism resource?</div><ul class='options'>
+<li>A. Folk music (Quan ho)</li>
+<li>B. Traditional festivals</li>
+<li>C. Ancient architecture (Pagodas, Temples)</li>
+<li>D. Language and customs</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>28. The "Moc ban" (woodblocks) recognized by UNESCO are associated with which temple/dynasty?</div><ul class='options'>
+<li>A. Temple of Literature</li>
+<li>B. Vinh Nghiem Pagoda / Nguyen Dynasty</li>
+<li>C. One Pillar Pagoda</li>
+<li>D. Bai Dinh Pagoda</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>29. Vietnam is located on the eastern edge of which peninsula?</div><ul class='options'>
+<li>A. Malay Peninsula</li>
+<li>B. Indochinese Peninsula</li>
+<li>C. Korean Peninsula</li>
+<li>D. Balkan Peninsula</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>30. Which specialized agency is responsible for the state management of tourism under the Ministry of Culture, Sports and Tourism?</div><ul class='options'>
+<li>A. People's Committee</li>
+<li>B. Vietnam National Administration of Tourism (VNAT)</li>
+<li>C. Department of Transport</li>
+<li>D. Ministry of Finance</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>1. In tourism spatial organization, which level refers to a specific site where tourism resources are exploited?</div><ul class='options'>
+<li>A. Tourism Center</li>
+<li>B. Tourism Region</li>
+<li>C. Tourism Point</li>
+<li>D. Tourism Route</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>2. According to the classification in the sources, what are the two main types of "Tourism Points"?</div><ul class='options'>
+<li>A. Domestic points and International points</li>
+<li>B. Functional points and Resource points</li>
+<li>C. Urban points and Rural points</li>
+<li>D. Natural points and Historical points</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>3. How many levels are used to evaluate the "Attractiveness" of a tourism resource?</div><ul class='options'>
+<li>A. 2 levels</li>
+<li>B. 3 levels</li>
+<li>C. 4 levels</li>
+<li>D. 5 levels</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>4. A tourism point is rated as "Very Attractive" (Rất hấp dẫn) when it can develop:</div><ul class='options'>
+<li>A. Only 1 type of tourism</li>
+<li>B. 2 types of tourism</li>
+<li>C. 3-4 types of tourism</li>
+<li>D. More than 4 types of tourism</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>D</div></div>
+<div class='question-card'><div class='question'>5. What determines the "Operational Time" (Thời gian hoạt động) of a tourism point?</div><ul class='options'>
+<li>A. Only the distance from the city</li>
+<li>B. Natural and cultural factors that create seasonality</li>
+<li>C. The number of hotels available</li>
+<li>D. The price of entrance tickets</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>6. A tourism point with an operational time of more than 200 days per year and over 180 days of good climate is rated as:</div><ul class='options'>
+<li>A. Short</li>
+<li>B. Medium</li>
+<li>C. Long</li>
+<li>D. Very long</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>D</div></div>
+<div class='question-card'><div class='question'>7. A "Short" (Ngắn) operational time is defined as having a good climate for how many days?</div><ul class='options'>
+<li>A. > 180 days</li>
+<li>B. 120 – 180 days</li>
+<li>C. 90 – 120 days</li>
+<li>D. < 90 days</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>D</div></div>
+<div class='question-card'><div class='question'>8. What is the definition of "Tourist Capacity" (Sức chứa)?</div><ul class='options'>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>A. The maximum number of visitors a site can handle with minimal impact on resources.</div></div>
+<div class='question-card'><div class='question'>9. A tourism point has a "Very High" (Rất cao) capacity when it can handle:</div><ul class='options'>
+<li>A. < 500 visitors/day</li>
+<li>B. 500 – 750 visitors/day</li>
+<li>C. 750 – 1,000 visitors/day</li>
+<li>D. > 1,000 visitors/day</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>D</div></div>
+<div class='question-card'><div class='question'>10. Which factor is used to evaluate the "Accessibility" (Khả năng tiếp cận) of a tourism point?</div><ul class='options'>
+<li>A. The number of languages spoken by staff</li>
+<li>B. Distance, number of transport modes, and travel time</li>
+<li>C. The quality of food served</li>
+<li>D. The age of the historical monument</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>11. A tourism point is "Very Convenient" (Rất thuận lợi) if the distance is 0-15km and the travel time is:</div><ul class='options'>
+<li>A. < 30 minutes</li>
+<li>B. 30 minutes – 1 hour</li>
+<li>C. 1 – 2 hours</li>
+<li>D. > 2 hours</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>A</div></div>
+<div class='question-card'><div class='question'>12. "Tourism Infrastructure" (Cơ sở hạ tầng) includes which of the following?</div><ul class='options'>
+<li>A. Hotels and restaurants</li>
+<li>B. Transport networks, communication, electricity, and water systems</li>
+<li>C. Souvenir shops and theme parks</li>
+<li>D. Travel agencies and tour guides</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>13. For a tourism point to be rated as "Very Good" in infrastructure, its hotel system must accommodate:</div><ul class='options'>
+<li>A. < 100 people/day</li>
+<li>B. 100 - 300 people/day</li>
+<li>C. 300 - 500 people/day</li>
+<li>D. > 500 people/day with > 2-star standard</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>D</div></div>
+<div class='question-card'><div class='question'>14. The criterion "Synchronous Combination" (Sự kết hợp đồng bộ) evaluates the relationship between:</div><ul class='options'>
+<li>A. Domestic and foreign tourists</li>
+<li>B. Tourism resources and infrastructure/technical facilities</li>
+<li>C. Mountainous and coastal regions</li>
+<li>D. Politics and economics</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>15. Environmental sustainability (Độ bền vững) is rated on how many levels?</div><ul class='options'>
+<li>A. 2 levels</li>
+<li>B. 3 levels</li>
+<li>C. 4 levels</li>
+<li>D. 5 levels</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>16. Which of the following is NOT a criterion for tourism regionalization (Phân vùng) in Vietnam?</div><ul class='options'>
+<li>A. Unique tourism products</li>
+<li>B. Natural environment conditions</li>
+<li>C. The number of international airports in the world</li>
+<li>D. Infrastructure and technical facilities</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>17. How many tourism regions is Vietnam currently divided into?</div><ul class='options'>
+<li>A. 5 regions</li>
+<li>B. 6 regions</li>
+<li>C. 7 regions</li>
+<li>D. 8 regions</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>18. Which region includes 14 provinces such as Hoa Binh, Son La, and Dien Bien?</div><ul class='options'>
+<li>A. Red River Delta</li>
+<li>B. North Central Coast</li>
+<li>C. Northern Midlands and Mountains</li>
+<li>D. Central Highlands</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>19. What is a characteristic tourism product of the Northern Midlands and Mountains?</div><ul class='options'>
+<li>A. Wet rice civilization culture</li>
+<li>B. Border tourism associated with gate trade (thương mại cửa khẩu)</li>
+<li>C. Modern high-tech theme parks</li>
+<li>D. Tropical beach resorts only</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>20. How many provinces/cities are in the Red River Delta and Northeast Coast region?</div><ul class='options'>
+<li>A. 6</li>
+<li>B. 8</li>
+<li>C. 11</li>
+<li>D. 13</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>21. Which tourism product is specifically linked to the Red River Delta?</div><ul class='options'>
+<li>A. Central Highlands Gong culture</li>
+<li>B. Culture associated with the Red River wet rice civilization</li>
+<li>C. Chăm culture and architecture</li>
+<li>D. Floating markets</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>22. The North Central Coast (Bắc Trung Bộ) consists of how many provinces?</div><ul class='options'>
+<li>A. 5</li>
+<li>B. 6</li>
+<li>C. 7</li>
+<li>D. 8</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>23. Which key tourism area in North Central Coast is associated with the Ho Dynasty Citadel and Sam Son?</div><ul class='options'>
+<li>A. Thua Thien Hue</li>
+<li>B. Quang Binh - Quang Trị</li>
+<li>C. Nam Nghe An - Bac Ha Tinh</li>
+<li>D. Thanh Hoa and its surroundings</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>D</div></div>
+<div class='question-card'><div class='question'>24. The South Central Coast (Duyên hải Nam Trung Bộ) includes which of these major tourism hubs?</div><ul class='options'>
+<li>A. Ha Noi - Hai Phong</li>
+<li>B. Da Nang - Quang Nam</li>
+<li>C. Can Tho - Kien Giang</li>
+<li>D. Ho Chi Minh City - Vung Tau</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>25. What is a specific cultural resource mentioned for the South Central Coast?</div><ul class='options'>
+<li>A. H'Mong ethnic culture</li>
+<li>B. Chăm culture</li>
+<li>C. Khmer culture</li>
+<li>D. Muong culture</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>26. How many provinces are in the Central Highlands (Tây Nguyên) region?</div><ul class='options'>
+<li>A. 4</li>
+<li>B. 5</li>
+<li>C. 6</li>
+<li>D. 7</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>27. Which city is a key tourism destination in the Central Highlands, associated with Tuyen Lam Lake?</div><ul class='options'>
+<li>A. Buon Ma Thuot</li>
+<li>B. Pleiku</li>
+<li>C. Da Lat</li>
+<li>D. Kon Tum</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>28. The Southeast region (Đông Nam Bộ) includes which major economic and tourism center?</div><ul class='options'>
+<li>A. Da Nang</li>
+<li>B. Can Tho</li>
+<li>C. Ho Chi Minh City</li>
+<li>D. Hue</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>29. Tay Ninh province in the Southeast is associated with which famous mountain and international border gate?</div><ul class='options'>
+<li>A. Fansipan and Lao Cai</li>
+<li>B. Ba Den Mountain and Moc Bai Gate</li>
+<li>C. Sam Mountain and Tinh Bien</li>
+<li>D. Lang Biang and Bo Y</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>30. The Mekong Delta (Đồng bằng sông Cửu Long) region consists of how many provinces/cities?</div><ul class='options'>
+<li>A. 11</li>
+<li>B. 12</li>
+<li>C. 13</li>
+<li>D. 14</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>1. How many provinces are included in the Northern Midlands and Mountains tourism region?</div><ul class='options'>
+<li>A. 11 provinces</li>
+<li>B. 12 provinces</li>
+<li>C. 13 provinces</li>
+<li>D. 14 provinces</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>D</div></div>
+<div class='question-card'><div class='question'>2. What percentage of Vietnam's total land area does this region occupy?</div><ul class='options'>
+<li>A. 16%</li>
+<li>B. 28.8%</li>
+<li>C. 6.4%</li>
+<li>D. 40%</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>3. Which country borders the Northern Midlands and Mountains region to the West?</div><ul class='options'>
+<li>A. China</li>
+<li>B. Laos</li>
+<li>C. Cambodia</li>
+<li>D. Thailand</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>4. To the South, which region does the Northern Midlands and Mountains border?</div><ul class='options'>
+<li>A. North Central Coast</li>
+<li>B. Central Highlands</li>
+<li>C. Red River Delta and Northeast Coast</li>
+<li>D. Southeast region</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>5. What is the length of the border between this region and China?</div><ul class='options'>
+<li>A. 610 km</li>
+<li>B. 1,080 km</li>
+<li>C. 1,240 km</li>
+<li>D. 3,260 km</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>6. The Hữu Nghị border gate is located in which province?</div><ul class='options'>
+<li>A. Cao Bang</li>
+<li>B. Lao Cai</li>
+<li>C. Ha Giang</li>
+<li>D. Lang Son</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>D</div></div>
+<div class='question-card'><div class='question'>7. Which border gate is located in Điện Biên province?</div><ul class='options'>
+<li>A. Pa Hang</li>
+<li>B. Tay Trang</li>
+<li>C. Ma Lu Thang</li>
+<li>D. Ta Lung</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>8. Approximately how many historical and cultural relics are there in this region?</div><ul class='options'>
+<li>A. Over 550</li>
+<li>B. Over 1,000</li>
+<li>C. Over 5,000</li>
+<li>D. Over 7,000</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>D</div></div>
+<div class='question-card'><div class='question'>9. Which of the following is a "Special National Relic" located in Điện Biên?</div><ul class='options'>
+<li>A. ATK Cho Don</li>
+<li>B. Pac Bo</li>
+<li>C. Dien Bien Phu Battlefield</li>
+<li>D. Hung Temple</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>10. Ba Bể Lake, a famous scenic spot and special national relic, is in which province?</div><ul class='options'>
+<li>A. Cao Bang</li>
+<li>B. Bac Kan</li>
+<li>C. Ha Giang</li>
+<li>D. Tuyen Quang</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>11. Which UNESCO-recognized intangible cultural heritage is associated with Phú Thọ province?</div><ul class='options'>
+<li>A. Quan ho folk songs</li>
+<li>B. Space of Gong culture</li>
+<li>C. Xoan singing and Hung Vuong worship</li>
+<li>D. Ca Tru</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>12. Which of the following is a characteristic tourism product of this region?</div><ul class='options'>
+<li>A. Floating market tourism</li>
+<li>B. Border tourism associated with gate trade</li>
+<li>C. Chăm culture research tourism</li>
+<li>D. Modern high-tech urban tourism</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>13. The Sơn La - Điện Biên key tourism area is notably associated with which plateau?</div><ul class='options'>
+<li>A. Dong Van Plateau</li>
+<li>B. Moc Chau Plateau</li>
+<li>C. Pleiku Plateau</li>
+<li>D. Dak Lak Plateau</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>14. Which province is described as the place "where the Red River flows into Vietnam"?</div><ul class='options'>
+<li>A. Ha Giang</li>
+<li>B. Lao Cai</li>
+<li>C. Cao Bang</li>
+<li>D. Lang Son</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>15. Sa Pa is located on the eastern slope of which mountain range?</div><ul class='options'>
+<li>A. Bach Ma Range</li>
+<li>B. Truong Son Range</li>
+<li>C. Hoang Lien Son Range</li>
+<li>D. Pu Den Dinh Range</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>16. At what altitude is the Sa Pa tourism urban area situated?</div><ul class='options'>
+<li>A. 500m</li>
+<li>B. 1,000m</li>
+<li>C. 1,500m</li>
+<li>D. 3,143m</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>17. Which famous peak in Lao Cai is known as the "Roof of Indochina"?</div><ul class='options'>
+<li>A. Ham Rong</li>
+<li>B. Fansipan</li>
+<li>C. Mau Son</li>
+<li>D. Tay Con Linh</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>18. Thang Hen Lake and Ban Gioc Waterfall are key attractions in which province?</div><ul class='options'>
+<li>A. Ha Giang</li>
+<li>B. Cao Bang</li>
+<li>C. Lang Son</li>
+<li>D. Bac Kan</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>19. Which province is home to the UNESCO Global Geopark "Dong Van Karst Plateau"?</div><ul class='options'>
+<li>A. Cao Bang</li>
+<li>B. Lao Cai</li>
+<li>C. Ha Giang</li>
+<li>D. Son La</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>20. The key tourism area of Thái Nguyên - Lạng Sơn is associated with which mountain resort?</div><ul class='options'>
+<li>A. Sa Pa</li>
+<li>B. Tam Dao</li>
+<li>C. Mau Son</li>
+<li>D. Da Lat</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>21. Which national highway (QL) serves as the route for the Hanoi - Thai Nguyen - Bac Kan - Cao Bang tourism line?</div><ul class='options'>
+<li>A. QL 1A</li>
+<li>B. QL 2</li>
+<li>C. QL 3</li>
+<li>D. QL 6</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>22. The tourism route Hanoi - Phu Tho - Tuyen Quang - Ha Giang follows which highway?</div><ul class='options'>
+<li>A. QL 1A</li>
+<li>B. QL 2</li>
+<li>C. QL 3</li>
+<li>D. QL 4</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>23. Which highway is primarily used for the tourism route connecting Hanoi to the Northwest (Tây Bắc) provinces?</div><ul class='options'>
+<li>A. QL 1A</li>
+<li>B. QL 2</li>
+<li>C. QL 5</li>
+<li>D. QL 6</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>D</div></div>
+<div class='question-card'><div class='question'>24. The international tourism route from Hanoi to Kunming (China) passes through which Vietnamese border province?</div><ul class='options'>
+<li>A. Lang Son</li>
+<li>B. Lao Cai</li>
+<li>C. Ha Giang</li>
+<li>D. Cao Bang</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>25. The international route from Hanoi to Nanning (China) follows which highway?</div><ul class='options'>
+<li>A. QL 1</li>
+<li>B. QL 2</li>
+<li>C. QL 3</li>
+<li>D. QL 6</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>A</div></div>
+<div class='question-card'><div class='question'>26. Which of the following is an attraction located in the Sa Pa area?</div><ul class='options'>
+<li>A. Pac Bo Relic</li>
+<li>B. Muong Hoa Valley</li>
+<li>C. Ban Gioc Waterfall</li>
+<li>D. Nui Coc Lake</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>27. ATK Định Hóa is a historical relic associated with which province?</div><ul class='options'>
+<li>A. Tuyen Quang</li>
+<li>B. Thai Nguyen</li>
+<li>C. Bac Kan</li>
+<li>D. Cao Bang</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>28. The "Pa Hang" border gate connects Vietnam with which country?</div><ul class='options'>
+<li>A. China</li>
+<li>B. Laos</li>
+<li>C. Cambodia</li>
+<li>D. Thailand</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>29. How far is Sa Pa from Hanoi?</div><ul class='options'>
+<li>A. 102 km</li>
+<li>B. 175 km</li>
+<li>C. 293 km</li>
+<li>D. 336 km</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>D</div></div>
+<div class='question-card'><div class='question'>30. Which province in this region is NOT mentioned as bordering China?</div><ul class='options'>
+<li>A. Ha Giang</li>
+<li>B. Cao Bang</li>
+<li>C. Lang Son</li>
+<li>D. Hoa Binh</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>D</div></div>
+<div class='question-card'><div class='question'>1. How many provinces and cities are included in the Red River Delta and Northeast Coast tourism region?</div><ul class='options'>
+<li>A. 8</li>
+<li>B. 11</li>
+<li>C. 13</li>
+<li>D. 14</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>2. What percentage of Vietnam's total land area does this region occupy?</div><ul class='options'>
+<li>A. 16%</li>
+<li>B. 6.4%</li>
+<li>C. 28.8%</li>
+<li>D. 10%</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>3. Which province in this region shares a 133km border with China?</div><ul class='options'>
+<li>A. Hai Phong</li>
+<li>B. Nam Dinh</li>
+<li>C. Quang Ninh</li>
+<li>D. Ninh Bình</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>4. The coastline of this region along the East Sea is approximately how long?</div><ul class='options'>
+<li>A. 300 km</li>
+<li>B. 600 km</li>
+<li>C. 1,290 km</li>
+<li>D. 3,260 km</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>5. Which border gate connects this region with China?</div><ul class='options'>
+<li>A. Huu Nghi</li>
+<li>B. Tay Trang</li>
+<li>C. Mong Cai</li>
+<li>D. Lao Cai</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>6. What is the first national park established in Vietnam (in 1962)?</div><ul class='options'>
+<li>A. Cat Ba</li>
+<li>B. Ba Vi</li>
+<li>C. Cuc Phuong</li>
+<li>D. Xuan Thuy</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>7. Which of the following is recognized as a World Biosphere Reserve in this region?</div><ul class='options'>
+<li>A. Tam Dao</li>
+<li>B. Cat Ba</li>
+<li>C. Bai Tu Long</li>
+<li>D. Cuc Phuong</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>8. "Dong Dau" is a famous archaeological site located in which province?</div><ul class='options'>
+<li>A. Bac Ninh</li>
+<li>B. Hai Duong</li>
+<li>C. Vinh Phuc</li>
+<li>D. Ha Nam</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>9. "Cai Beo" archaeological site is located in which area?</div><ul class='options'>
+<li>A. Cuc Phuong</li>
+<li>B. Cat Ba</li>
+<li>C. Thang Long Citadel</li>
+<li>D. Van Mieu</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>10. In what year was the Temple of Literature (Van Mieu Quoc Tu Giam) built?</div><ul class='options'>
+<li>A. 1010</li>
+<li>B. 1070</li>
+<li>C. 1802</li>
+<li>D. 1962</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>11. Which of the following pagodas is located in Nam Dinh province?</div><ul class='options'>
+<li>A. Tran Quoc Pagoda</li>
+<li>B. Phat Tich Pagoda</li>
+<li>C. Bai Dinh Pagoda</li>
+<li>D. Quynh Lam Pagoda</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>D</div></div>
+<div class='question-card'><div class='question'>12. Which communal house (Dinh) is located in Bac Ninh province?</div><ul class='options'>
+<li>A. Tay Dang</li>
+<li>B. Chu Quyen</li>
+<li>C. Dinh Bang</li>
+<li>D. La Khe</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>13. The famous Phat Diem Cathedral complex is located in which province?</div><ul class='options'>
+<li>A. Nam Dinh</li>
+<li>B. Ninh Binh</li>
+<li>C. Hai Phong</li>
+<li>D. Ha Nam</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>14. Which cathedral is located in Nam Dinh and is a significant architectural landmark?</div><ul class='options'>
+<li>A. Hanoi Cathedral</li>
+<li>B. Phat Diem Cathedral</li>
+<li>C. Phu Nhai Cathedral</li>
+<li>D. Hai Phong Cathedral</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>15. "Tay Thien" is a famous scenic and spiritual spot in which province?</div><ul class='options'>
+<li>A. Hai Duong</li>
+<li>B. Quang Ninh</li>
+<li>C. Vinh Phuc</li>
+<li>D. Bac Ninh</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>16. This region is described as the "cradle" (cái nôi) of which type of festivals?</div><ul class='options'>
+<li>A. Mountainous ethnic festivals</li>
+<li>B. Coastal fishing festivals</li>
+<li>C. Agricultural festivals</li>
+<li>D. Modern music festivals</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>17. The Lim Festival, famous for Quan Ho singing, is held in which province?</div><ul class='options'>
+<li>A. Ha Nam</li>
+<li>B. Bac Ninh</li>
+<li>C. Hai Duong</li>
+<li>D. Thai Binh</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>18. The Buffalo Fighting Festival (Lễ hội Chọi Trâu) is a tradition of which city?</div><ul class='options'>
+<li>A. Hanoi</li>
+<li>B. Hai Phong</li>
+<li>C. Nam Dinh</li>
+<li>D. Ninh Binh</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>19. What is a characteristic tourism product of the Red River Delta region?</div><ul class='options'>
+<li>A. Gong culture research</li>
+<li>B. Floating market tours</li>
+<li>C. Culture associated with the Red River wet rice civilization</li>
+<li>D. Mountain trekking with ethnic minorities</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>20. Which type of tourism involving meetings, incentives, conferences, and exhibitions is a strength of this region?</div><ul class='options'>
+<li>A. Dark tourism</li>
+<li>B. MICE tourism</li>
+<li>C. Medical tourism</li>
+<li>D. Volunteer tourism</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>21. The Hanoi key tourism area is primarily associated with:</div><ul class='options'>
+<li>A. High-speed rail networks</li>
+<li>B. Inner-city historical relics and suburban natural landscapes</li>
+<li>C. Only modern shopping malls</li>
+<li>D. Desert safaris</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>22. The key tourism area of Quang Ninh - Hai Phong is focused on:</div><ul class='options'>
+<li>A. Rice fields</li>
+<li>B. Sea and island landscapes (Ha Long - Cat Ba)</li>
+<li>C. High mountains</li>
+<li>D. Industrial factories</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>23. Tam Coc - Bich Dong and Trang An are key attractions in which tourism hub?</div><ul class='options'>
+<li>A. Hanoi</li>
+<li>B. Quang Ninh</li>
+<li>C. Ninh Binh</li>
+<li>D. Hai Phong</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>24. How many "national tourism areas" (khu du lịch quốc gia) are planned for development in this region?</div><ul class='options'>
+<li>A. 2</li>
+<li>B. 8</li>
+<li>C. 9</li>
+<li>D. 11</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>25. How many "tourism cities" (đô thị du lịch) are identified in this region's development orientation?</div><ul class='options'>
+<li>A. 2</li>
+<li>B. 5</li>
+<li>C. 7</li>
+<li>D. 10</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>A</div></div>
+<div class='question-card'><div class='question'>26. Which of the following is a national park located in the Red River Delta Wetlands?</div><ul class='options'>
+<li>A. Ba Vi</li>
+<li>B. Xuan Thuy</li>
+<li>C. Tam Dao</li>
+<li>D. Cuc Phuong</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>27. The festival held at Yen Tu mountain is located in which province?</div><ul class='options'>
+<li>A. Hai Duong</li>
+<li>B. Ninh Binh</li>
+<li>C. Quang Ninh</li>
+<li>D. Bac Ninh</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>28. Which site is a UNESCO World Natural Heritage site located in this region?</div><ul class='options'>
+<li>A. Thang Long Citadel</li>
+<li>B. Ha Long Bay</li>
+<li>C. Yen Tu</li>
+<li>D. Huong Pagoda</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>29. "Con Son - Kiep Bac" historical relic is located in which province?</div><ul class='options'>
+<li>A. Hai Duong</li>
+<li>B. Hung Yen</li>
+<li>C. Ha Nam</li>
+<li>D. Thai Binh</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>A</div></div>
+<div class='question-card'><div class='question'>30. In Leiper's system applied to this region, which subsystem would include the various traditional craft villages?</div><ul class='options'>
+<li>A. Tourist subsystem</li>
+<li>B. Technical facility subsystem</li>
+<li>C. Tourism resource subsystem (Humanistic)</li>
+<li>D. Management subsystem</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>1. How many provinces and cities are included in the North Central Coast tourism region?</div><ul class='options'>
+<li>A. 4</li>
+<li>B. 5</li>
+<li>C. 6</li>
+<li>D. 7</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>2. What percentage of Vietnam's total land area does the North Central Coast occupy?</div><ul class='options'>
+<li>A. 6.4%</li>
+<li>B. 16%</li>
+<li>C. 28.8%</li>
+<li>D. 10%</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>3. Which of the following provinces is NOT part of the North Central Coast region?</div><ul class='options'>
+<li>A. Thanh Hoa</li>
+<li>B. Quang Binh</li>
+<li>C. Da Nang</li>
+<li>D. Thua Thien Hue</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>4. What is the length of the coastline of the North Central Coast region?</div><ul class='options'>
+<li>A. 300 km</li>
+<li>B. 600 km</li>
+<li>C. 670 km</li>
+<li>D. 1,290 km</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>5. The North Central Coast shares a border of approximately 1,294 km with which country?</div><ul class='options'>
+<li>A. China</li>
+<li>B. Cambodia</li>
+<li>C. Laos</li>
+<li>D. Thailand</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>6. Which geographical feature serves as the southern boundary of this region, separating it from the South Central Coast?</div><ul class='options'>
+<li>A. Hoanh Son Range</li>
+<li>B. Hai Van Pass (Bach Ma Range)</li>
+<li>C. Tam Diep Mountain</li>
+<li>D. Ngang Pass</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>7. What is a dominant physical characteristic of the North Central Coast territory?</div><ul class='options'>
+<li>A. Wide and flat plains</li>
+<li>B. High volcanic plateaus</li>
+<li>C. Long and narrow territory stretching across many latitudes</li>
+<li>D. Archipelago-dominated landscape</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>8. Which UNESCO World Natural Heritage site is located in Quang Binh province?</div><ul class='options'>
+<li>A. Ha Long Bay</li>
+<li>B. Phong Nha - Ke Bang National Park</li>
+<li>C. Trang An Landscape Complex</li>
+<li>D. Cat Tien National Park</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>9. The Citadel of the Ho Dynasty (Thanh Nha Ho), a UNESCO World Cultural Heritage site, is located in:</div><ul class='options'>
+<li>A. Nghe An</li>
+<li>B. Ha Tinh</li>
+<li>C. Thanh Hoa</li>
+<li>D. Quang Tri</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>10. Which site was recognized by UNESCO as a World Cultural Heritage in 1993?</div><ul class='options'>
+<li>A. My Son Sanctuary</li>
+<li>B. Hoi An Ancient Town</li>
+<li>C. Complex of Hue Monuments</li>
+<li>D. Thang Long Imperial Citadel</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>11. "Vi and Giam" folk songs, an intangible cultural heritage, are characteristic of which two provinces?</div><ul class='options'>
+<li>A. Thanh Hoa and Nghe An</li>
+<li>B. Nghe An and Ha Tinh</li>
+<li>C. Quang Binh and Quang Tri</li>
+<li>D. Quang Tri and Thua Thien Hue</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>12. Which UNESCO-recognized intangible heritage is associated specifically with Hue?</div><ul class='options'>
+<li>A. Space of Gong Culture</li>
+<li>B. Ca Tru Singing</li>
+<li>C. Nha Nhac (Hue Court Music)</li>
+<li>D. Xoan Singing</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>13. How many national-ranked historical and cultural relics are there in the North Central Coast?</div><ul class='options'>
+<li>A. Over 156</li>
+<li>B. Over 450</li>
+<li>C. Over 550</li>
+<li>D. Over 7,000</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>14. The Kim Lien memorial site, dedicated to President Ho Chi Minh, is located in which province?</div><ul class='options'>
+<li>A. Thanh Hoa</li>
+<li>B. Nghe An</li>
+<li>C. Ha Tinh</li>
+<li>D. Quang Binh</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>15. Which of the following is a famous historical relic in Quang Tri associated with the anti-American war?</div><ul class='options'>
+<li>A. Ham Rong Bridge</li>
+<li>B. Dong Loc Junction</li>
+<li>C. Vinh Moc Tunnels</li>
+<li>D. Lam Kinh Relic</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>16. Which province is home to the memorial site of the great poet Nguyen Du?</div><ul class='options'>
+<li>A. Nghe An</li>
+<li>B. Ha Tinh</li>
+<li>C. Thanh Hoa</li>
+<li>D. Thua Thien Hue</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>17. Sam Son is a famous tourism city and beach destination in which province?</div><ul class='options'>
+<li>A. Nghe An</li>
+<li>B. Ha Tinh</li>
+<li>C. Thanh Hoa</li>
+<li>D. Quang Binh</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>18. Cua Lo beach is a key tourism destination in:</div><ul class='options'>
+<li>A. Thanh Hoa</li>
+<li>B. Nghe An</li>
+<li>C. Ha Tinh</li>
+<li>D. Quang Binh</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>19. Which beach is located in Ha Tinh province?</div><ul class='options'>
+<li>A. Cua Tung</li>
+<li>B. Thien Cam</li>
+<li>C. Lang Co</li>
+<li>D. Nhat Le</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>20. Lang Co beach and Lap An lagoon are famous natural attractions in:</div><ul class='options'>
+<li>A. Quang Tri</li>
+<li>B. Thua Thien Hue</li>
+<li>C. Quang Binh</li>
+<li>D. Da Nang</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>21. Which national park in this region is known for its biodiversity and the "Cẩm Lương" fish stream nearby?</div><ul class='options'>
+<li>A. Pu Mat</li>
+<li>B. Ben En</li>
+<li>C. Cuc Phuong</li>
+<li>D. Bach Ma</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>22. The Lao Bao international border gate connects Quang Tri province with:</div><ul class='options'>
+<li>A. China</li>
+<li>B. Cambodia</li>
+<li>C. Laos</li>
+<li>D. Thailand</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>23. Which of the following is a characteristic tourism product of the North Central Coast?</div><ul class='options'>
+<li>A. Floating market tours</li>
+<li>B. High-tech urban tourism</li>
+<li>C. Heritage and revolutionary historical tourism</li>
+<li>D. Winter sports tourism</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>24. The "Hue Festival" is a major cultural event held in which province?</div><ul class='options'>
+<li>A. Thanh Hoa</li>
+<li>B. Nghe An</li>
+<li>C. Thua Thien Hue</li>
+<li>D. Quang Nam</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>25. Which key tourism area is associated with the "Nam Nghe An - Bac Ha Tinh" hub?</div><ul class='options'>
+<li>A. Sam Son and Lam Kinh</li>
+<li>B. Cua Lo, Kim Lien, and Cau Treo border gate</li>
+<li>C. Phong Nha - Ke Bang and Cua Tung</li>
+<li>D. Hue Citadel and Lang Co</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>26. Which historical site is located in Ha Tinh and commemorates the young female volunteers?</div><ul class='options'>
+<li>A. Khe Sanh</li>
+<li>B. Dong Loc Junction (Nga ba Dong Loc)</li>
+<li>C. Hien Luong Bridge</li>
+<li>D. Truong Son Cemetery</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>27. Thien Mu Pagoda and Tu Duc Tomb are famous architectural relics in:</div><ul class='options'>
+<li>A. Thanh Hoa</li>
+<li>B. Hue</li>
+<li>C. Vinh</li>
+<li>D. Dong Hoi</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>28. The "Cau Treo" international border gate is located in which province?</div><ul class='options'>
+<li>A. Nghe An</li>
+<li>B. Ha Tinh</li>
+<li>C. Quang Binh</li>
+<li>D. Thanh Hoa</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>29. Which mountain range in the region contains the Bach Ma National Park?</div><ul class='options'>
+<li>A. Hoang Lien Son</li>
+<li>B. Truong Son Range</li>
+<li>C. Pu Den Dinh</li>
+<li>D. Dong Trieu</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>30. In terms of transport, the North Central Coast serves as a vital gateway for which landlocked country to access the sea?</div><ul class='options'>
+<li>A. Cambodia</li>
+<li>B. Laos</li>
+<li>C. Thailand</li>
+<li>D. Myanmar</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>1. How many provinces and cities are included in the South Central Coast tourism region?</div><ul class='options'>
+<li>A. 6</li>
+<li>B. 7</li>
+<li>C. 8</li>
+<li>D. 9</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>2. Which geographical feature serves as the northern boundary separating this region from the North Central Coast?</div><ul class='options'>
+<li>A. Hoanh Son Range</li>
+<li>B. Bach Ma Range (Hai Van Pass)</li>
+<li>C. Ngang Pass</li>
+<li>D. Tam Diep Mountain</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>3. The South Central Coast is described as the place that:</div><ul class='options'>
+<li>A. Has the highest mountains in Vietnam.</li>
+<li>B. Welcomes the earliest sunrise on the Vietnamese mainland.</li>
+<li>C. Has the largest delta in the country.</li>
+<li>D. Borders China to the West.</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>4. What is the total length of the coastline in the South Central Coast region?</div><ul class='options'>
+<li>A. 600 km</li>
+<li>B. 670 km</li>
+<li>C. 1,290 km</li>
+<li>D. 3,260 km</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>5. Which region borders the South Central Coast to the South?</div><ul class='options'>
+<li>A. North Central Coast</li>
+<li>B. Central Highlands</li>
+<li>C. Southeast (Dong Nam Bo)</li>
+<li>D. Mekong Delta</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>6. To the West, which region does the South Central Coast primarily border?</div><ul class='options'>
+<li>A. Cambodia</li>
+<li>B. Central Highlands (Tay Nguyen)</li>
+<li>C. Thailand</li>
+<li>D. Northern Mountains</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>7. Which of the following is a famous peninsula located in Da Nang?</div><ul class='options'>
+<li>A. Hon Gom</li>
+<li>B. Phuong Mai</li>
+<li>C. Son Tra</li>
+<li>D. Cam Ranh</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>8. Which bay in this region is recognized as one of the 30 most beautiful bays in the world?</div><ul class='options'>
+<li>A. Dung Quat Bay</li>
+<li>B. Quy Nhon Bay</li>
+<li>C. Nha Trang Bay</li>
+<li>D. Xuan Dai Bay</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>9. Non Nuoc and My Khe are famous beaches located in which city?</div><ul class='options'>
+<li>A. Nha Trang</li>
+<li>B. Da Nang</li>
+<li>C. Phan Thiet</li>
+<li>D. Quy Nhon</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>10. Which beach is a well-known destination in Binh Thuan province?</div><ul class='options'>
+<li>A. Ninh Chu</li>
+<li>B. Ca Na</li>
+<li>C. Mui Ne</li>
+<li>D. Sa Huynh</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>11. The Vu Gia – Thu Bon river system is primarily located in which area?</div><ul class='options'>
+<li>A. Khanh Hoa</li>
+<li>B. Da Nang – Quang Nam</li>
+<li>C. Binh Dinh</li>
+<li>D. Ninh Thuan</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>12. Which river is also known by the name "Da Rang"?</div><ul class='options'>
+<li>A. Thu Bon River</li>
+<li>B. Tra Khuc River</li>
+<li>C. Ba River</li>
+<li>D. Con River</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>13. Where is the famous "Vinh Hao" mineral water source located?</div><ul class='options'>
+<li>A. Binh Dinh</li>
+<li>B. Phu Yen</li>
+<li>C. Binh Thuan</li>
+<li>D. Khanh Hoa</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>14. Which site is recognized by UNESCO as a World Biosphere Reserve in this region?</div><ul class='options'>
+<li>A. Nui Chua</li>
+<li>B. Cu Lao Cham</li>
+<li>C. Son Tra</li>
+<li>D. Ba Na</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>15. Nui Chua and Phuoc Binh National Parks are located in which province?</div><ul class='options'>
+<li>A. Khanh Hoa</li>
+<li>B. Ninh Thuan</li>
+<li>C. Binh Thuan</li>
+<li>D. Phu Yen</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>16. The Hoang Sa (Paracel) archipelago is administratively part of which city?</div><ul class='options'>
+<li>A. Nha Trang</li>
+<li>B. Da Nang</li>
+<li>C. Quy Nhon</li>
+<li>D. Tam Ky</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>17. Which province manages the Truong Sa (Spratly) archipelago?</div><ul class='options'>
+<li>A. Da Nang</li>
+<li>B. Quang Ngai</li>
+<li>C. Khanh Hoa</li>
+<li>D. Binh Thuan</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>18. Ly Son is a famous island district belonging to which province?</div><ul class='options'>
+<li>A. Binh Dinh</li>
+<li>B. Quang Ngai</li>
+<li>C. Phu Yen</li>
+<li>D. Khanh Hoa</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>19. Which UNESCO World Cultural Heritage site was recognized in 1999?</div><ul class='options'>
+<li>A. Hoi An Ancient Town</li>
+<li>B. My Son Sanctuary</li>
+<li>C. Complex of Hue Monuments</li>
+<li>D. Citadel of the Ho Dynasty</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>20. Hoi An Ancient Town was recognized by UNESCO as a World Cultural Heritage in which year?</div><ul class='options'>
+<li>A. 1993</li>
+<li>B. 1999</li>
+<li>C. 2005</li>
+<li>D. 2009</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>21. The Museum of Cham Sculpture is a famous cultural attraction in:</div><ul class='options'>
+<li>A. Hue</li>
+<li>B. Da Nang</li>
+<li>C. Phan Rang</li>
+<li>D. Quy Nhon</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>22. Which famous archaeological culture is associated with Quang Ngai province?</div><ul class='options'>
+<li>A. Dong Son Culture</li>
+<li>B. Sa Huynh Culture</li>
+<li>C. Oc Eo Culture</li>
+<li>D. Hoa Binh Culture</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>23. The "Kate" Festival is a traditional event of which ethnic group?</div><ul class='options'>
+<li>A. H'Mong</li>
+<li>B. Cham</li>
+<li>C. Khmer</li>
+<li>D. Ba Na</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>24. Which festival is common among coastal communities from Da Nang to Binh Thuan?</div><ul class='options'>
+<li>A. Tay Sơn Festival</li>
+<li>B. Cau Ngu (Nghinh Ong) Festival</li>
+<li>C. Quan The Am Festival</li>
+<li>D. Ponagar Festival</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>25. The International Fireworks Festival is a signature event of which city?</div><ul class='options'>
+<li>A. Nha Trang</li>
+<li>B. Da Nang</li>
+<li>C. Phan Thiet</li>
+<li>D. Hoi An</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>26. "Non Nuoc" is a famous craft village known for:</div><ul class='options'>
+<li>A. Silk weaving</li>
+<li>B. Stone carving</li>
+<li>C. Pottery</li>
+<li>D. Woodworking</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>27. Bau Truc is a famous traditional craft village of the Cham people known for:</div><ul class='options'>
+<li>A. Mat weaving</li>
+<li>B. Pottery</li>
+<li>C. Brocade weaving</li>
+<li>D. Bronze casting</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>28. Which of the following is a characteristic tourism product of the region?</div><ul class='options'>
+<li>A. Floating market tours</li>
+<li>B. Marine and island tourism</li>
+<li>C. Winter sports</li>
+<li>D. High-tech agricultural tourism</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>29. The key tourism area of "Da Nang – Quang Nam" is associated with which sites?</div><ul class='options'>
+<li>A. Dam O Loan and Cam Ranh</li>
+<li>B. Mui Ne and Phu Quy</li>
+<li>C. Son Tra, Hoi An, and My Son</li>
+<li>D. Sa Huynh and Ly Son</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>30. How many "tourism cities" (đô thị du lịch) are planned for the South Central Coast region?</div><ul class='options'>
+<li>A. 2</li>
+<li>B. 3</li>
+<li>C. 4</li>
+<li>D. 5</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>1. Which region consists of 5 provinces: Kon Tum, Gia Lai, Đắk Lắk, Đắk Nông, and Lâm Đồng?</div><ul class='options'>
+<li>A. North Central Coast</li>
+<li>B. Central Highlands (Tây Nguyên)</li>
+<li>C. Southeast</li>
+<li>D. Mekong Delta</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>2. To the West, the Central Highlands region shares borders with which countries?</div><ul class='options'>
+<li>A. China and Laos</li>
+<li>B. Laos and Cambodia</li>
+<li>C. Cambodia and Thailand</li>
+<li>D. Thailand and Myanmar</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>3. What is the characteristic slope of the terrain in the Central Highlands?</div><ul class='options'>
+<li>A. Sloping from West to East</li>
+<li>B. Sloping from North to South</li>
+<li>C. Sloping from East to West</li>
+<li>D. Flat and low-lying</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>4. What is the average altitude of the plateaus in the Central Highlands?</div><ul class='options'>
+<li>A. 100 - 200m</li>
+<li>B. 300 - 500m</li>
+<li>C. 600 - 800m</li>
+<li>D. Above 1,500m</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>5. The forest area in the Central Highlands accounts for approximately what percentage of the total forest area in Vietnam?</div><ul class='options'>
+<li>A. 6.4%</li>
+<li>B. 14.9%</li>
+<li>C. 28.8%</li>
+<li>D. 40%</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>6. According to the sources, approximately how many historical relics are there in the Central Highlands?</div><ul class='options'>
+<li>A. Over 156</li>
+<li>B. Over 450</li>
+<li>C. Over 550</li>
+<li>D. Over 7,000</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>7. Which cultural element of the Central Highlands was recognized by UNESCO as an Intangible Cultural Heritage of Humanity?</div><ul class='options'>
+<li>A. Nha Nhac (Court Music)</li>
+<li>B. The Space of Gong Culture</li>
+<li>C. Xoan Singing</li>
+<li>D. Don Ca Tai Tu</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>8. In what year did UNESCO recognize the Space of Gong Culture in the Central Highlands?</div><ul class='options'>
+<li>A. 1993</li>
+<li>B. 1999</li>
+<li>C. 2003</li>
+<li>D. 2005</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>D</div></div>
+<div class='question-card'><div class='question'>9. How many "Special National Relics" are identified in the Central Highlands region?</div><ul class='options'>
+<li>A. 1</li>
+<li>B. 2</li>
+<li>C. 7</li>
+<li>D. 13</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>10. The revolutionary historical relic "Đắk Tô – Tân Cảnh" is located in which province?</div><ul class='options'>
+<li>A. Gia Lai</li>
+<li>B. Kon Tum</li>
+<li>C. Đắk Lắk</li>
+<li>D. Lâm Đồng</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>11. The Pleiku Prison is a historical relic located in which province?</div><ul class='options'>
+<li>A. Kon Tum</li>
+<li>B. Gia Lai</li>
+<li>C. Đắk Nông</li>
+<li>D. Lâm Đồng</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>12. Which of the following is a Cham architectural relic located in Đắk Lắk?</div><ul class='options'>
+<li>A. Ponagar Tower</li>
+<li>B. Yang Prong Tower</li>
+<li>C. Banh It Tower</li>
+<li>D. Nhan Tower</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>13. The famous Kon Tum Wooden Church is an example of which type of tourism resource?</div><ul class='options'>
+<li>A. Natural landscape</li>
+<li>B. Archaeological relic</li>
+<li>C. Architectural and artistic relic</li>
+<li>D. Traditional craft village</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>14. The month known as "ning nơng" in the Central Highlands is typically the time for:</div><ul class='options'>
+<li>A. Planting new crops</li>
+<li>B. Year-end festivals</li>
+<li>C. Hunting season</li>
+<li>D. Flooding season</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>15. Where do Central Highlands ethnic communities usually organize their festivals?</div><ul class='options'>
+<li>A. At the local market</li>
+<li>B. Inside a pagoda</li>
+<li>C. In front of the Nhà Rông (Communal House)</li>
+<li>D. On a floating boat</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>16. The "Bơ Thi" festival is typically associated with which space?</div><ul class='options'>
+<li>A. Water troughs (máng nước)</li>
+<li>B. The cemetery area (khu nhà mồ)</li>
+<li>C. High mountain peaks</li>
+<li>D. Rice fields</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>17. Which products are mentioned as part of the appeal for ecosystem research tourism in the region?</div><ul class='options'>
+<li>A. Rice and corn</li>
+<li>B. Flowers, coffee, and elephants</li>
+<li>C. Rubber and pepper only</li>
+<li>D. Tea and seafood</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>18. Which city is a key tourism center in the region, located on the Lâm Viên Plateau?</div><ul class='options'>
+<li>A. Buôn Ma Thuột</li>
+<li>B. Pleiku</li>
+<li>C. Đà Lạt</li>
+<li>D. Gia Nghĩa</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>19. Yok Đôn National Park is a key destination associated with which province?</div><ul class='options'>
+<li>A. Kon Tum</li>
+<li>B. Gia Lai</li>
+<li>C. Đắk Lắk</li>
+<li>D. Đắk Nông</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>20. The "Bờ Y" international border gate is located in which provinces/hub area?</div><ul class='options'>
+<li>A. Đắk Lắk</li>
+<li>B. Lâm Đồng</li>
+<li>C. Gia Lai - Kon Tum</li>
+<li>D. Đắk Nông</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>21. Tuyền Lâm Lake and Đan Kia – Suối Vàng are major attractions in which tourism area?</div><ul class='options'>
+<li>A. Buôn Ma Thuột</li>
+<li>B. Kon Tum</li>
+<li>C. Đà Lạt</li>
+<li>D. Măng Đen</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>22. Which province is home to the "Măng Đen" tourism area and the "Yaly" hydroelectric plant?</div><ul class='options'>
+<li>A. Kon Tum and Gia Lai</li>
+<li>B. Đắk Lắk</li>
+<li>C. Đắk Nông</li>
+<li>D. Lâm Đồng</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>A</div></div>
+<div class='question-card'><div class='question'>23. Which animal is traditionally associated with tourism and culture in Đắk Lắk?</div><ul class='options'>
+<li>A. Tiger</li>
+<li>B. Buffalo</li>
+<li>C. Elephant</li>
+<li>D. Horse</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>24. Which of the following is NOT a characteristic tourism product of the Central Highlands?</div><ul class='options'>
+<li>A. Mountain resort tourism</li>
+<li>B. Cultural heritage tourism (Gongs)</li>
+<li>C. Floating market tourism</li>
+<li>D. Ecosystem research (Coffee, Flowers)</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>25. According to the development orientation, how many "tourism cities" (đô thị du lịch) are planned for the Central Highlands?</div><ul class='options'>
+<li>A. 1</li>
+<li>B. 2</li>
+<li>C. 3</li>
+<li>D. 4</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>A</div></div>
+<div class='question-card'><div class='question'>26. To the North, the Central Highlands region borders which other tourism region?</div><ul class='options'>
+<li>A. Red River Delta</li>
+<li>B. North Central Coast</li>
+<li>C. South Central Coast</li>
+<li>D. Southeast</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>27. To the South, the Central Highlands region borders which other tourism region?</div><ul class='options'>
+<li>A. South Central Coast</li>
+<li>B. Southeast (Đông Nam Bộ)</li>
+<li>C. Mekong Delta</li>
+<li>D. North Central Coast</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>28. The Kon Tum Bishop's House (Tòa giám mục) is located in which province?</div><ul class='options'>
+<li>A. Lâm Đồng</li>
+<li>B. Đắk Lắk</li>
+<li>C. Kon Tum</li>
+<li>D. Gia Lai</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>29. Into how many main terrain types is the geography of the Central Highlands categorized?</div><ul class='options'>
+<li>A. 2 (Plains and Mountains)</li>
+<li>B. 3 (Mountains, Plateaus, Valleys)</li>
+<li>C. 4 (Karst, Coast, Hills, Mountains)</li>
+<li>D. 5 (All types)</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>30. The "Space of Gong Culture" involves which of the following activities?</div><ul class='options'>
+<li>A. Only singing folk songs</li>
+<li>B. Playing traditional musical instruments and cultural performances</li>
+<li>C. Competitive boat racing</li>
+<li>D. Puppetry shows</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>1. How many provinces and cities are included in the Southeast tourism region?</div><ul class='options'>
+<li>A. 4</li>
+<li>B. 5</li>
+<li>C. 6</li>
+<li>D. 13</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>2. Which city serves as the National Tourism Center for the Southeast region?</div><ul class='options'>
+<li>A. Vung Tau</li>
+<li>B. Tay Ninh</li>
+<li>C. Ho Chi Minh City</li>
+<li>D. Thu Dau Mot</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>3. The Southeast region shares a border with which country to the North and Northwest?</div><ul class='options'>
+<li>A. Laos</li>
+<li>B. Cambodia</li>
+<li>C. Thailand</li>
+<li>D. China</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>4. Which of the following is a Special National Relic located in Ho Chi Minh City?</div><ul class='options'>
+<li>A. Con Dao Prison</li>
+<li>B. Independence Palace (Dinh Độc Lập)</li>
+<li>C. Central Office for South Vietnam</li>
+<li>D. Lam Kinh Relic</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>5. Which island district belongs to Ba Ria – Vung Tau province and is a major historical destination?</div><ul class='options'>
+<li>A. Phu Quoc</li>
+<li>B. Ly Son</li>
+<li>C. Con Dao</li>
+<li>D. Cat Ba</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>6. The "Central Office for South Vietnam" (Căn cứ Trung ương cục miền Nam) is a Special National Relic in which province?</div><ul class='options'>
+<li>A. Tay Ninh</li>
+<li>B. Binh Duong</li>
+<li>C. Binh Phuoc</li>
+<li>D. Dong Nai</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>7. Which UNESCO-recognized Intangible Cultural Heritage is characteristic of the Southeast and Southern Vietnam?</div><ul class='options'>
+<li>A. Space of Gong Culture</li>
+<li>B. Nhã Nhạc (Court Music)</li>
+<li>C. Đờn Ca Tài Tử</li>
+<li>D. Xoan Singing</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>8. The Southeast region is bordered to the West and Southwest by which other tourism region?</div><ul class='options'>
+<li>A. South Central Coast</li>
+<li>B. Central Highlands</li>
+<li>C. Mekong Delta (ĐBSCL)</li>
+<li>D. North Central Coast</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>9. Which famous spiritual destination is located in Tay Ninh province and features 12 gates?</div><ul class='options'>
+<li>A. Ba Den Mountain</li>
+<li>B. Cao Dai Holy See (Tòa Thánh Tây Ninh)</li>
+<li>C. Vinh Nghiem Pagoda</li>
+<li>D. Phat Diem Cathedral</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>10. The Ba Den Mountain is a key attraction in which province?</div><ul class='options'>
+<li>A. Binh Duong</li>
+<li>B. Tay Ninh</li>
+<li>C. Binh Phuoc</li>
+<li>D. Dong Nai</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>11. Which international border gate connects Tay Ninh province with Cambodia?</div><ul class='options'>
+<li>A. Lao Bao</li>
+<li>B. Moc Bai</li>
+<li>C. Cau Treo</li>
+<li>D. Huu Nghi</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>12. The "Cu Chi Tunnels" is a Special National Relic located in:</div><ul class='options'>
+<li>A. Tay Ninh</li>
+<li>B. Binh Duong</li>
+<li>C. Ho Chi Minh City</li>
+<li>D. Dong Nai</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>13. According to the development orientation, Vung Tau is classified as a:</div><ul class='options'>
+<li>A. National Tourism Point</li>
+<li>B. National Tourism Area</li>
+<li>C. National Tourism City (Đô thị du lịch)</li>
+<li>D. World Heritage Site</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>14. Which forest area in Ho Chi Minh City is a key site for eco-tourism mentioned in the sources?</div><ul class='options'>
+<li>A. Cuc Phuong</li>
+<li>B. Can Gio Mangrove Forest (Rừng sác Cần Giờ)</li>
+<li>C. Yok Don</li>
+<li>D. Bach Ma</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>15. Which of the following is a planned "National Tourism Area" in the Southeast region?</div><ul class='options'>
+<li>A. Sapa</li>
+<li>B. Ba Den Mountain</li>
+<li>C. Phong Nha</li>
+<li>D. Lang Co</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>16. The "Dinh Co" festival is a traditional event associated with which coastal area?</div><ul class='options'>
+<li>A. Nha Trang</li>
+<li>B. Vung Tau (Ba Ria – Vung Tau)</li>
+<li>C. Da Nang</li>
+<li>D. Phan Thiet</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>17. The "Truong Son – Ho Chi Minh Road" historical relic in this region is located in which province?</div><ul class='options'>
+<li>A. Tay Ninh</li>
+<li>B. Binh Phuoc</li>
+<li>C. Dong Nai</li>
+<li>D. Binh Duong</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>18. Which reservoir (lake) is a major attraction in Tay Ninh province?</div><ul class='options'>
+<li>A. Nui Coc Lake</li>
+<li>B. Dau Tieng Lake</li>
+<li>C. To Nung Lake</li>
+<li>D. Thac Ba Lake</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>19. The "Ba Temple Festival" (Lễ hội chùa Bà) is a famous spiritual event in:</div><ul class='options'>
+<li>A. Ho Chi Minh City</li>
+<li>B. Tay Ninh</li>
+<li>C. Dong Nai</li>
+<li>D. Binh Phuoc</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>20. The Southeast region borders which tourism region to the East and Northeast?</div><ul class='options'>
+<li>A. Mekong Delta</li>
+<li>B. Central Highlands</li>
+<li>C. South Central Coast (DH Nam Trung Bộ)</li>
+<li>D. North Central Coast</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>21. Which architectural style is mentioned as being prominent in the region's churches?</div><ul class='options'>
+<li>A. Traditional Vietnamese</li>
+<li>B. Champa</li>
+<li>C. European (Roman or Gothic)</li>
+<li>D. Khmer</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>22. How many "national tourism areas" (khu du lịch quốc gia) are planned for development in the Southeast?</div><ul class='options'>
+<li>A. 2</li>
+<li>B. 4</li>
+<li>C. 7</li>
+<li>D. 9</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>23. Which of the following is a key tourism destination in Binh Duong province?</div><ul class='options'>
+<li>A. Con Dao</li>
+<li>B. Thai Son Pagoda – Nui Cau</li>
+<li>C. Cu Chi Tunnels</li>
+<li>D. Ba Den Mountain</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>24. The "Nghinh Ong" festival in this region is typically associated with:</div><ul class='options'>
+<li>A. Farming communities</li>
+<li>B. Coastal fishing communities</li>
+<li>C. Mountainous ethnic groups</li>
+<li>D. Pottery craftsmen</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>25. Which province in the Southeast is home to famous pottery and ceramic craft villages?</div><ul class='options'>
+<li>A. Tay Ninh</li>
+<li>B. Binh Duong</li>
+<li>C. Binh Phuoc</li>
+<li>D. Ba Ria - Vung Tau</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>26. According to the sources, approximately how many national-ranked historical relics are there in the Southeast?</div><ul class='options'>
+<li>A. Over 156</li>
+<li>B. Over 450</li>
+<li>C. Over 550</li>
+<li>D. Over 7,000</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>A</div></div>
+<div class='question-card'><div class='question'>27. The Southeast region's terrain is generally described as:</div><ul class='options'>
+<li>A. Transition from highlands to delta (cao nguyên lượn sóng)</li>
+<li>B. High and rugged mountains only</li>
+<li>C. Deep limestone valleys</li>
+<li>D. Flat low-lying wetlands only</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>A</div></div>
+<div class='question-card'><div class='question'>28. "Phuoc Hai" and "Long Hai" are key tourism areas associated with which city/province?</div><ul class='options'>
+<li>A. Ho Chi Minh City</li>
+<li>B. Tay Ninh</li>
+<li>C. Vung Tau (Ba Ria – Vung Tau)</li>
+<li>D. Binh Duong</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>29. Which site in Binh Phuoc is mentioned as a place for tourism development?</div><ul class='options'>
+<li>A. Dam O Loan</li>
+<li>B. Thac Mo – Ba Ra</li>
+<li>C. Nui Dinh</li>
+<li>D. Binh Chau</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>30. In terms of climate, the Southeast region typically has:</div><ul class='options'>
+<li>A. Four distinct seasons with a cold winter</li>
+<li>B. Two seasons: rainy and dry</li>
+<li>C. Perpetual snow and ice</li>
+<li>D. Desert-like conditions year-round</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>1. Where is the Mekong Delta tourism region located in Vietnam?</div><ul class='options'>
+<li>A. Northeast</li>
+<li>B. Northwest</li>
+<li>C. Southeast</li>
+<li>D. Southwest</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>D</div></div>
+<div class='question-card'><div class='question'>2. How many sides of the Mekong Delta region border the sea?</div><ul class='options'>
+<li>A. 1 side</li>
+<li>B. 2 sides</li>
+<li>C. 3 sides</li>
+<li>D. It is landlocked</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>3. What is the total length of the coastline in the Mekong Delta?</div><ul class='options'>
+<li>A. Over 300 km</li>
+<li>B. Over 600 km</li>
+<li>C. Over 700 km</li>
+<li>D. Over 1,200 km</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>4. The Mekong Delta shares a border of approximately 340 km with which country?</div><ul class='options'>
+<li>A. China</li>
+<li>B. Laos</li>
+<li>C. Cambodia</li>
+<li>D. Thailand</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>5. Which tourism region borders the Mekong Delta to the Northeast?</div><ul class='options'>
+<li>A. North Central Coast</li>
+<li>B. Central Highlands</li>
+<li>C. Southeast (Đông Nam Bộ)</li>
+<li>D. South Central Coast</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>6. Which body of water borders the Mekong Delta to the West and Southwest?</div><ul class='options'>
+<li>A. East Sea (Biển Đông)</li>
+<li>B. Gulf of Tonkin</li>
+<li>C. Gulf of Thailand</li>
+<li>D. Andaman Sea</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>7. How many provinces and cities are included in the Mekong Delta tourism region?</div><ul class='options'>
+<li>A. 11</li>
+<li>B. 12</li>
+<li>C. 13</li>
+<li>D. 14</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>8. Which city in the Mekong Delta is a centrally run city (thành phố trực thuộc Trung ương)?</div><ul class='options'>
+<li>A. My Tho</li>
+<li>B. Long Xuyen</li>
+<li>C. Can Tho</li>
+<li>D. Rach Gia</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>9. Which type of terrain is most characteristic of the Mekong Delta tourism resources?</div><ul class='options'>
+<li>A. High mountains</li>
+<li>B. Karst limestone plateaus</li>
+<li>C. Alluvial plains with dense rivers and canals</li>
+<li>D. Desert sand dunes</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>10. The Rach Gam – Xoai Mut historical relic is located in which province?</div><ul class='options'>
+<li>A. Ben Tre</li>
+<li>B. Tien Giang</li>
+<li>C. Vinh Long</li>
+<li>D. Dong Thap</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>11. Which island district in Kien Giang province is home to a famous special national prison relic?</div><ul class='options'>
+<li>A. Cat Ba</li>
+<li>B. Con Dao</li>
+<li>C. Phu Quoc</li>
+<li>D. Ly Son</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>12. The historical relic "Chuong Thien" is located in which province?</div><ul class='options'>
+<li>A. Soc Trang</li>
+<li>B. Bac Lieu</li>
+<li>C. Hau Giang</li>
+<li>D. Ca Mau</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>13. Go Thap, a site for archaeology and architectural art, is located in:</div><ul class='options'>
+<li>A. Long An</li>
+<li>B. Dong Thap</li>
+<li>C. An Giang</li>
+<li>D. Tien Giang</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>14. The Oc Eo – Ba The archaeological site is a famous tourism resource in:</div><ul class='options'>
+<li>A. Kien Giang</li>
+<li>B. Can Tho</li>
+<li>C. An Giang</li>
+<li>D. Tra Vinh</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>15. Which province is home to the memorial site of President Ton Duc Thang?</div><ul class='options'>
+<li>A. Dong Thap</li>
+<li>B. An Giang</li>
+<li>C. Hau Giang</li>
+<li>D. Vinh Long</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>16. The memorial site for the great poet Nguyen Dinh Chieu is located in:</div><ul class='options'>
+<li>A. Tien Giang</li>
+<li>B. Ben Tre</li>
+<li>C. Tra Vinh</li>
+<li>D. Soc Trang</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>17. The "Dong Khoi" historical relic is a signature attraction in which province?</div><ul class='options'>
+<li>A. Long An</li>
+<li>B. Ben Tre</li>
+<li>C. Ca Mau</li>
+<li>D. Bac Lieu</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>18. Approximately how many national-ranked relics are there in the Mekong Delta?</div><ul class='options'>
+<li>A. 54</li>
+<li>B. 156</li>
+<li>C. 178</li>
+<li>D. Over 550</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>19. Which ancient culture is notably associated with archaeological relics in the Mekong Delta?</div><ul class='options'>
+<li>A. Dong Son Culture</li>
+<li>B. Sa Huynh Culture</li>
+<li>C. Oc Eo Culture</li>
+<li>D. Hoa Binh Culture</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>20. The religious architecture of the Mekong Delta is diverse, including which types of buildings?</div><ul class='options'>
+<li>A. Only Buddhist pagodas</li>
+<li>B. Only Catholic churches</li>
+<li>C. Pagodas, temples, shrines, cathedrals, and mosques</li>
+<li>D. Only ethnic communal houses (Nhà Rông)</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>21. The "Via Ba Chua Xu" festival is a major event held at which location?</div><ul class='options'>
+<li>A. Sam Mountain (An Giang)</li>
+<li>B. Cam Mountain (An Giang)</li>
+<li>C. Ba Den Mountain (Tay Ninh)</li>
+<li>D. Thoi Son Island (Tien Giang)</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>A</div></div>
+<div class='question-card'><div class='question'>22. The "Nghinh Ong" festival is typically organized by which communities in the region?</div><ul class='options'>
+<li>A. Mountainous ethnic groups</li>
+<li>B. Coastal provinces</li>
+<li>C. Floating market traders only</li>
+<li>D. Fruit orchard owners</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>23. Which province is famous for the traditional Khmer Cow/Ox Racing festival?</div><ul class='options'>
+<li>A. Tra Vinh</li>
+<li>B. Soc Trang</li>
+<li>C. An Giang</li>
+<li>D. Bac Lieu</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>24. What is the main purpose of the Khmer festival "Oc Om Bok"?</div><ul class='options'>
+<li>A. To pray for rain</li>
+<li>B. To worship the Moon and thank it for a successful harvest</li>
+<li>C. To commemorate a military victory</li>
+<li>D. To celebrate the Lunar New Year</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>25. What is a characteristic tourism product of the Mekong Delta?</div><ul class='options'>
+<li>A. Winter skiing</li>
+<li>B. High-tech industrial tours</li>
+<li>C. Orchard ecotourism and river-based tours</li>
+<li>D. Desert safaris</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>26. Which type of accommodation is often combined with river and orchard tours in this region?</div><ul class='options'>
+<li>A. Luxury 5-star skyscrapers</li>
+<li>B. Mountain cabins</li>
+<li>C. Homestay</li>
+<li>D. Desert camps</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>27. The key tourism area of "Tien Giang – Ben Tre" is notably associated with:</div><ul class='options'>
+<li>A. Tram Chim National Park</li>
+<li>B. Phu Quoc island</li>
+<li>C. Thoi Son orchard tourism</li>
+<li>D. U Minh forest</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>28. "Can Tho – Kien Giang" is a key tourism hub associated with which attractions?</div><ul class='options'>
+<li>A. Rach Gam - Xoai Mut</li>
+<li>B. Phu Quoc, Ha Tien, and floating markets</li>
+<li>C. Dong Khoi relic</li>
+<li>D. Mount Sam</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>29. Which key tourism area includes U Minh, Nam Can, and the southernmost point of Vietnam?</div><ul class='options'>
+<li>A. Dong Thap</li>
+<li>B. An Giang</li>
+<li>C. Ca Mau</li>
+<li>D. Bac Lieu</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>30. The hub of "Dong Thap – An Giang" is focused on which attractions?</div><ul class='options'>
+<li>A. Floating markets and beaches</li>
+<li>B. Long Xuyen quadrangle and Tram Chim National Park</li>
+<li>C. Côn Đảo prison</li>
+<li>D. Thới Sơn island</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+</body></html>
+

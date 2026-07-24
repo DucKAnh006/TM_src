@@ -1,0 +1,2665 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FE TTM201</title>
+<style>
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; color: #333; padding: 20px; max-width: 900px; margin: 0 auto; }
+    h1 { text-align: center; color: #2c3e50; }
+    .question-card { background: #fff; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+    .question { font-size: 1.1em; font-weight: bold; margin-bottom: 10px; }
+    .options { list-style-type: none; padding: 0; }
+    .options li { margin-bottom: 8px; padding: 8px; background: #ecf0f1; border-radius: 4px; }
+    .btn-show { background-color: #3498db; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; font-size: 0.9em; margin-top: 10px; transition: background 0.3s; }
+    .btn-show:hover { background-color: #2980b9; }
+    .answer { display: none; margin-top: 15px; padding: 10px; background: #e8f8f5; border-left: 4px solid #1abc9c; color: #16a085; font-weight: bold; white-space: pre-line; }
+    .intro { text-align: center; font-style: italic; color: #7f8c8d; margin-bottom: 20px; }
+    .btn-back { display: inline-block; margin-bottom: 20px; text-decoration: none; background: #34495e; color: white; padding: 10px 20px; border-radius: 8px; font-weight: bold; transition: background 0.3s, transform 0.2s; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    .btn-back:hover { background: #2c3e50; transform: translateY(-2px); }
+</style>
+<script>
+    function toggleAnswer(btn) {
+        var answer = btn.nextElementSibling;
+        if (answer.style.display === "none" || answer.style.display === "") {
+            answer.style.display = "block";
+            btn.textContent = "Ẩn đáp án";
+        } else {
+            answer.style.display = "none";
+            btn.textContent = "Hiện đáp án";
+        }
+    }
+</script>
+</head>
+<body>
+<div style="max-width: 900px; margin: 0 auto; padding-top: 10px;">
+    <a href="index.html" class="btn-back">quay lại</a>
+</div>
+<h1>FE TTM201</h1>
+<div class='question-card'><div class='question'>1. According to the UNWTO, a person who stays in a place outside their usual environment for not more than one consecutive year for leisure or business is called a:</div><ul class='options'>
+<li>A. Traveler</li>
+<li>B. Visitor</li>
+<li>C. Excursionist</li>
+<li>D. Non-visitor</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>2. What is the minimum duration of stay required for a visitor to be classified as a "tourist"?</div><ul class='options'>
+<li>A. 12 hours</li>
+<li>B. 24 hours</li>
+<li>C. 48 hours</li>
+<li>D. 1 week</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>3. A visitor who stays for less than 24 hours in a destination and does not spend the night is called an:</div><ul class='options'>
+<li>A. Inbound tourist</li>
+<li>B. Outbound tourist</li>
+<li>C. Excursionist</li>
+<li>D. International tourist</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>4. Tourism is considered a subset of which broader activity?</div><ul class='options'>
+<li>A. Migration</li>
+<li>B. Hospitality</li>
+<li>C. Travel</li>
+<li>D. Transportation</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>5. Which perspective of tourism is most commonly used in global definitions?</div><ul class='options'>
+<li>A. Sociological</li>
+<li>B. Environmental</li>
+<li>C. Psychological</li>
+<li>D. Economic</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>D</div></div>
+<div class='question-card'><div class='question'>6. A Briton visiting France for tourism purposes is considered by France to be an:</div><ul class='options'>
+<li>A. Inbound tourist</li>
+<li>B. Outbound tourist</li>
+<li>C. Domestic tourist</li>
+<li>D. Excursionist</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>A</div></div>
+<div class='question-card'><div class='question'>7. If a British resident visits France, from the perspective of Britain, this person is an:</div><ul class='options'>
+<li>A. Inbound tourist</li>
+<li>B. Outbound tourist</li>
+<li>C. Domestic tourist</li>
+<li>D. Internal visitor</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>8. Which of the following is a primary journey involved in tourism travel?</div><ul class='options'>
+<li>A. Commuting to work</li>
+<li>B. Moving to a new residence</li>
+<li>C. Onward journey to destination and return</li>
+<li>D. Daily movement within a city</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>9. In the historical development of tourism, which period is characterized by travel for food and escaping enemies?</div><ul class='options'>
+<li>A. Ancient times</li>
+<li>B. Middle Ages</li>
+<li>C. Pre-historic period</li>
+<li>D. Industrial period</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>10. During the Middle Ages, what was the primary motivation for travel?</div><ul class='options'>
+<li>A. Education</li>
+<li>B. Religion</li>
+<li>C. Leisure</li>
+<li>D. Trade</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>11. The "Grand Tour" in the 17th century primarily involved which group of people?</div><ul class='options'>
+<li>A. Religious pilgrims</li>
+<li>B. Industrial workers</li>
+<li>C. Young law scholars traveling for education</li>
+<li>D. Sailors exploring new territories</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>12. Which historical period saw the invention of railways and steamships, making transport much easier?</div><ul class='options'>
+<li>A. Renaissance period</li>
+<li>B. Industrial period</li>
+<li>C. Modern period</li>
+<li>D. Ancient times</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>13. Who is credited with organizing the first inclusive excursion by train in 1841?</div><ul class='options'>
+<li>A. Thomas Bennett</li>
+<li>B. Sir Henry Lunn</li>
+<li>C. Thomas Cook</li>
+<li>D. Vladimir Raitz</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>14. Which component of the tourism industry includes airlines, hotels, and restaurants?</div><ul class='options'>
+<li>A. Intermediaries</li>
+<li>B. Principals</li>
+<li>C. Support providers</li>
+<li>D. Ancillary services</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>15. Tour operators and travel agencies are classified under which component of the tourism industry?</div><ul class='options'>
+<li>A. Principals</li>
+<li>B. Intermediaries</li>
+<li>C. Attractions</li>
+<li>D. Developmental organizations</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>16. What forms the core of the "pull" of a destination and is the chief reason for a tourist's visit?</div><ul class='options'>
+<li>A. Transport</li>
+<li>B. Accommodation</li>
+<li>C. Attraction</li>
+<li>D. Intermediaries</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>17. Which of the following is considered a "Support Provider" in the tourism industry?</div><ul class='options'>
+<li>A. Airlines</li>
+<li>B. Construction industry</li>
+<li>C. Tour operators</li>
+<li>D. Museums</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>18. Which element of transport refers to the medium used, such as roads or airways?</div><ul class='options'>
+<li>A. The Way</li>
+<li>B. The Terminal</li>
+<li>C. The Carrying Unit</li>
+<li>D. The Motive Power</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>A</div></div>
+<div class='question-card'><div class='question'>19. Which of the following is a "natural" medium (way) of transport?</div><ul class='options'>
+<li>A. Railways</li>
+<li>B. Roads</li>
+<li>C. Airways</li>
+<li>D. Pipelines</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>20. What type of arrangement is common for the construction and management of artificial transport media like roads?</div><ul class='options'>
+<li>A. Direct Government Funding</li>
+<li>B. Build Operate Transfer (BOT)</li>
+<li>C. Non-profit cooperatives</li>
+<li>D. Crowdfunding</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>21. What is a "Terminal" in the context of transport elements?</div><ul class='options'>
+<li>A. The engine of a vehicle</li>
+<li>B. The route taken by a plane</li>
+<li>C. A facility for boarding and alighting, like an airport</li>
+<li>D. The seat of a passenger</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>22. The relationship between tourism and transport is described as:</div><ul class='options'>
+<li>A. Competitive</li>
+<li>B. Parasitic</li>
+<li>C. Symbiotic and complementary</li>
+<li>D. Independent</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>23. Which event in air travel significantly increased the significance of transport in tourism?</div><ul class='options'>
+<li>A. Invention of the wheel</li>
+<li>B. Deregulation of air travel and emergence of low-cost carriers</li>
+<li>C. The collapse of the Roman Empire</li>
+<li>D. The invention of the bicycle</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>24. By 2030, international tourist arrivals are expected to reach:</div><ul class='options'>
+<li>A. 1.2 billion</li>
+<li>B. 1.5 billion</li>
+<li>C. 1.8 billion</li>
+<li>D. 2.5 billion</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>25. Which countries are currently becoming very important source markets in Asia?</div><ul class='options'>
+<li>A. Japan and Korea</li>
+<li>B. Thailand and Vietnam</li>
+<li>C. China and India</li>
+<li>D. Singapore and Malaysia</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>26. Which transport element includes the actual vehicles like cars, buses, and aircraft?</div><ul class='options'>
+<li>A. The Way</li>
+<li>B. The Carrying Unit</li>
+<li>C. The Terminal</li>
+<li>D. The Motive Power</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>27. "Dark tourism" is often associated with travel to sites associated with death or tragedy and was prevalent during which period?</div><ul class='options'>
+<li>A. Ancient times</li>
+<li>B. Pre-historic period</li>
+<li>C. Middle Ages</li>
+<li>D. Modern era</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>28. The concept of "Sustainable Development" in tourism emerged as:</div><ul class='options'>
+<li>A. A way to maximize short-term profit</li>
+<li>B. A general philosophy of tourism development</li>
+<li>C. A method to exclude local communities</li>
+<li>D. A focus solely on urban development</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>29. "Domestic tourism" refers to tourism activities that take place:</div><ul class='options'>
+<li>A. In a neighboring country</li>
+<li>B. Within the tourist's own country</li>
+<li>C. Only in rural areas</li>
+<li>D. Only during winter</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>30. Which definition of tourism emphasizes the interaction between tourists, business suppliers, and host communities?</div><ul class='options'>
+<li>A. Davidson (1989)</li>
+<li>B. Bull (1991)</li>
+<li>C. McIntosh and Goeldner (1990)</li>
+<li>D. WTO (1991)</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>31. To be considered a "Domestic Visitor" according to some standards, the maximum duration of stay is typically:</div><ul class='options'>
+<li>A. One month</li>
+<li>B. Three months</li>
+<li>C. Six months</li>
+<li>D. One year</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>32. The "Way" element of transport can be:</div><ul class='options'>
+<li>A. Only artificial</li>
+<li>B. Only natural</li>
+<li>C. Both natural and artificial</li>
+<li>D. Neither natural nor artificial</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>33. Which of the following is NOT a fundamental element of transport?</div><ul class='options'>
+<li>A. The Way</li>
+<li>B. The Carrying Unit</li>
+<li>C. The Destination Attraction</li>
+<li>D. The Motive Power</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>34. Transport acts as a "primary attraction" in which of the following cases?</div><ul class='options'>
+<li>A. A daily bus commute</li>
+<li>B. A flight for a business meeting</li>
+<li>C. A luxury cruise or high-speed train experience</li>
+<li>D. A taxi ride to a hotel</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>35. The "travel propensity" describes:</div><ul class='options'>
+<li>A. The cost of a travel ticket</li>
+<li>B. The likelihood or tendency of a society to travel</li>
+<li>C. The speed of a transport mode</li>
+<li>D. The distance of a journey</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>36. In the 21st century, modern tourism is characterized as being highly:</div><ul class='options'>
+<li>A. Isolated from global trends</li>
+<li>B. Sophisticated and influenced by globalization</li>
+<li>C. Dependant on animal transport</li>
+<li>D. Restricted to aristocrats</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>37. According to WTO (1991), a same-day visitor must return within how many hours?</div><ul class='options'>
+<li>A. 12 hours</li>
+<li>B. 24 hours</li>
+<li>C. 48 hours</li>
+<li>D. 72 hours</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>38. The "Carrying Unit" in rail transport consists of the:</div><ul class='options'>
+<li>A. Track</li>
+<li>B. Locomotive and carriages</li>
+<li>C. Station</li>
+<li>D. Coal/Fuel</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>39. Movement turns into "travel" when it is across:</div><ul class='options'>
+<li>A. An international border</li>
+<li>B. A certain distance</li>
+<li>C. A period of one week</li>
+<li>D. A mountain range</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>40. Environmental impacts, such as those from aviation, are part of the broader study of tourism's impact on:</div><ul class='options'>
+<li>A. Only the economy</li>
+<li>B. Only the local society</li>
+<li>C. Economy, society, culture, and environment</li>
+<li>D. Only the transport industry</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>Hy vọng bộ câu hỏi này sẽ giúp bạn ôn tập tốt cho kỳ thi sắp tới. Nếu bạn cần câu hỏi cho các chương tiếp theo, hãy cho tôi biết nhé!<br>Chào bạn, dựa trên tài liệu Chapter 2: Air Transport & Airline management trong chương trình học TTM201, tôi đã biên soạn bộ 40 câu hỏi trắc nghiệm bằng tiếng Anh kèm đáp án để hỗ trợ bạn ôn thi cuối kỳ.<br>Các câu hỏi này bao phủ toàn bộ nội dung từ lịch sử hàng không, các quy định quốc tế, phân loại hàng không, đến các đặc điểm và chức năng quản lý hãng hàng không.<br>1. The term "aviation" is derived from the Latin word "avis", which means:</div><ul class='options'>
+<li>A. Aircraft</li>
+<li>B. Bird</li>
+<li>C. Flight</li>
+<li>D. Wing</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>2. On December 17, 1903, the Wright brothers made the first successful flight using which aircraft?</div><ul class='options'>
+<li>A. Flyer I</li>
+<li>B. Kitty Hawk</li>
+<li>C. Spirit of St. Louis</li>
+<li>D. Concorde</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>A</div></div>
+<div class='question-card'><div class='question'>3. In what year was the first International Air Traffic Association (IATA) formed in The Hague?</div><ul class='options'>
+<li>A. 1903</li>
+<li>B. 1914</li>
+<li>C. 1919</li>
+<li>D. 1945</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>4. The first airline service in 1914 was unique because it carried only:</div><ul class='options'>
+<li>A. One passenger</li>
+<li>B. Air mail</li>
+<li>C. Military equipment</li>
+<li>D. Cargo</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>A</div></div>
+<div class='question-card'><div class='question'>5. Which of the following airlines was born during the First World War period?</div><ul class='options'>
+<li>A. Emirates</li>
+<li>B. Imperial Airways</li>
+<li>C. Singapore Airlines</li>
+<li>D. Delta Airlines</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>6. The Airline Deregulation Act, which allowed the marketplace to determine business decisions, was promulgated in:</div><ul class='options'>
+<li>A. 1944</li>
+<li>B. 1960</li>
+<li>C. 1978</li>
+<li>D. 1995</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>7. What is the primary objective of airline deregulation?</div><ul class='options'>
+<li>A. To increase government control over fares</li>
+<li>B. To discourage new entrants into the market</li>
+<li>C. To improve efficiency and innovation through competition</li>
+<li>D. To eliminate international travel boundaries</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>8. "Open skies" agreements refer to transport agreements between countries that allow:</div><ul class='options'>
+<li>A. Only government-owned planes to fly</li>
+<li>B. Airlines to fly any route between the countries and into third countries</li>
+<li>C. Flights only during daylight hours</li>
+<li>D. Airlines to set fixed prices for all routes</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>9. Which of the following is NOT one of the major global airline alliances mentioned?</div><ul class='options'>
+<li>A. Star Alliance</li>
+<li>B. SkyTeam</li>
+<li>C. Oneworld</li>
+<li>D. Global Wing</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>D</div></div>
+<div class='question-card'><div class='question'>10. Low-cost carriers (LCCs) are often referred to as:</div><ul class='options'>
+<li>A. Legacy airlines</li>
+<li>B. No-frills airlines</li>
+<li>C. Flag carriers</li>
+<li>D. Trunk airlines</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>11. Civil aviation is broadly categorized into:</div><ul class='options'>
+<li>A. Domestic and International</li>
+<li>B. Commercial air transportation and General aviation</li>
+<li>C. Scheduled and Non-scheduled</li>
+<li>D. Military and Private</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>12. According to ICAO, "General Aviation" includes all civil aviation operations EXCEPT:</div><ul class='options'>
+<li>A. Private flights</li>
+<li>B. Scheduled and non-scheduled air transport for hire</li>
+<li>C. Air ambulances</li>
+<li>D. Aerial application (crop dusting)</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>13. Which of the following is an example of general aviation?</div><ul class='options'>
+<li>A. A flight by a major airline from Hanoi to Paris</li>
+<li>B. A land survey flight</li>
+<li>C. A military fighter jet mission</li>
+<li>D. A cargo flight by a global logistics company</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>14. What type of aviation was a prime reason for the evolution and growth of modern air transportation?</div><ul class='options'>
+<li>A. General aviation</li>
+<li>B. Commercial aviation</li>
+<li>C. Military aviation</li>
+<li>D. Civil aviation</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>15. The air transportation system is classified under four headings: Airports, Airlines, Aircraft, and:</div><ul class='options'>
+<li>A. Ground Handling</li>
+<li>B. Travel Agencies</li>
+<li>C. Air navigation services</li>
+<li>D. Catering services</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>16. NASA defines aeroplanes as transportation devices designed to move:</div><ul class='options'>
+<li>A. Only passengers</li>
+<li>B. Only military personnel</li>
+<li>C. People and cargo from one place to another</li>
+<li>D. Fuel between continents</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>17. Which of these aircraft is typically used for long-distance flights?</div><ul class='options'>
+<li>A. B737</li>
+<li>B. A320</li>
+<li>C. B747</li>
+<li>D. ATR 72</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>18. Air navigation services are also known as:</div><ul class='options'>
+<li>A. Airport security</li>
+<li>B. Air traffic services</li>
+<li>C. Flight attendant services</li>
+<li>D. Terminal management</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>19. The first international multilateral convention on the regulation of aerial navigation (1919) was the:<br>3. Paris Convention</div><ul class='options'>
+<li>A. Warsaw Convention</li>
+<li>B. Chicago Convention</li>
+<li>D. Havana Convention</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>20. The Warsaw Convention (1929) is primarily known for setting limits of liability for:</div><ul class='options'>
+<li>A. Aircraft fuel consumption</li>
+<li>B. Pilot training hours</li>
+<li>C. Freight, baggage, and bodily injury on international flights</li>
+<li>D. Airport construction costs</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>21. Standards and Recommended Practices (SARPs) for civil aviation are developed and implemented by:</div><ul class='options'>
+<li>A. IATA</li>
+<li>B. NASA</li>
+<li>C. ICAO</li>
+<li>D. WTO</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>22. "Runway incursion" and "Runway excursion" are categorized as:</div><ul class='options'>
+<li>A. Security issues</li>
+<li>B. Ground and runway safety issues</li>
+<li>C. Commercial operation errors</li>
+<li>D. Navigation failures</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>23. Which of the following is considered a "Security issue" rather than a safety issue?</div><ul class='options'>
+<li>A. Bird strike</li>
+<li>B. Lightning</li>
+<li>C. Hijacking</li>
+<li>D. Mechanical error</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>24. The airline industry has redefined the concept of distance by:</div><ul class='options'>
+<li>A. Increasing the cost of short trips</li>
+<li>B. Improving the ease and comfort of long-haul travel</li>
+<li>C. Forcing people to stay in their usual environment</li>
+<li>D. Reducing the number of airports</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>25. In the airline industry, travel agents and tour operators act as:</div><ul class='options'>
+<li>A. Principals</li>
+<li>B. Intermediaries</li>
+<li>C. Regulatory bodies</li>
+<li>D. Equipment manufacturers</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>26. As a service industry, airline products possess characteristics like intangibility, perishability, and:</div><ul class='options'>
+<li>A. Sustainability</li>
+<li>B. Inseparability</li>
+<li>C. Durability</li>
+<li>D. Profitability</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>27. An airline market controlled by a small group of large firms is described as:</div><ul class='options'>
+<li>A. Monopoly</li>
+<li>B. Perfect competition</li>
+<li>C. Oligopolistic</li>
+<li>D. Monopolistic competition</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>28. "Dynamic pricing" in the airline industry means that ticket prices:</div><ul class='options'>
+<li>A. Are fixed by the government</li>
+<li>B. Change according to demand fluctuations</li>
+<li>C. Are the same for all passengers on a flight</li>
+<li>D. Only decrease over time</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>29. Which group constitutes the major market for airlines?</div><ul class='options'>
+<li>A. Government officials</li>
+<li>B. Tourists</li>
+<li>C. Aircraft manufacturers</li>
+<li>D. Local commuters</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>30. Comparing the two, which group typically has a higher frequency of travel?</div><ul class='options'>
+<li>A. Leisure travelers</li>
+<li>B. Business travelers</li>
+<li>C. First-time travelers</li>
+<li>D. Domestic excursionists</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>31. "Major airlines" (also called trunk airlines) primarily focus on:</div><ul class='options'>
+<li>A. Routes of 400 miles or less</li>
+<li>B. Long-haul routes between major cities</li>
+<li>C. Rural community connections</li>
+<li>D. Seasonal charter flights</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>32. A "Flag carrier" is an airline that is:</div><ul class='options'>
+<li>A. The newest in a country</li>
+<li>B. Owned or previously owned by the government</li>
+<li>C. Exclusive to domestic routes</li>
+<li>D. Owned by a single person</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>33. Full-service carriers (FSCs) are also known as:</div><ul class='options'>
+<li>A. Budget airlines</li>
+<li>B. Legacy airlines</li>
+<li>C. Commuter airlines</li>
+<li>D. Non-scheduled carriers</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>34. In the booking records, what code is typically used for Business Class?</div><ul class='options'>
+<li>A. F</li>
+<li>B. C</li>
+<li>C. Y</li>
+<li>D. B</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>35. Which class of service is usually the largest on a flight?</div><ul class='options'>
+<li>A. First Class</li>
+<li>B. Business Class</li>
+<li>C. Economy Class</li>
+<li>D. VIP Class</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>36. Employees responsible for safety in the cabin while flying are the:</div><ul class='options'>
+<li>A. Cockpit crew</li>
+<li>B. Flight crew</li>
+<li>C. Cabin crew</li>
+<li>D. Maintenance staff</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>37. The cockpit crew (flight crew) usually consists of a pilot in command (captain) and a:</div><ul class='options'>
+<li>A. Purser</li>
+<li>B. Flight attendant</li>
+<li>C. First officer</li>
+<li>D. Load planner</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>38. The "Hub and spoke" system involves airlines operating from:</div><ul class='options'>
+<li>A. Every small city to every other small city directly</li>
+<li>B. Hub cities with spoke routes to smaller cities</li>
+<li>C. Only international airports</li>
+<li>D. Water-based terminals</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>39. Direct operating costs for an airline are elements closely related to flying, such as:</div><ul class='options'>
+<li>A. Administration expenses</li>
+<li>B. Marketing costs</li>
+<li>C. Fuel</li>
+<li>D. Station expenses</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>40. What systems provide the backbone for communication between airline principals and intermediaries?</div><ul class='options'>
+<li>A. ATC (Air Traffic Control)</li>
+<li>B. SARPs</li>
+<li>C. GDS (Global Distribution Systems)</li>
+<li>D. FFP (Frequent Flyer Programs)</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>1. Which mode of transport is considered the most flexible for tourists because it allows for door-to-door service?</div><ul class='options'>
+<li>A. Rail transport</li>
+<li>B. Air transport</li>
+<li>C. Road transport</li>
+<li>D. Water transport</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>2. The relationship between tourism and transport is best described as:</div><ul class='options'>
+<li>A. Independent</li>
+<li>B. Competitive</li>
+<li>C. Symbiotic and complementary</li>
+<li>D. Parasitic</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>3. In the fundamental elements of transport, "The Way" refers to:</div><ul class='options'>
+<li>A. The vehicle used for travel</li>
+<li>B. The medium or route used (e.g., roads, tracks, or sea lanes)</li>
+<li>C. The fuel used to power the engine</li>
+<li>D. The destination city</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>4. Which of the following is an example of an "artificial" way in land transportation?</div><ul class='options'>
+<li>A. The air corridors</li>
+<li>B. Ocean routes</li>
+<li>C. Railway tracks and paved roads</li>
+<li>D. River channels</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>5. The facility where passengers board or alight from a vehicle, such as a bus station or pier, is called:</div><ul class='options'>
+<li>A. The Carrying Unit</li>
+<li>B. The Way</li>
+<li>C. The Terminal</li>
+<li>D. The Motive Power</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>6. A road transport form where a group of people travels together on a pre-set itinerary is known as a:</div><ul class='options'>
+<li>A. Car rental service</li>
+<li>B. Coach tour</li>
+<li>C. Private taxi ride</li>
+<li>D. Commuter bus</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>7. Car rental companies frequently partner with airlines to offer which type of package?</div><ul class='options'>
+<li>A. All-inclusive cruise packages</li>
+<li>B. Fly-drive packages</li>
+<li>C. Rail-only passes</li>
+<li>D. Destination marketing brochures</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>8. Which of these is a well-known global intermediary/principal in the car rental industry?</div><ul class='options'>
+<li>A. Boeing</li>
+<li>B. Hertz</li>
+<li>C. Cunard</li>
+<li>D. Eurail</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>9. The Build-Operate-Transfer (BOT) model is commonly used for the development of:</div><ul class='options'>
+<li>A. Aircraft engines</li>
+<li>B. Cruise ship interiors</li>
+<li>C. Roads, bridges, and highways</li>
+<li>D. Travel agency websites</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>10. The actual vehicle used for movement (e.g., a bus, car, or train carriage) is termed the:</div><ul class='options'>
+<li>A. Terminal</li>
+<li>B. Motive Power</li>
+<li>C. Carrying Unit</li>
+<li>D. The Way</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>11. The expansion of railways in the 19th century was a milestone because it:</div><ul class='options'>
+<li>A. Restricted travel to the wealthy elite only</li>
+<li>B. Made travel affordable and accessible to the masses for the first time</li>
+<li>C. Completely replaced all forms of water transport</li>
+<li>D. Was only used for transporting heavy cargo</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>12. High-speed rail (HSR) services like the TGV are primarily associated with which country?</div><ul class='options'>
+<li>A. Japan</li>
+<li>B. USA</li>
+<li>C. France</li>
+<li>D. United Kingdom</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>13. The "Eurail Pass" is a specific tourism product that offers:</div><ul class='options'>
+<li>A. Discounted flights across Europe</li>
+<li>B. Unlimited or flexible rail travel across multiple European countries</li>
+<li>C. Luxury bus tours in North America</li>
+<li>D. River cruises on the Nile</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>14. Luxury train services, such as the "Orient Express", are primarily marketed as:</div><ul class='options'>
+<li>A. A basic means of commuting</li>
+<li>B. An attraction and a destination in themselves</li>
+<li>C. The cheapest form of international travel</li>
+<li>D. A replacement for short-haul flights</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>15. What is the primary difference between an "ocean liner" and a "cruise ship"?</div><ul class='options'>
+<li>A. Ocean liners are for holidays, while cruise ships are for transport</li>
+<li>B. Ocean liners are for point-to-point transport, while cruise ships are for leisure and the onboard experience</li>
+<li>C. Ocean liners only sail on rivers</li>
+<li>D. There is no functional difference</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>16. Which development significantly contributed to the decline of ocean liners as a mode of transport?</div><ul class='options'>
+<li>A. The invention of the bicycle</li>
+<li>B. The rise of private automobiles</li>
+<li>C. The advent of long-haul commercial jet aviation</li>
+<li>D. The end of the Industrial Revolution</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>17. Cruise ships are often called "floating resorts" because they provide:</div><ul class='options'>
+<li>A. Cargo storage for international trade</li>
+<li>B. Accommodation, multiple dining options, and entertainment on board</li>
+<li>C. Fast transport between two cities without any stops</li>
+<li>D. Emergency services only</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>18. A cruise journey that takes place on inland waterways like the Rhine or Mekong is a:</div><ul class='options'>
+<li>A. Coastal cruise</li>
+<li>B. River cruise</li>
+<li>C. Transatlantic liner</li>
+<li>D. Ferry crossing</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>19. "Shore excursions" in cruise tourism refers to:</div><ul class='options'>
+<li>A. The flight taken to reach the departure port</li>
+<li>B. Organized tours and activities conducted at various ports of call</li>
+<li>C. The safety drills performed on the first day</li>
+<li>D. Room service options available in the cabin</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>20. Which transport element provides the energy required to move the carrying unit?</div><ul class='options'>
+<li>A. The Terminal</li>
+<li>B. The Way</li>
+<li>C. The Motive Power</li>
+<li>D. The Infrastructure</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>21. In rail transport, the "Carrying Unit" typically consists of:</div><ul class='options'>
+<li>A. The iron tracks and sleepers</li>
+<li>B. The station platforms and ticket offices</li>
+<li>C. The locomotive and the passenger carriages</li>
+<li>D. The overhead electric lines</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>22. "Scenic rail" tours are distinct because:</div><ul class='options'>
+<li>A. The destination is the only important factor</li>
+<li>B. The journey itself through picturesque landscapes is the main selling point</li>
+<li>C. They only operate during the night</li>
+<li>D. They are used exclusively for business travelers</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>23. Car rental services are highly valued by tourists for providing:</div><ul class='options'>
+<li>A. Fixed departure times</li>
+<li>B. High-speed travel without flexibility</li>
+<li>C. Personal mobility, independence, and privacy</li>
+<li>D. Free international airfare</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>24. Which mode of transport is generally considered the most environmentally sustainable per passenger kilometer?</div><ul class='options'>
+<li>A. Private luxury cars</li>
+<li>B. Long-haul aircraft</li>
+<li>C. Rail transport</li>
+<li>D. Helicopters</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>25. Ferries are an essential form of water transportation for:</div><ul class='options'>
+<li>A. Crossing landlocked deserts</li>
+<li>B. Short-distance travel between islands or across channels/straits</li>
+<li>C. Traveling between inland mountain resorts</li>
+<li>D. Cargo-only logistics in the deep ocean</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>26. The "Shinkansen" is a world-famous high-speed rail system located in:</div><ul class='options'>
+<li>A. Germany</li>
+<li>B. Japan</li>
+<li>C. China</li>
+<li>D. Canada</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>27. In many countries, the majority of domestic tourism trips are made by:</div><ul class='options'>
+<li>A. Cruise ship</li>
+<li>B. Private car</li>
+<li>C. Commercial aircraft</li>
+<li>D. High-speed train</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>28. Which of the following is a major operating cost for land transport providers?</div><ul class='options'>
+<li>A. Landing fees at airports</li>
+<li>B. Fuel, labor, and vehicle maintenance</li>
+<li>C. Deep-sea anchoring fees</li>
+<li>D. Satellite communication taxes</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>29. The term "Modal Split" in the tourism industry refers to:</div><ul class='options'>
+<li>A. A vehicle breaking down during a tour</li>
+<li>B. The relative share of different transport modes used by a specific market</li>
+<li>C. Dividing a tour group into two smaller groups</li>
+<li>D. The separation of a highway into two lanes</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>30. Recreational Vehicles (RVs) or motorhomes are unique because they combine:</div><ul class='options'>
+<li>A. Transport and accommodation in one unit</li>
+<li>B. Air and water travel capabilities</li>
+<li>C. Rail wheels and road tires</li>
+<li>D. Government and private sector ownership</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>A</div></div>
+<div class='question-card'><div class='question'>31. In the car rental business, a "daily rate" typically does NOT include:</div><ul class='options'>
+<li>A. The use of the vehicle's engine</li>
+<li>B. Personal insurance and fuel costs</li>
+<li>C. The steering wheel and tires</li>
+<li>D. The basic seats of the car</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>32. "Coastal cruising" involves ships that usually:</div><ul class='options'>
+<li>A. Sail across the open ocean for several weeks</li>
+<li>B. Stay near the coastline and visit a series of local ports</li>
+<li>C. Travel only on frozen arctic lakes</li>
+<li>D. Remain permanently docked in a single harbor</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>33. Which of the following is recognized as one of the world's most popular cruise regions?</div><ul class='options'>
+<li>A. The Sahara Desert</li>
+<li>B. The Caribbean Sea</li>
+<li>C. Central Asia</li>
+<li>D. The Amazon Rainforest floor</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>34. A major transport "Hub" (such as a central train station) is an example of which element?</div><ul class='options'>
+<li>A. The Way</li>
+<li>B. The Terminal</li>
+<li>C. The Motive Power</li>
+<li>D. The Carrying Unit</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>35. Land and water transport providers are categorized as "Principals" because:</div><ul class='options'>
+<li>A. They act only as intermediaries between tourists and hotels</li>
+<li>B. They are direct suppliers of core tourism services</li>
+<li>C. They are strictly non-profit organizations</li>
+<li>D. They do not interact with travel agents</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>36. A "Group Inclusive Tour" (GIT) by coach typically includes:</div><ul class='options'>
+<li>A. Only the seat on the bus</li>
+<li>B. Transport, accommodation, and often sightseeing or meals</li>
+<li>C. Only the airfare to the starting point</li>
+<li>D. No guide or assistance during the trip</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>37. In cruise terminology, a "Port of Call" is defined as:</div><ul class='options'>
+<li>A. The home port where the journey begins and ends</li>
+<li>B. An intermediate stop where the ship docks for passengers to visit</li>
+<li>C. A telephone station located on the ship's deck</li>
+<li>D. A specific type of car rental office at the pier</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>38. The Great Ocean Road in Australia is an example of transport infrastructure acting as:</div><ul class='options'>
+<li>A. A transit terminal</li>
+<li>B. A primary tourism attraction</li>
+<li>C. A carrying unit for passengers</li>
+<li>D. Motive power for vehicles</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>39. Car rental is particularly popular among which segment of international tourists?</div><ul class='options'>
+<li>A. Those on strict budget bus tours</li>
+<li>B. Those on "fly-drive" independent holidays</li>
+<li>C. Those who do not have a valid driver's license</li>
+<li>D. Those traveling exclusively by rail</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>40. The current role of water transport in global tourism is primarily focused on:</div><ul class='options'>
+<li>A. Basic point-to-point commuting for workers</li>
+<li>B. Leisure experiences, cruising, and sightseeing</li>
+<li>C. Heavy industrial cargo shipment only</li>
+<li>D. Short-distance underwater exploration</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>1. A system that makes products available for consumption through various channels is known as a:</div><ul class='options'>
+<li>A. Production system</li>
+<li>B. Distribution system</li>
+<li>C. Financial system</li>
+<li>D. Marketing system</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>2. Which of the following is defined as a third party who stands between two parties to facilitate a deal?</div><ul class='options'>
+<li>A. Principal</li>
+<li>B. Supplier</li>
+<li>C. Intermediary</li>
+<li>D. Consumer</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>3. In the tourism distribution system, intermediaries are typically:</div><ul class='options'>
+<li>A. Owned by the government</li>
+<li>B. Independent groups or organizations</li>
+<li>C. Part of the transport motive power</li>
+<li>D. Only found in the destination country</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>4. Which of the following is NOT one of the four main types of intermediaries mentioned?</div><ul class='options'>
+<li>A. Agents</li>
+<li>B. Wholesalers</li>
+<li>C. Manufacturers</li>
+<li>D. Retailers</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>5. Distribution of goods and services in tourism takes place by means of:</div><ul class='options'>
+<li>A. Only direct sales</li>
+<li>B. Channels and intermediaries</li>
+<li>C. Only physical transport</li>
+<li>D. Government mandates</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>6. Which intermediary function involves gathering various service elements into a single package?</div><ul class='options'>
+<li>A. Financing</li>
+<li>B. Packaging and consolidation</li>
+<li>C. Customization</li>
+<li>D. Information search</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>7. The survival of the tour operation industry is primarily dependent upon:</div><ul class='options'>
+<li>A. The speed of aircraft</li>
+<li>B. Efficient packaging of products</li>
+<li>C. High ticket prices</li>
+<li>D. Seasonal weather changes</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>8. Performing reservation duties according to the specific needs of customers is a function of:</div><ul class='options'>
+<li>A. Principals only</li>
+<li>B. The Way</li>
+<li>C. Intermediaries</li>
+<li>D. Motive Power</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>9. When are confirmation documents usually issued to the consumer?</div><ul class='options'>
+<li>A. After the tour is finished</li>
+<li>B. Prior to travel</li>
+<li>C. During the transit flight</li>
+<li>D. At the hotel check-out</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>10. Which type of distribution system involves no intermediaries between the supplier and the consumer?</div><ul class='options'>
+<li>A. Indirect system</li>
+<li>B. Direct system</li>
+<li>C. Hybrid system</li>
+<li>D. Third-party system</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>11. A distribution system that uses both direct and indirect methods is called a:</div><ul class='options'>
+<li>A. Simple system</li>
+<li>B. Complex system</li>
+<li>C. Hybrid system</li>
+<li>D. Closed system</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>12. "FIT" in the context of tour customization stands for:</div><ul class='options'>
+<li>A. Fast International Transit</li>
+<li>B. Free Independent Travelers</li>
+<li>C. Foreign Industry Tours</li>
+<li>D. Fixed Inclusive Tourists</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>13. Which intermediaries are known for customizing products specifically for FITs?</div><ul class='options'>
+<li>A. Wholesalers and Manufacturers</li>
+<li>B. Junket representatives and Call centers</li>
+<li>C. Tour operators and retailers</li>
+<li>D. Airlines and Railway providers</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>14. The "Financing" function of an intermediary involves:</div><ul class='options'>
+<li>A. Printing brochures</li>
+<li>B. Ensuring required financial resources to perform duties</li>
+<li>C. Hiring tour guides</li>
+<li>D. Building airports</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>15. Why do tour operators need significant financial resources during the packaging process?</div><ul class='options'>
+<li>A. To buy fuel for airlines</li>
+<li>B. To manage the organization and market tour packages</li>
+<li>C. To build new roads</li>
+<li>D. To pay government taxes for tourists</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>16. Which specific intermediary offers services primarily to the casino industry?</div><ul class='options'>
+<li>A. Travel call center</li>
+<li>B. Junket representatives</li>
+<li>C. Retail travel agents</li>
+<li>D. Consolidators</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>17. Junket representatives act as intermediaries for which group of people?</div><ul class='options'>
+<li>A. Budget travelers</li>
+<li>B. Premium players</li>
+<li>C. Government officials</li>
+<li>D. Backpackers</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>18. A "virtual location" where travel products are sold over the phone is a:</div><ul class='options'>
+<li>A. Seaport terminal</li>
+<li>B. Retail storefront</li>
+<li>C. Travel and tourism call center</li>
+<li>D. Distribution warehouse</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>19. Potential tourists use toll-free numbers in call centers to:</div><ul class='options'>
+<li>A. Apply for a pilot license</li>
+<li>B. Gather information and book hotel rooms</li>
+<li>C. Complain about the weather</li>
+<li>D. Request local transport in their hometown</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>20. Intermediaries stand between which two primary parties?</div><ul class='options'>
+<li>A. The Way and The Terminal</li>
+<li>B. The Supplier (Principal) and the Consumer (Tourist)</li>
+<li>C. The Government and the Airline</li>
+<li>D. The Pilot and the Cabin Crew</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>21. "Indirect distribution" means that the product reaches the consumer through:</div><ul class='options'>
+<li>A. One or more intermediaries</li>
+<li>B. A direct website booking</li>
+<li>C. A walk-in visit to the airline office</li>
+<li>D. Social media ads with no booking link</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>A</div></div>
+<div class='question-card'><div class='question'>22. Which of the following is a primary function of tourism intermediaries?</div><ul class='options'>
+<li>A. Managing airport runways</li>
+<li>B. Booking and confirming services</li>
+<li>C. Operating aircraft engines</li>
+<li>D. Training foreign pilots</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>23. The "Consolidation" function is most similar to:</div><ul class='options'>
+<li>A. Customization</li>
+<li>B. Packaging</li>
+<li>C. Financing</li>
+<li>D. Transportation</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>24. Distribution in tourism is considered unique because:</div><ul class='options'>
+<li>A. The product is tangible and storable</li>
+<li>B. The product is intangible and perishable</li>
+<li>C. There are no intermediaries involved</li>
+<li>D. Consumers always buy from manufacturers</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>25. A wholesaler in tourism typically:</div><ul class='options'>
+<li>A. Sells one ticket at a time to the public</li>
+<li>B. Buys large blocks of space and resells them to retailers</li>
+<li>C. Only works for the government</li>
+<li>D. Never uses a distribution channel</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>26. Retailers in the tourism distribution channel are often represented by:</div><ul class='options'>
+<li>A. Aircraft manufacturers</li>
+<li>B. Travel agencies</li>
+<li>C. Port authorities</li>
+<li>D. Hotel cleaning staff</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>27. Which function allows an intermediary to handle performance variation or service quality complaints?</div><ul class='options'>
+<li>A. Financing</li>
+<li>B. Mediator/Complaint handling</li>
+<li>C. Packaging</li>
+<li>D. Carrying unit maintenance</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>28. An intermediary acting as a mediator helps to:</div><ul class='options'>
+<li>A. Increase the speed of the bus</li>
+<li>B. Handle customer complaints efficiently</li>
+<li>C. Change the natural medium of transport</li>
+<li>D. Lower the cost of fuel</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>29. The process of making a deal take place between a principal and a tourist is called:</div><ul class='options'>
+<li>A. Transportation</li>
+<li>B. Facilitation/Negotiation</li>
+<li>C. Aviation</li>
+<li>D. Migration</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>30. Which element is considered the "backbone" of a packaged tour product?</div><ul class='options'>
+<li>A. The motive power</li>
+<li>B. A preset itinerary</li>
+<li>C. The terminal building</li>
+<li>D. The pilot's uniform</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>31. Direct Operating Costs are usually handled by the principal, but who handles "Payment Collection" from the customer?</div><ul class='options'>
+<li>A. The Way</li>
+<li>B. The Intermediary</li>
+<li>C. The Carrying Unit</li>
+<li>D. The Terminal</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>32. According to Source 4, "agents" and "distributors" are types of:</div><ul class='options'>
+<li>A. Principals</li>
+<li>B. Intermediaries</li>
+<li>C. Consumers</li>
+<li>D. Motive powers</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>33. The use of technology applications to enter the market with new services is typical of:</div><ul class='options'>
+<li>A. Traditional manual agencies</li>
+<li>B. Modern digital intermediaries</li>
+<li>C. Pre-historic travelers</li>
+<li>D. Ancient wholesalers</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>34. A person booking a hotel room via a call center is interacting with:</div><ul class='options'>
+<li>A. A direct distribution system</li>
+<li>B. An indirect/intermediary distribution system</li>
+<li>C. A motive power system</li>
+<li>D. A natural way system</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>35. Intermediaries help tourists by:</div><ul class='options'>
+<li>A. Driving the tour bus themselves</li>
+<li>B. Making products available and accessible for purchase</li>
+<li>C. Building the hotel rooms</li>
+<li>D. Controlling the weather at the destination</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>36. "Payment collection" refers to the intermediary's role in:</div><ul class='options'>
+<li>A. Paying the pilot's salary</li>
+<li>B. Collecting money from tourists for the services booked</li>
+<li>C. Paying for the airport's electricity</li>
+<li>D. Collecting taxes from the local government</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>37. "Accreditation" is often necessary for intermediaries to:</div><ul class='options'>
+<li>A. Fly an aircraft</li>
+<li>B. Issue international air tickets</li>
+<li>C. Clean hotel rooms</li>
+<li>D. Drive a taxi</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>38. Which function ensures that an intermediary has the funds to market tour packages?</div><ul class='options'>
+<li>A. Customization</li>
+<li>B. Financing</li>
+<li>C. Consolidation</li>
+<li>D. Mediation</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>39. Tourism intermediaries are important because they provide:</div><ul class='options'>
+<li>A. Only physical vehicles</li>
+<li>B. Professionalism and expertise in distributing complex products</li>
+<li>C. Only food and beverage</li>
+<li>D. Only airport security</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>40. The relationship where a travel agency sells a flight ticket to a customer is an example of:</div><ul class='options'>
+<li>A. Primary journey</li>
+<li>B. Distribution channel activity</li>
+<li>C. Motive power operation</li>
+<li>D. Terminal management</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>1. From an economic perspective, a travel agency is fundamentally classified as a:</div><ul class='options'>
+<li>A. Producer</li>
+<li>B. Retailer</li>
+<li>C. Manufacturer</li>
+<li>D. Regulatory body</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>2. According to Page (2009), a travel agency is a "physical location that offers a convenient place to purchase":</div><ul class='options'>
+<li>A. Aircraft parts</li>
+<li>B. Hotel furniture</li>
+<li>C. Travel products</li>
+<li>D. Office supplies</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>3. When a travel agent focuses on the promotion of a supplier's products, they are acting as a:</div><ul class='options'>
+<li>A. Logistics manager</li>
+<li>B. Marketing agent</li>
+<li>C. Financial auditor</li>
+<li>D. Human resource officer</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>4. A travel agency is described as a "catalyst of transaction" because it:</div><ul class='options'>
+<li>A. Increases the speed of the aircraft</li>
+<li>B. Facilitates the deal between the principal and the final consumer</li>
+<li>C. Produces the fuel for transport</li>
+<li>D. Operates the hotel kitchen</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>5. Why is a travel agent called a "real-time intermediary"?</div><ul class='options'>
+<li>A. Because they travel with the tourist 24/7</li>
+<li>B. Because the transaction occurs when the consumer approaches, even if the product is still with the principal</li>
+<li>C. Because they only work during the night</li>
+<li>D. Because they own the satellites used for GPS</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>6. For a traveler, a travel agency is considered a reliable source of ________ for various travel needs.</div><ul class='options'>
+<li>A. Income</li>
+<li>B. Assistance</li>
+<li>C. Legal legislation</li>
+<li>D. Physical transport</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>7. To be effective, a travel agent must be an expert knowledgeable about:</div><ul class='options'>
+<li>A. Aircraft engineering</li>
+<li>B. Schedules, routing, and regulations</li>
+<li>C. Hotel construction materials</li>
+<li>D. Deep-sea diving techniques</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>8. Which type of travel agent handles the products of both principals (like airlines) and wholesalers (like tour operators)?</div><ul class='options'>
+<li>A. Wholesale travel agent</li>
+<li>B. Retail travel agent</li>
+<li>C. Specialty travel agency</li>
+<li>D. Online travel agent</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>9. A wholesale travel agent typically purchases services from suppliers in:</div><ul class='options'>
+<li>A. Small, individual units</li>
+<li>B. Large quantities in advance</li>
+<li>C. Only when a customer walks in</li>
+<li>D. Second-hand markets</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>10. Corporate travel agencies offer services primarily to:</div><ul class='options'>
+<li>A. Students and backpackers</li>
+<li>B. Business clients and their employees</li>
+<li>C. Government military units</li>
+<li>D. Local farmers</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>11. Which type of agency offers services for "niche" markets or specific tourism sectors?</div><ul class='options'>
+<li>A. Retail travel agent</li>
+<li>B. Specialty travel agency</li>
+<li>C. Agency chains</li>
+<li>D. Wholesale travel agent</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>12. OTA stands for:</div><ul class='options'>
+<li>A. Official Tour Authority</li>
+<li>B. Online Travel Agent</li>
+<li>C. Overseas Travel Arrangement</li>
+<li>D. Open Tour Association</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>13. What is the primary focus of an Online Travel Agent (OTA)?</div><ul class='options'>
+<li>A. Physical walk-in sales locations</li>
+<li>B. Online reservations and booking services</li>
+<li>C. Building physical airports</li>
+<li>D. Manufacturing souvenir items</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>14. Independent travel agencies are characterized as being:</div><ul class='options'>
+<li>A. Owned by global airline alliances</li>
+<li>B. Unaffiliated to large organizations and privately owned</li>
+<li>C. Part of a government ministry</li>
+<li>D. Only accessible via mobile apps</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>15. Agency chains are defined as wholly owned mega agencies that have:</div><ul class='options'>
+<li>A. Only one office in a small town</li>
+<li>B. A large number of branch offices in many countries</li>
+<li>C. No employees, only automated robots</li>
+<li>D. No relationship with airlines</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>16. Where do home-based agencies primarily conduct their services?</div><ul class='options'>
+<li>A. From an airport terminal</li>
+<li>B. From their place of residence using electronic technology</li>
+<li>C. Inside a hotel lobby</li>
+<li>D. From a moving train</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>17. One of the primary duties of travel agents is making bookings with principals on behalf of:</div><ul class='options'>
+<li>A. The local government</li>
+<li>B. Clients (tourists)</li>
+<li>C. The aircraft manufacturer</li>
+<li>D. The tax office</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>18. Why is a travel agent considered an "information provider"?</div><ul class='options'>
+<li>A. Because they write newspapers</li>
+<li>B. Because travelers are intensive information seekers regarding their trips</li>
+<li>C. Because they work for the television station</li>
+<li>D. Because they teach in local schools</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>19. Professional expertise in "itinerary planning" helps a traveler ensure:</div><ul class='options'>
+<li>A. The highest possible price</li>
+<li>B. Smooth travel between different locations</li>
+<li>C. That they never leave the hotel</li>
+<li>D. That they only travel by foot</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>20. Calculating airfares for multi-destination travels is described as a:</div><ul class='options'>
+<li>A. Simple, one-second task</li>
+<li>B. Laborious and complex task</li>
+<li>C. Task for hotel cleaners</li>
+<li>D. Task for the tour bus driver</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>21. Once a travel agent books a seat, it is their responsibility to issue the:</div><ul class='options'>
+<li>A. Pilot's license</li>
+<li>B. Confirmed ticket or booking document</li>
+<li>C. Hotel's deed of ownership</li>
+<li>D. Tourist's passport</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>22. Travel agents are reliable sources of advice on travel options, particularly for:</div><ul class='options'>
+<li>A. Professional pilots</li>
+<li>B. First-time travelers</li>
+<li>C. Hotel owners</li>
+<li>D. Airport security staff</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>23. During communication and negotiation, travel agents negotiate ________ with suppliers.</div><ul class='options'>
+<li>A. The weather conditions</li>
+<li>B. The rates for services</li>
+<li>C. The flight path of the plane</li>
+<li>D. The hotel's staff hiring policy</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>24. Which of the following is an essential document arranged by agents for international travel?</div><ul class='options'>
+<li>A. Shopping list</li>
+<li>B. Visa</li>
+<li>C. Library card</li>
+<li>D. Gym membership</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>25. Travel insurance is highly recommended for tourists traveling:</div><ul class='options'>
+<li>A. To the local supermarket</li>
+<li>B. To a foreign country</li>
+<li>C. Only by bicycle</li>
+<li>D. For less than one hour</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>26. A travel agent acts as a mediator to handle ________ when service quality fluctuates.</div><ul class='options'>
+<li>A. Airline fuel production</li>
+<li>B. Customer complaints</li>
+<li>C. Highway construction</li>
+<li>D. Passport printing</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>27. In a typical Travel Agency organization table, who is directly supported by a Secretary?</div><ul class='options'>
+<li>A. Account Executive</li>
+<li>B. Manager</li>
+<li>C. Cashier</li>
+<li>D. Liaison Officer</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>28. Which department handles Bookkeepers and Cashiers?</div><ul class='options'>
+<li>A. Operations</li>
+<li>B. Sales</li>
+<li>C. Administration</li>
+<li>D. Marketing</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>29. Roles like "Travel Counsellor" and "Reservations & Ticketing" belong to which department?</div><ul class='options'>
+<li>A. Administration</li>
+<li>B. Operations</li>
+<li>C. Finance</li>
+<li>D. Legal</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>30. The "Sales" department in a travel agency typically includes which position?</div><ul class='options'>
+<li>A. Bookkeeper</li>
+<li>B. Account Executive</li>
+<li>C. Utility Personnel</li>
+<li>D. Pilot</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>31. According to the "Basic Organization Structure," the Reservation/Travel Dept is linked to:</div><ul class='options'>
+<li>A. Only the Finance department</li>
+<li>B. Outbound, MICE, and HR departments</li>
+<li>C. Only the local police station</li>
+<li>D. The aircraft factory</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>32. An agency might have vice presidents for operations and:</div><ul class='options'>
+<li>A. Navigation</li>
+<li>B. Marketing</li>
+<li>C. Engineering</li>
+<li>D. Catering</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>33. What can happen if an agency provides inaccurate information to a customer?</div><ul class='options'>
+<li>A. They will gain more customers</li>
+<li>B. They will be seen as unreliable and lose business</li>
+<li>C. The aircraft will fly faster</li>
+<li>D. The hotel will give them a free room</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>34. Travel agency staff must be well-versed in travel-related information to maintain:</div><ul class='options'>
+<li>A. Aircraft engines</li>
+<li>B. Agency reliability and customer trust</li>
+<li>C. Road surfaces</li>
+<li>D. International law</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>35. A "Liaison Officer" is found in which functional area of a travel agency?</div><ul class='options'>
+<li>A. Administration</li>
+<li>B. Operations</li>
+<li>C. Sales</li>
+<li>D. Kitchen</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>36. "Bookings of air seats, transport, and accommodation" are part of the:</div><ul class='options'>
+<li>A. Manufacturing functions</li>
+<li>B. Functions and activities of a travel agent</li>
+<li>C. Government functions</li>
+<li>D. Agriculture functions</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>37. Travel agents negotiate with clients to ensure:</div><ul class='options'>
+<li>A. The pilot is happy</li>
+<li>B. The quality of services to be provided</li>
+<li>C. The airplane is painted blue</li>
+<li>D. The bus has four wheels</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>38. Which type of agency is unaffiliated to large organizations?</div><ul class='options'>
+<li>A. Agency chain</li>
+<li>B. Independent agency</li>
+<li>C. Corporate travel department</li>
+<li>D. Wholesale agent</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>39. Corporate travel departments are sections found within:</div><ul class='options'>
+<li>A. Public parks</li>
+<li>B. Corporate companies</li>
+<li>C. Small family homes</li>
+<li>D. Primary schools</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>40. The Billing and Settlement Plan (BSP) is a system related to the management of:</div><ul class='options'>
+<li>A. Bus schedules</li>
+<li>B. Airline ticket payments and settlements</li>
+<li>C. Hotel laundry</li>
+<li>D. Museum entrance fees</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>1. The growing application of which technology has transformed the travel industry and its distribution systems?</div><ul class='options'>
+<li>A. Artificial Intelligence</li>
+<li>B. Information and Communication Technology (ICT)</li>
+<li>C. Blockchain Technology</li>
+<li>D. Mechanical Engineering</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>2. Which system has had a significant impact on productivity in the travel industry, specifically regarding marketing?</div><ul class='options'>
+<li>A. Passenger Name Record (PNR)</li>
+<li>B. Property Management System (PMS)</li>
+<li>C. Computer Reservation System (CRS)</li>
+<li>D. Billing and Settlement Plan (BSP)</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>3. GDSs now provide the ________ for communication between principals and intermediaries.</div><ul class='options'>
+<li>A. Physical outlet</li>
+<li>B. Backbone</li>
+<li>C. Legal framework</li>
+<li>D. Financial audit</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>4. Systems that handle large volumes of data as part of travel transactions are known as:</div><ul class='options'>
+<li>A. Global Positioning Systems (GPS)</li>
+<li>B. Transaction Processing Systems (TPS)</li>
+<li>C. Social Media Platforms</li>
+<li>D. Electronic Mail Systems</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>5. Which of the following is listed as a leading online travel intermediary?<br>6. The emergence of Web-based travel agencies was a direct result of the increasing scope of:</div><ul class='options'>
+<li>A. Boeing</li>
+<li>B. Expedia</li>
+<li>C. Airbus</li>
+<li>D. IATAAnswer: B</li>
+<li>A. Manual reservations</li>
+<li>B. Hand-written ticketing</li>
+<li>C. Product transaction and distribution on the Internet</li>
+<li>D. Rail transport expansion</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>7. NDC, a development in air travel distribution, stands for:</div><ul class='options'>
+<li>A. National Delivery Center</li>
+<li>B. New Distribution Capability</li>
+<li>C. Next Destination Choice</li>
+<li>D. Network Distribution Chain</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>8. Which organization launched the NDC Program to develop a new data transmission standard?<br>9. The NDC Standard is based on which data transmission language?</div><ul class='options'>
+<li>A. UNWTOB. IATAC. UNESCOD. PATAAnswer: B</li>
+<li>A. HTMLB. C++C. XMLD. Python</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>10. What is a primary goal of NDC?</div><ul class='options'>
+<li>A. To eliminate all travel agents</li>
+<li>B. To enhance communication between airlines and intermediaries</li>
+<li>C. To reduce the speed of internet transactions</li>
+<li>D. To promote paper-based ticketing</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>11. Which industry was the pioneer in developing Computer Reservation Systems (CRSs)?</div><ul class='options'>
+<li>A. Hotel industry</li>
+<li>B. Rail industry</li>
+<li>C. Airline industry</li>
+<li>D. Cruise industry</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>12. An airline CRS is a computer system primarily designed for use by ________ to facilitate the sale of travel products.</div><ul class='options'>
+<li>A. Pilots</li>
+<li>B. Booking agents</li>
+<li>C. Baggage handlers</li>
+<li>D. Aircraft mechanics</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>13. Which of the following was a manual method for making reservations before automation?</div><ul class='options'>
+<li>A. Sabre</li>
+<li>B. Lady Susan</li>
+<li>C. Amadeus</li>
+<li>D. Galileo</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>14. Before the 1950s, American Airlines used which type of manual system?</div><ul class='options'>
+<li>A. Touch-screen kiosks</li>
+<li>B. Request and reply system</li>
+<li>C. Mobile apps</li>
+<li>D. Voice-recognition systems</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>15. Which company partnered with American Airlines to develop the first automated reservation system?</div><ul class='options'>
+<li>A. Microsoft</li>
+<li>B. IBMC. Apple</li>
+<li>D. Google</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>16. What does the acronym SABRE stand for?</div><ul class='options'>
+<li>A. System for Air Booking and Regional Exchanges</li>
+<li>B. Semi-Automatic Business Research Environment</li>
+<li>C. Standard Airline Booking and Reservation Engine</li>
+<li>D. Southern Airways Booking and Registration Entity</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>17. Why was SABRE considered a milestone in global travel distribution?</div><ul class='options'>
+<li>A. It was the first system to use handwritten records</li>
+<li>B. It was the first real-time business application for reservations</li>
+<li>C. It only allowed bookings for military personnel</li>
+<li>D. It was a paper-based filing cabinet system</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>18. In which year was the Sabre system first installed in a travel agency?</div><ul class='options'>
+<li>A. 1950</li>
+<li>B. 1960</li>
+<li>C. 1976</li>
+<li>D. 1996</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>19. Global Distribution Systems (GDSs) are essentially ________ connecting several CRSs.</div><ul class='options'>
+<li>A. Mobile phones</li>
+<li>B. Super switches</li>
+<li>C. Social networks</li>
+<li>D. Security cameras</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>20. Which CRS strategy involves programming the system to give a host airline's flights a superior display position?</div><ul class='options'>
+<li>A. The halo effect</li>
+<li>B. Commission overrides</li>
+<li>C. Display bias</li>
+<li>D. Code sharing</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>21. When travel agents have more confidence in the accuracy of a CRS's parent airline, it is called:</div><ul class='options'>
+<li>A. Display bias</li>
+<li>B. The halo effect</li>
+<li>C. Code sharing</li>
+<li>D. Price fixing</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>22. "Code sharing" agreements were helpful for smaller airlines because they could:</div><ul class='options'>
+<li>A. Buy their own GDSB. Use the code letters of bigger partners to link flight schedules</li>
+<li>C. Operate without any flight codes</li>
+<li>D. Increase the price of every seat</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>23. Extra commission paid to encourage agents to sell a particular airline’s seats is known as:</div><ul class='options'>
+<li>A. Base fare</li>
+<li>B. Commission overrides</li>
+<li>C. Taxes and surcharges</li>
+<li>D. Booking fees</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>24. PNR stands for:</div><ul class='options'>
+<li>A. Private Network Route</li>
+<li>B. Passenger Name Record</li>
+<li>C. Primary National Registry</li>
+<li>D. Public Number Record</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>25. Which GDS function involves maintaining details of user information for each booking?</div><ul class='options'>
+<li>A. Fare quotes</li>
+<li>B. Maintenance of PNRC. Weather forecasting</li>
+<li>D. Aircraft maintenance</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>26. In GDS reservation processing, which method involves the GDS contacting the airline inventory for availability?</div><ul class='options'>
+<li>A. Direct access</li>
+<li>B. Seamless connectivity</li>
+<li>C. Sell on status</li>
+<li>D. Manual entry</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>27. What is an Airline Reservation System (ARS) primarily used for?</div><ul class='options'>
+<li>A. To show schedules for multiple competing airlines</li>
+<li>B. To show schedules and manage bookings for a single airline</li>
+<li>C. To track airport security staff</li>
+<li>D. To manage duty-free shop inventory</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>28. Which of the following is a component of a modern airline reservation system?</div><ul class='options'>
+<li>A. Paper logs</li>
+<li>B. E-tickets</li>
+<li>C. Teletype machines</li>
+<li>D. Wall-sized boards</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>29. OTAs primarily market and sell travel products directly to customers through:</div><ul class='options'>
+<li>A. Newspaper classifieds</li>
+<li>B. Their own and other online channels</li>
+<li>C. Radio advertisements only</li>
+<li>D. Door-to-door sales</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>30. Which OTA was established by Microsoft in 1996?</div><ul class='options'>
+<li>A. Booking.com</li>
+<li>B. Travelocity</li>
+<li>C. Expedia</li>
+<li>D. Priceline</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>31. Mobile Travel Agents (MTAs) are currently considered "niche players" focusing on:</div><ul class='options'>
+<li>A. Bookings made one year in advance</li>
+<li>B. Tonight-only bookings made by travelers on the go</li>
+<li>C. Corporate group tours only</li>
+<li>D. Government state visits</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>32. DIS stands for:</div><ul class='options'>
+<li>A. Data Integration System</li>
+<li>B. Destination Information System</li>
+<li>C. Digital Interchange Standard</li>
+<li>D. Driver Information Service</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>33. A comprehensive electronic database of a destination’s facilities is called a:</div><ul class='options'>
+<li>A. Global Distribution System</li>
+<li>B. Destination Information System (DIS)</li>
+<li>C. Transaction Processing System</li>
+<li>D. Internet Booking Engine</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>34. DMS, which offers tools for destination marketing and promotion, stands for:</div><ul class='options'>
+<li>A. Data Management Software</li>
+<li>B. Destination Management System</li>
+<li>C. Digital Marketing Service</li>
+<li>D. Direct Messaging System</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>35. Which online intermediary enables customers to search and compare prices but does NOT usually offer direct booking on its own site?</div><ul class='options'>
+<li>A. Aggregators</li>
+<li>B. Meta search engines</li>
+<li>C. Opaque sites</li>
+<li>D. Product review sites</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>36. Which of the following is an example of a Meta search engine?</div><ul class='options'>
+<li>A. Sabre</li>
+<li>B. KAYAKC. Amadeus</li>
+<li>D. Fidelio</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>37. Intermediaries that aggregate inventories from different sources like GDSs are called:</div><ul class='options'>
+<li>A. Affiliates</li>
+<li>B. Travel aggregators</li>
+<li>C. Group buying sites</li>
+<li>D. Opaque sites</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>38. Which type of site offers unsold or "distressed" travel products?</div><ul class='options'>
+<li>A. Trip planning sites</li>
+<li>B. Opaque sites</li>
+<li>C. Product review sites</li>
+<li>D. Meta search engines</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>39. In hospitality distribution, where are reservations typically processed at the corporate level?</div><ul class='options'>
+<li>A. Central Reservation Office (CRO)</li>
+<li>B. Front Desk</li>
+<li>C. Kitchen</li>
+<li>D. Housekeeping</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>A</div></div>
+<div class='question-card'><div class='question'>40. PMS in the context of hotel distribution stands for:</div><ul class='options'>
+<li>A. Payment Management System</li>
+<li>B. Property Management System</li>
+<li>C. Personal Messaging Service</li>
+<li>D. Public Marketing System</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>1. A trip taken by a group of people who travel together and follow a pre-planned itinerary is defined as a:</div><ul class='options'>
+<li>A. Business meeting</li>
+<li>B. Tour</li>
+<li>C. Migration</li>
+<li>D. Expedition</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>2. Which term describes the professional organization of a traveler’s journey, including arranging services and facilities?</div><ul class='options'>
+<li>A. Travel agency</li>
+<li>B. Tour operation</li>
+<li>C. Hospitality management</li>
+<li>D. Destination marketing</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>3. An individual or agency that organizes package tours and arranges necessary facilities and services is a:</div><ul class='options'>
+<li>A. Travel consultant</li>
+<li>B. Tour operator</li>
+<li>C. Hotel concierge</li>
+<li>D. Ground handler</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>4. According to the "Wholesalers" viewpoint, tour operators buy services in large quantities to sell them in:</div><ul class='options'>
+<li>A. Larger quantities</li>
+<li>B. Smaller quantities</li>
+<li>C. Bulk to the government</li>
+<li>D. Gift vouchers only</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>5. From the "Principals" viewpoint, tour operators create a single whole new product termed an:</div><ul class='options'>
+<li>A. Independent tour</li>
+<li>B. Inclusive tour</li>
+<li>C. Excursion</li>
+<li>D. Transit route</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>6. The "Light assembly" business viewpoint suggests that a tour operator ________ various travel products into a convenient package.</div><ul class='options'>
+<li>A. Manufactures</li>
+<li>B. Assembles</li>
+<li>C. Inventories</li>
+<li>D. Distributes</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>7. Compared to many other sectors in tourism, starting a tour operation business is generally:</div><ul class='options'>
+<li>A. More capital-intensive</li>
+<li>B. Less capital-intensive</li>
+<li>C. Impossible for individuals</li>
+<li>D. Only for government agencies</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>8. Basic facilities required for a micro-level start-up tour operation include a computer, Internet, and:</div><ul class='options'>
+<li>A. A fleet of buses</li>
+<li>B. A private jet</li>
+<li>C. A telephone and stationery</li>
+<li>D. A 5-star hotel building</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>9. How do tour operators typically receive additional revenue apart from the sale of packages?</div><ul class='options'>
+<li>A. Government grants</li>
+<li>B. Commissions from suppliers</li>
+<li>C. Airline fuel taxes</li>
+<li>D. Airport construction fees</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>10. Which civilization established a well-maintained road system that benefited early travel?</div><ul class='options'>
+<li>A. Ancient Egyptians</li>
+<li>B. The Romans</li>
+<li>C. The Greeks</li>
+<li>D. The Phoenicians</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>11. Who is considered the pioneer of organized tour programs, having organized a train excursion in 1841?</div><ul class='options'>
+<li>A. Thomas Bennett</li>
+<li>B. Thomas Cook</li>
+<li>C. Sir Henry Lunn</li>
+<li>D. Arthur Tauck</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>12. Thomas Cook introduced ________ in 1867/1868 to facilitate hotel stays for his clients.</div><ul class='options'>
+<li>A. Credit cards</li>
+<li>B. Hotel coupons</li>
+<li>C. Passports</li>
+<li>D. Air miles</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>13. In 1874, Thomas Cook launched the "circular note," which was an early form of the:</div><ul class='options'>
+<li>A. Boarding pass</li>
+<li>B. Traveler’s cheque</li>
+<li>C. Identity card</li>
+<li>D. Visa</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>14. Thomas Bennett started his travel agency business in Europe as a:</div><ul class='options'>
+<li>A. Hotel owner</li>
+<li>B. "Trip organizer"</li>
+<li>C. Bus driver</li>
+<li>D. Pilot</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>15. Sir Henry Lunn is credited with starting the first ________ in 1898.</div><ul class='options'>
+<li>A. Safari tour</li>
+<li>B. Winter sports tourism</li>
+<li>C. Space tourism</li>
+<li>D. Medical tourism</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>16. Arthur Tauck, who commenced operations in 1925, is recognized as the pioneer of:</div><ul class='options'>
+<li>A. Luxury cruises</li>
+<li>B. Adventure tours</li>
+<li>C. Business conventions</li>
+<li>D. Pilgrimages</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>17. Vladimir Raitz is credited with establishing the first mass charter air transport to:</div><ul class='options'>
+<li>A. "Cold" destinations</li>
+<li>B. "Sun" destinations</li>
+<li>C. Industrial cities</li>
+<li>D. Mountain peaks</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>18. Which factor enabled the growth of long-haul tourism after the Second World War?</div><ul class='options'>
+<li>A. Decrease in political freedom</li>
+<li>B. Advancement in transport technology</li>
+<li>C. Invention of the wheel</li>
+<li>D. Decline of the Internet</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>19. A tour operator that directly handles foreign tourists arriving at a destination is an:</div><ul class='options'>
+<li>A. Outbound tour operator</li>
+<li>B. Inbound tour operator</li>
+<li>C. Domestic tour operator</li>
+<li>D. Specialist operator</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>20. Inbound tour operators provide services like "Meet and greet" at the:</div><ul class='options'>
+<li>A. Hotel kitchen</li>
+<li>B. Airport</li>
+<li>C. Shopping mall</li>
+<li>D. Local school</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>21. An outbound tour operator organizes tours for ________ to visit another country.</div><ul class='options'>
+<li>A. Foreigners</li>
+<li>B. Residents of their own country</li>
+<li>C. Only government officials</li>
+<li>D. Non-visitors</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>22. Marketing for an outbound operator may be easier because the potential customers are:</div><ul class='options'>
+<li>A. Living in a foreign country</li>
+<li>B. Located in and around the operator's location</li>
+<li>C. Not interested in travel</li>
+<li>D. Only looking for local transport</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>23. Domestic tour operators organize tours for residents to visit destinations within:</div><ul class='options'>
+<li>A. Overseas territories</li>
+<li>B. Their own country's boundaries</li>
+<li>C. The neighboring continent</li>
+<li>D. Outer space</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>24. The term "ground operator" usually refers to small-scale agents who arrange services for:</div><ul class='options'>
+<li>A. Outbound flights</li>
+<li>B. Incoming tourists in a specific destination</li>
+<li>C. Airline engine maintenance</li>
+<li>D. Cruise ship construction</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>25. Mass market tour operators focus on group tours to:</div><ul class='options'>
+<li>A. Unknown, remote locations</li>
+<li>B. Established and well-known destinations</li>
+<li>C. Private residences only</li>
+<li>D. Research laboratories</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>26. Specialist operators organize tours based on specific themes or interests, such as:</div><ul class='options'>
+<li>A. General grocery shopping</li>
+<li>B. Bird watching or archaeology</li>
+<li>C. Daily commuting</li>
+<li>D. Random walking</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>27. Which type of tour operator uses bicycles for tours, usually organized to the countryside?</div><ul class='options'>
+<li>A. Coach tour operator</li>
+<li>B. Cycle tour operator</li>
+<li>C. Safari operator</li>
+<li>D. Ferry tour operator</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>28. A safari operator typically offers tours into geographical areas such as:</div><ul class='options'>
+<li>A. Skyscrapers and offices</li>
+<li>B. Forests and deserts</li>
+<li>C. Underwater tunnels</li>
+<li>D. Underground subways</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>29. One benefit of tour operations for tourists is "economical" travel, because operators:</div><ul class='options'>
+<li>A. Charge higher prices than airlines</li>
+<li>B. Buy products in bulk at discounted prices</li>
+<li>C. Never use professional guides</li>
+<li>D. Provide no insurance</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>30. Tour operators help destinations by providing a base for ________ development.</div><ul class='options'>
+<li>A. Agricultural</li>
+<li>B. Infrastructure</li>
+<li>C. Military</li>
+<li>D. Mining</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>31. Financial risk in tour operations is often related to changes in external factors and the use of:</div><ul class='options'>
+<li>A. Solar power</li>
+<li>B. Debt and financial leverage</li>
+<li>C. Local languages</li>
+<li>D. Traditional clothing</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>32. Performance risk occurs because the actual services (like flights and hotels) are delivered by:</div><ul class='options'>
+<li>A. The tour operator themselves</li>
+<li>B. The principals/suppliers</li>
+<li>C. The tourists</li>
+<li>D. The tax office</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>33. Social risk for a tour operator entrepreneur involves the potential of having a ________ if the business fails.</div><ul class='options'>
+<li>A. Good holiday</li>
+<li>B. Failed image among peers</li>
+<li>C. Free ticket</li>
+<li>D. New career</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>34. Functional departmentalization in a tour operation company might include a ________ department.</div><ul class='options'>
+<li>A. Navigation</li>
+<li>B. Reservation</li>
+<li>C. Botany</li>
+<li>D. Farming</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>35. Which economic factor can dampen the scope of the tour operation sector by increasing unemployment?</div><ul class='options'>
+<li>A. Economic boom</li>
+<li>B. Economic recession</li>
+<li>C. Low inflation</li>
+<li>D. High disposable income</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>36. "Currency issues" refer to the risk associated with fluctuating ________ between tour planning and execution.</div><ul class='options'>
+<li>A. Temperature</li>
+<li>B. Exchange rates</li>
+<li>C. Altitude</li>
+<li>D. Speed limits</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>37. Legal factors affecting tour operators include rules and regulations regarding:</div><ul class='options'>
+<li>A. The color of the sky</li>
+<li>B. Visas and labor laws</li>
+<li>C. Private gardening</li>
+<li>D. Personal hobbies</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>38. Technological factors in the environment can lead to "disintermediation," which means:</div><ul class='options'>
+<li>A. Adding more intermediaries</li>
+<li>B. Removing intermediaries through direct online sales</li>
+<li>C. Improving bus engines</li>
+<li>D. Building more airports</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>39. Physical forces that can affect tour operations include:</div><ul class='options'>
+<li>A. New software updates</li>
+<li>B. Natural calamities and climate change</li>
+<li>C. Changes in office stationery</li>
+<li>D. Local fashion trends</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>40. International factors that influence the business include regionalism, human rights, and:</div><ul class='options'>
+<li>A. Daily weather forecasts</li>
+<li>B. War or political stability</li>
+<li>C. Personal diets</li>
+<li>D. Local sports scores</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>1. A planned and prearranged form of travel offered as a single product to a group or individual is called a:</div><ul class='options'>
+<li>A. Transit flight</li>
+<li>B. Package tour</li>
+<li>C. Hotel booking</li>
+<li>D. Visa application</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>2. In a package tour, the tourist typically pays:</div><ul class='options'>
+<li>A. A separate price for every individual service</li>
+<li>B. A single price for all the services included</li>
+<li>C. Only for the transport</li>
+<li>D. After the tour is completed</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>3. According to Pond (1993), a package tour provides which of the following for a set fee?</div><ul class='options'>
+<li>A. Only transportation</li>
+<li>B. Only accommodation</li>
+<li>C. All or most of the required services (transport, accommodation, etc.)</li>
+<li>D. Only international insurance</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>4. Tour classification based on the country of origin and destination includes:</div><ul class='options'>
+<li>A. Long-haul and short-haul</li>
+<li>B. Overseas and domestic tours</li>
+<li>C. Guided and hosted tours</li>
+<li>D. Summer and winter tours</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>5. For overseas tours, which of the following is NOT one of the three kind of tour groups mentioned?</div><ul class='options'>
+<li>A. Group travel for pleasure</li>
+<li>B. Group travel for business</li>
+<li>C. Group travel for a specific purpose (SIT)</li>
+<li>D. Group travel for illegal migration</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>D</div></div>
+<div class='question-card'><div class='question'>6. FIT in the context of tour classification stands for:</div><ul class='options'>
+<li>A. Fast Independent Transit</li>
+<li>B. Foreign/Free Independent Tour</li>
+<li>C. Fixed Inclusive Tourist</li>
+<li>D. First Industry Tour</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>7. Which type of tour gives the maximum autonomy and flexibility to the participants?</div><ul class='options'>
+<li>A. Group inclusive tour (GIT)</li>
+<li>B. Mass-market tour</li>
+<li>C. Independent tour (FIT)</li>
+<li>D. Escorted tour</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>8. Tours designed exclusively to fit the specific needs of a particular market or affinity group are called:</div><ul class='options'>
+<li>A. Standard tours</li>
+<li>B. Tailor-made or custom-designed tours</li>
+<li>C. Random tours</li>
+<li>D. Non-inclusive tours</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>9. In Poynter's list of FIT segments, "Empty nesters" are defined as people:</div><ul class='options'>
+<li>A. Aged below 20 with no money</li>
+<li>B. Aged above 50 with little family responsibilities</li>
+<li>C. Traveling with large groups of children</li>
+<li>D. Who have no permanent home</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>10. Which FIT segment consists of young people who prefer physical involvement and risky activities?</div><ul class='options'>
+<li>A. Empty nesters</li>
+<li>B. The adventuresome</li>
+<li>C. Business professionals</li>
+<li>D. Family reunions</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>11. A tour programme targeted at a group of tourists with a fixed itinerary is known as a:</div><ul class='options'>
+<li>A. Foreign independent tour (FIT)</li>
+<li>B. Group inclusive tour (GIT)</li>
+<li>C. Solo tour</li>
+<li>D. Random excursion</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>12. What is a major factor that encourages travelers to participate in GITs?</div><ul class='options'>
+<li>A. High luxury prices</li>
+<li>B. Lower cost due to bulk purchase of elements</li>
+<li>C. Lack of an itinerary</li>
+<li>D. Absolute privacy</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>13. "Mainstream" tourism that refers to the large-scale movement of people to popular destinations is also called:</div><ul class='options'>
+<li>A. Niche tourism</li>
+<li>B. Mass-market tours</li>
+<li>C. Specialty tours</li>
+<li>D. Private tours</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>14. Mass-market tours are usually characterized by:</div><ul class='options'>
+<li>A. Very high prices and unique destinations</li>
+<li>B. Popular destinations and lower prices</li>
+<li>C. Small groups of 2-3 people only</li>
+<li>D. No pre-planned activities</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>15. SITs stand for tours organized based on specific themes or motivations, which means:</div><ul class='options'>
+<li>A. Standard International Tours</li>
+<li>B. Special Interest Tours</li>
+<li>C. Seasonal Industrial Tours</li>
+<li>D. Simple Inclusive Tours</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>16. Which of the following is an example of an SIT?</div><ul class='options'>
+<li>A. A general beach holiday with no activities</li>
+<li>B. A bird-watching or archaeology tour</li>
+<li>C. A random bus ride to the next city</li>
+<li>D. A daily commute to work</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>17. Travel and tourism products that appeal to special tastes and have a smaller target market are called:</div><ul class='options'>
+<li>A. Mass-market tours</li>
+<li>B. Niche tours</li>
+<li>C. Global tours</li>
+<li>D. Commercial tours</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>18. A "long-haul" tour typically involves a flight duration of:</div><ul class='options'>
+<li>A. 1 hour or less</li>
+<li>B. 2 to 3 hours</li>
+<li>C. Ten hours or more</li>
+<li>D. Exactly 5 hours</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>19. Short-haul tours refer to holidays where travel duration is usually a maximum of:</div><ul class='options'>
+<li>A. One hour</li>
+<li>B. Five hours</li>
+<li>C. Ten hours</li>
+<li>D. Twenty-four hours</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>20. A tour that visits only a single destination or resort is a:</div><ul class='options'>
+<li>A. Multi-center holiday</li>
+<li>B. Single-center holiday</li>
+<li>C. Round-the-world tour</li>
+<li>D. Safari holiday</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>21. Multi-center holidays involve tours to:</div><ul class='options'>
+<li>A. Only one hotel for the whole month</li>
+<li>B. Two or more destinations in one trip</li>
+<li>C. Only the airport and back</li>
+<li>D. Destinations in different galaxies</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>22. An "all-inclusive" holiday is a package where:</div><ul class='options'>
+<li>A. Only the flight is paid for</li>
+<li>B. Almost all tour elements (meals, drinks, activities) are included in a single price</li>
+<li>C. The tourist pays for everything separately at the destination</li>
+<li>D. No entertainment is provided</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>23. A tour that includes a professional orienting the participants at sites using interpretations is a:</div><ul class='options'>
+<li>A. Hosted tour</li>
+<li>B. Guided tour</li>
+<li>C. Independent tour</li>
+<li>D. Self-service tour</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>24. In an escorted tour, who accompanies the group throughout the entire programme?</div><ul class='options'>
+<li>A. A local waiter</li>
+<li>B. A professional tour manager or leader</li>
+<li>C. A government tax officer</li>
+<li>D. No one</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>25. A "hosted tour" is different from an escorted tour because the host:</div><ul class='options'>
+<li>A. Travels with the group everywhere</li>
+<li>B. Is stationed in a designated location for assistance</li>
+<li>C. Is the pilot of the aircraft</li>
+<li>D. Does not speak the local language</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>26. A tour whose membership is composed of individuals from the same club or organization is an:</div><ul class='options'>
+<li>A. Mass-market tour</li>
+<li>B. Affinity tour</li>
+<li>C. Safari holiday</li>
+<li>D. FIT</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>27. A thrilling journey into an exotic, remote location (like a forest or desert) is called a:</div><ul class='options'>
+<li>A. Fly/drive holiday</li>
+<li>B. Safari holiday</li>
+<li>C. City break</li>
+<li>D. Convention tour</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>28. "Fly/drive" holidays are a combination of:</div><ul class='options'>
+<li>A. Rail and walking</li>
+<li>B. A flight along with hiring a car or camper</li>
+<li>C. Swimming and cycling</li>
+<li>D. Staying at home and watching TV</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>29. Summer tours are the most traditional form of:</div><ul class='options'>
+<li>A. Business travel</li>
+<li>B. Recreational tours (primarily beach-based)</li>
+<li>C. Winter sports</li>
+<li>D. Educational research</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>30. Planned travel with the intention to attend meetings, conferences, or events is called a:</div><ul class='options'>
+<li>A. MICE tour</li>
+<li>B. Safari holiday</li>
+<li>C. Affinity tour</li>
+<li>D. Niche tour</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>A</div></div>
+<div class='question-card'><div class='question'>31. An "incentive tour" is offered to employees or partners as a:</div><ul class='options'>
+<li>A. Punishment for low sales</li>
+<li>B. Reward for achieving particular targets</li>
+<li>C. Way to increase their daily work hours</li>
+<li>D. Form of mandatory unpaid labor</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>32. Which of the following is considered a core element of a package tour?</div><ul class='options'>
+<li>A. The tourist's personal clothing</li>
+<li>B. Return travel and accommodation</li>
+<li>C. Souvenirs bought at the market</li>
+<li>D. Local taxes paid by residents</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>33. The key marketing tool used to highlight attractions, accommodation, and prices of a tour is the:</div><ul class='options'>
+<li>A. Airline ticket</li>
+<li>B. Tour brochure</li>
+<li>C. Passport</li>
+<li>D. Hotel receipt</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>34. Travel insurance policies for tours commonly include coverage for:</div><ul class='options'>
+<li>A. Buying a new car</li>
+<li>B. Medical emergencies and lost baggage</li>
+<li>C. Daily grocery shopping</li>
+<li>D. Routine home maintenance</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>35. The advance time between initiating a tour and its departure date is known as:</div><ul class='options'>
+<li>A. Lag time</li>
+<li>B. Lead time</li>
+<li>C. Real time</li>
+<li>D. Overtime</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>36. A detailed itinerary that involves every activity, hotel contact, and meal detail is an:</div><ul class='options'>
+<li>A. Abstract itinerary</li>
+<li>B. Inclusive itinerary</li>
+<li>C. Preliminary itinerary</li>
+<li>D. Hidden itinerary</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>37. An itinerary that contains only essential items and is shorter is called an:</div><ul class='options'>
+<li>A. Inclusive itinerary</li>
+<li>B. Abstract itinerary</li>
+<li>C. Multi-page booklet</li>
+<li>D. Inclusive brochure</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>38. Costs that remain constant regardless of the number of participants in a tour are:</div><ul class='options'>
+<li>A. Variable costs</li>
+<li>B. Fixed costs</li>
+<li>C. Hidden costs</li>
+<li>D. Optional costs</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>39. Costs that change according to the number of tourists (like meals or entrance fees) are:</div><ul class='options'>
+<li>A. Fixed costs</li>
+<li>B. Variable costs</li>
+<li>C. Permanent costs</li>
+<li>D. Administrative costs</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>40. Meticulous planning and professionalism are considered ________ for preparing a successful package tour.</div><ul class='options'>
+<li>A. Optional</li>
+<li>B. Prerequisites</li>
+<li>C. Unnecessary</li>
+<li>D. Illegal</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>1. Which characteristic of tour products makes marketing particularly challenging for operators?</div><ul class='options'>
+<li>A. Tangibility</li>
+<li>B. Durability</li>
+<li>C. Intangibility, inseparability, and perishability</li>
+<li>D. Stability of quality</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>2. What is considered a critical factor for the long-term survival of tour operation businesses?</div><ul class='options'>
+<li>A. The number of aircraft owned</li>
+<li>B. Tourist satisfaction</li>
+<li>C. High ticket prices</li>
+<li>D. Minimal use of brochures</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>3. A tour brochure is fundamentally a publication that acts as a tool for:</div><ul class='options'>
+<li>A. Storing baggage</li>
+<li>B. Providing information and creating interest</li>
+<li>C. Hiring airline pilots</li>
+<li>D. Managing airport runways</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>4. One of the primary objectives of a tour brochure is to communicate ________ to potential clients.</div><ul class='options'>
+<li>A. The pilot’s personal life</li>
+<li>B. Terms and conditions related to the package</li>
+<li>C. The history of aircraft engines</li>
+<li>D. Local government election results</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>5. Which group is NOT listed as a target audience for tour brochures?</div><ul class='options'>
+<li>A. Potential travelers</li>
+<li>B. Retailers (travel agents)</li>
+<li>C. Suppliers (hotels)</li>
+<li>D. Aircraft manufacturers</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>D</div></div>
+<div class='question-card'><div class='question'>6. A brochure that covers all the packages or some packages of a similar nature offered by an operator is called a:</div><ul class='options'>
+<li>A. Dedicated brochure</li>
+<li>B. Comprehensive tour brochure</li>
+<li>C. Leaflet</li>
+<li>D. Single-page flyer</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>7. "Dedicated brochures" are specifically designed for:</div><ul class='options'>
+<li>A. Every single employee in the office</li>
+<li>B. Each specific package tour</li>
+<li>C. Only the hotel suppliers</li>
+<li>D. Only government officials</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>8. Why is a brochure considered a "tangible means" for a tour operator?</div><ul class='options'>
+<li>A. Because it can be used as a physical seat on a bus</li>
+<li>B. Because it provides a physical representation to help convince clients about an intangible product</li>
+<li>C. Because it is made of metal</li>
+<li>D. Because it is always given for free</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>9. For a retail travel agent, the tour brochure acts as the:</div><ul class='options'>
+<li>A. Only way to fly a plane</li>
+<li>B. Prime selling tool</li>
+<li>C. Government identity card</li>
+<li>D. Secondary source of confusion</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>10. What information should be included on the cover page of a tour brochure?</div><ul class='options'>
+<li>A. The pilot's home address</li>
+<li>B. The name of the package and the company logo</li>
+<li>C. A list of all competitors’ prices</li>
+<li>D. The technical specifications of the tour bus</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>11. Which quality of a good brochure refers to the information being believable and trustworthy?</div><ul class='options'>
+<li>A. Attractiveness</li>
+<li>B. Uniqueness</li>
+<li>C. Credible</li>
+<li>D. Layout</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>12. The first step in the brochure design process is:</div><ul class='options'>
+<li>A. Finalizing the front cover</li>
+<li>B. Understanding the target market and the product</li>
+<li>C. Printing 1,000 copies</li>
+<li>D. Hiring a tour manager</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>13. Market segmentation is defined as dividing a market into:</div><ul class='options'>
+<li>A. Completely random individuals</li>
+<li>B. Homogenous groups of customers</li>
+<li>C. Different countries only</li>
+<li>D. Different age groups only</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>14. Dividing a market based on countries, states, cities, or urban/rural spaces is called:</div><ul class='options'>
+<li>A. Demographic segmentation</li>
+<li>B. Psychographic segmentation</li>
+<li>C. Geographic segmentation</li>
+<li>D. Behavioral segmentation</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>15. Which segmentation base includes age, gender, occupation, and family size?</div><ul class='options'>
+<li>A. Geographic</li>
+<li>B. Demographic</li>
+<li>C. Psychographic</li>
+<li>D. Climatic</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>16. Psychographic segmentation is based on dividing markets in terms of:</div><ul class='options'>
+<li>A. Postal codes</li>
+<li>B. Lifestyle, personality, values, and beliefs</li>
+<li>C. Only the height of the tourists</li>
+<li>D. The number of children in a family</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>17. For a "niche" tour operator, the target market is usually ________ compared to mass operators.</div><ul class='options'>
+<li>A. Larger</li>
+<li>B. Smaller and more specific</li>
+<li>C. Exactly the same size</li>
+<li>D. Infinite</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>18. The sequential process of tourist purchase decision-making begins with:</div><ul class='options'>
+<li>A. Information search</li>
+<li>B. Need recognition</li>
+<li>C. Buying decision</li>
+<li>D. Act of purchase</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>19. In the buying behavior process, what follows "Information search"?</div><ul class='options'>
+<li>A. Product consumption</li>
+<li>B. Formation of alternatives</li>
+<li>C. Evaluation of tour experience</li>
+<li>D. Need recognition</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>20. Which factor is described as the "most important" for a tourist in buying decision-making?</div><ul class='options'>
+<li>A. Cultural factors</li>
+<li>B. Social factors</li>
+<li>C. Personal factors</li>
+<li>D. Environmental factors</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>21. Social factors influencing tourist behavior primarily include:</div><ul class='options'>
+<li>A. Only the individual's personality</li>
+<li>B. Reference groups, family, and peer groups</li>
+<li>C. The type of paper used in the brochure</li>
+<li>D. The price of fuel</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>22. Psychological factors that determine tourist buying behavior include perception, motivation, and:</div><ul class='options'>
+<li>A. Family size</li>
+<li>B. Attitudes and beliefs</li>
+<li>C. Postal address</li>
+<li>D. Passport color</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>23. Decisions regarding tour products are often difficult because the products are:</div><ul class='options'>
+<li>A. Very cheap and easy to buy</li>
+<li>B. Expensive and time-consuming</li>
+<li>C. Purchased every single day</li>
+<li>D. Tangible and easy to test</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>24. The term "Lead time" in tour operations refers to:</div><ul class='options'>
+<li>A. The time it takes to drive to the airport</li>
+<li>B. The advance time between initiating a tour and its departure date</li>
+<li>C. The time spent sleeping in a hotel</li>
+<li>D. The speed of the tour guide's speech</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>25. Which type of risk involves the image of the destination and the tourist’s personality perception?</div><ul class='options'>
+<li>A. Health risk</li>
+<li>B. Social risk</li>
+<li>C. Financial risk</li>
+<li>D. Physical risk</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>26. According to Gunn (1988), which level of image is developed through the influence of promotions by marketers?</div><ul class='options'>
+<li>A. Organic image</li>
+<li>B. Induced image</li>
+<li>C. Natural image</li>
+<li>D. Accidental image</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>27. "Organic image" is developed through:</div><ul class='options'>
+<li>A. Watching a TV advertisement for a tour</li>
+<li>B. An individual’s daily assimilation of information (e.g., school readings, mass media)</li>
+<li>C. Reading a tour operator's brochure</li>
+<li>D. Listening to a sales presentation</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>28. Branding in tour operations attempts to convey attributes, benefits, and:</div><ul class='options'>
+<li>A. The operator's home address</li>
+<li>B. Quality of service and values</li>
+<li>C. Only the lowest possible price</li>
+<li>D. The name of the bus manufacturer</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>29. The positioning strategy of "niche" operators is focused on:</div><ul class='options'>
+<li>A. Mass-market appeal to everyone</li>
+<li>B. Special interest products and experiential images</li>
+<li>C. Reducing prices to the absolute minimum</li>
+<li>D. Using only one-color brochures</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>30. Promotion in the marketing mix is the communication undertaken to:</div><ul class='options'>
+<li>A. Build more hotel rooms</li>
+<li>B. Influence consumer attitude and behavior</li>
+<li>C. Increase the speed of the bus</li>
+<li>D. Lower the cost of airplane fuel</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>31. What is a "Fam tour" (familiarization tour)?</div><ul class='options'>
+<li>A. A tour only for family members of the operator</li>
+<li>B. A tool to familiarize stakeholders (like agents or journalists) with products to promote them</li>
+<li>C. A tour that lasts for exactly one hour</li>
+<li>D. A mandatory tour for all local residents</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>32. Fam tours are often organized for which group to encourage positive media coverage?</div><ul class='options'>
+<li>A. Hotel cleaning staff</li>
+<li>B. Journalists, travel writers, and bloggers</li>
+<li>C. Local farmers</li>
+<li>D. Bus mechanics</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>33. Which media is NOT listed as being used for advertisements by tour operators today?</div><ul class='options'>
+<li>A. Social media</li>
+<li>B. Mobile apps</li>
+<li>C. Teletype machines</li>
+<li>D. Television & Radio</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>34. Advertising agencies are often engaged by tour operators to carry out:</div><ul class='options'>
+<li>A. Driving the tour buses</li>
+<li>B. Creative planning and media space contracting</li>
+<li>C. Cooking meals for the tourists</li>
+<li>D. Cleaning the hotel rooms</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>35. A "one-level distribution system" means the tour operator sells:</div><ul class='options'>
+<li>A. Only to wholesalers</li>
+<li>B. Directly to the tourist</li>
+<li>C. Only to the government</li>
+<li>D. Through three different agents</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>36. In a distribution system, the retail travel agent’s main roles are providing knowledge and:</div><ul class='options'>
+<li>A. Manufacturing the buses</li>
+<li>B. Persuading the customer to buy</li>
+<li>C. Setting international aviation laws</li>
+<li>D. Operating the airline's GDS</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>37. "Word of mouth" is significant in tour marketing because of the product's:</div><ul class='options'>
+<li>A. High visibility</li>
+<li>B. Intangibility and dependence on quality service</li>
+<li>C. Low price</li>
+<li>D. Tangible nature</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>38. Which of the following is a "Personal factor" influencing purchase decisions?</div><ul class='options'>
+<li>A. Subculture</li>
+<li>B. Reference groups</li>
+<li>C. Occupation and economic circumstances</li>
+<li>D. Motivation</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>39. The "Formation of alternatives" stage in buying behavior involves:</div><ul class='options'>
+<li>A. Buying the first ticket seen</li>
+<li>B. Identifying different options to meet the recognized need</li>
+<li>C. Returning home from the tour</li>
+<li>D. Complaining about a hotel</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>40. A tour brochure helps to maintain ________ while undertaking sales presentations.</div><ul class='options'>
+<li>A. The speed of the plane</li>
+<li>B. Uniformity of details</li>
+<li>C. The temperature of the room</li>
+<li>D. The price of souvenirs</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>1. The identification of various activities to be carried out to complete an assigned task is known as:</div><ul class='options'>
+<li>A. Market research</li>
+<li>B. Work scheduling</li>
+<li>C. Post-tour analysis</li>
+<li>D. Itinerary design</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>2. In pre-tour administration, periodic reviews of tasks are typically conducted at which intervals?</div><ul class='options'>
+<li>A. 10, 20, and 30 days</li>
+<li>B. 30, 60, and 90 days prior to departure</li>
+<li>C. Every week for one year</li>
+<li>D. Only on the day of departure</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>3. Which task immediately follows the marketing phase in the tour packaging process?</div><ul class='options'>
+<li>A. Financial auditing</li>
+<li>B. Handling enquiries</li>
+<li>C. Hiring tour guides</li>
+<li>D. Booking the flight</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>4. When handling enquiries, staff should ask potential customers whether they require:</div><ul class='options'>
+<li>A. Free airline tickets</li>
+<li>B. Hard or soft copies of brochures</li>
+<li>C. A private limousine</li>
+<li>D. A meeting with the airline pilot</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>5. What should staff handling queries be thorough in respect of?</div><ul class='options'>
+<li>A. The company's stock prices</li>
+<li>B. The specific tour and its details</li>
+<li>C. The history of aircraft engines</li>
+<li>D. Local agricultural policies</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>6. Which document should include the rules of cancellations and due dates for payments?</div><ul class='options'>
+<li>A. The tour map</li>
+<li>B. The invoice</li>
+<li>C. The baggage tag</li>
+<li>D. The flight manifest</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>7. Confirming hotel rooms and flight seats is part of which administrative stage?</div><ul class='options'>
+<li>A. Market research</li>
+<li>B. Reserving supplier services</li>
+<li>C. Post-tour analysis</li>
+<li>D. Designing brochures</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>8. By what time should the final rooming list for a tour typically be finalized?</div><ul class='options'>
+<li>A. 1 day in advance</li>
+<li>B. 7 days in advance</li>
+<li>C. 30 days in advance</li>
+<li>D. 90 days in advance</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>C</div></div>
+<div class='question-card'><div class='question'>9. Which system is primarily used for reserving and booking services with suppliers like airlines?</div><ul class='options'>
+<li>A. Social media apps</li>
+<li>B. Global Distribution Systems (GDS)</li>
+<li>C. Public radio</li>
+<li>D. Manual telegrams</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>10. Which travel document acts as an essential proof of identity and citizenship for international travel?</div><ul class='options'>
+<li>A. Hotel voucher</li>
+<li>B. Passport</li>
+<li>C. Business card</li>
+<li>D. Library card</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>11. A permission granted by a country to a foreigner to enter its territory for a specific period is a:</div><ul class='options'>
+<li>A. Manifest</li>
+<li>B. Visa</li>
+<li>C. Itinerary</li>
+<li>D. Receipt</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>12. Which document is necessary for entering certain countries to ensure safety from specific diseases?</div><ul class='options'>
+<li>A. Travel insurance</li>
+<li>B. Health/vaccination certificate</li>
+<li>C. Shopping list</li>
+<li>D. Driver’s license</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>13. The primary purpose of hotel vouchers is to allow tourists to:</div><ul class='options'>
+<li>A. Enter the aircraft</li>
+<li>B. Receive the services they have booked at the hotel</li>
+<li>C. Get a discount at local shops</li>
+<li>D. Identify their luggage</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>14. Which document contains a complete list of all passengers on a particular flight or tour?</div><ul class='options'>
+<li>A. Rooming list</li>
+<li>B. Passenger manifest</li>
+<li>C. Baggage tag</li>
+<li>D. Travel tip sheet</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>15. What is the specific purpose of a "Tour Manager Briefing"?</div><ul class='options'>
+<li>A. To sell souvenirs to the manager</li>
+<li>B. To communicate all arrangements and tour details to the manager</li>
+<li>C. To train the manager how to fly a plane</li>
+<li>D. To discuss the manager's personal salary only</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>16. During the briefing, which materials should be provided to the tour manager?</div><ul class='options'>
+<li>A. Flight manifest, rooming list, and vouchers</li>
+<li>B. A collection of local newspapers</li>
+<li>C. Empty stationery boxes only</li>
+<li>D. The manager's personal family photos</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>A</div></div>
+<div class='question-card'><div class='question'>17. Why is it useful for a tour manager to read tour questionnaires filled in by participants?</div><ul class='options'>
+<li>A. To learn about the participants' political views</li>
+<li>B. To understand the group’s nature, needs, and interests</li>
+<li>C. To find out the participants' home addresses for personal visits</li>
+<li>D. To correct the participants' grammar</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>18. What is the primary objective of a "Pre-departure meeting"?</div><ul class='options'>
+<li>A. To cancel the tour at the last minute</li>
+<li>B. To orient tourists to the whole tour and its proceedings</li>
+<li>C. To have a formal dinner with government officials</li>
+<li>D. To allow tourists to drive the tour bus</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>19. Which of the following is usually handed over to tourists during the pre-departure meeting?</div><ul class='options'>
+<li>A. Their airline pilot’s license</li>
+<li>B. Their travel documents (tickets, etc.)</li>
+<li>C. The keys to the hotel building</li>
+<li>D. A map of the entire world</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>20. If balance payments are pending due to currency variations, when are they typically collected?</div><ul class='options'>
+<li>A. After the tour is over</li>
+<li>B. During the pre-departure meeting</li>
+<li>C. At the destination airport baggage claim</li>
+<li>D. Never</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>21. Complimentary items such as tour bags or caps are usually provided at which stage?</div><ul class='options'>
+<li>A. Market research stage</li>
+<li>B. Pre-departure meeting</li>
+<li>C. When the tour returns home</li>
+<li>D. During the invoice preparation</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>22. How many minutes prior to the trip commencement should a tour coach ideally arrive?</div><ul class='options'>
+<li>A. 5 minutes</li>
+<li>B. 15 minutes</li>
+<li>C. 60 minutes</li>
+<li>D. 2 hours</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>23. A tour manager should find out airport check-in procedures in advance to:</div><ul class='options'>
+<li>A. Teach the airline staff how to work</li>
+<li>B. Help tour members at the departure point effectively</li>
+<li>C. Change the flight path</li>
+<li>D. Buy a plane for the company</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>24. Upon reaching the hotel, what is the tour manager's first priority?</div><ul class='options'>
+<li>A. To go to the swimming pool</li>
+<li>B. To verify the rooming list and provide booking details for registration</li>
+<li>C. To order a large meal for themselves</li>
+<li>D. To clean the hotel rooms</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>25. If a participant has excessive luggage that exceeds flight restrictions, the tour manager should:</div><ul class='options'>
+<li>A. Buy the luggage from the tourist</li>
+<li>B. Warn them about the restrictions and potential fees</li>
+<li>C. Leave the tourist at the airport</li>
+<li>D. Throw the luggage away</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>26. Which tour manager role involves interpreting various attractions and sites for the group?</div><ul class='options'>
+<li>A. Administrator</li>
+<li>B. Interpreter</li>
+<li>C. Motivator</li>
+<li>D. Accountant</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>27. As an "Entertainer," the tour manager helps to:</div><ul class='options'>
+<li>A. Calculate the tour's profit</li>
+<li>B. Energize the tour and reduce "boring time"</li>
+<li>C. Print the travel visas</li>
+<li>D. Negotiate hotel contracts</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>28. A tour manager acting as a "Motivator" seeks to:</div><ul class='options'>
+<li>A. Force tourists to stay in their rooms</li>
+<li>B. Inspire tourists to visit and learn about new places</li>
+<li>C. Discourage tourists from shopping</li>
+<li>D. Lower the speed of the tour bus</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>29. Which role involves listening to participants' issues and providing assistance?</div><ul class='options'>
+<li>A. Secretary</li>
+<li>B. Complaint handler</li>
+<li>C. Ground handler</li>
+<li>D. Pilot</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>30. What is a key "Do" regarding a tour manager's personal appearance?</div><ul class='options'>
+<li>A. Wear pajamas to work</li>
+<li>B. Dress neatly and consider one's appearance</li>
+<li>C. Never wear a uniform</li>
+<li>D. Wear a mask at all times</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>31. A tour manager should NEVER:</div><ul class='options'>
+<li>A. Smile at tourists</li>
+<li>B. Discuss personal problems with tour members</li>
+<li>C. Arrive early at the airport</li>
+<li>D. Use a map</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>32. What quality is needed for a tour manager to coordinate crisis management activities?</div><ul class='options'>
+<li>A. Fearfulness</li>
+<li>B. Leadership and decisiveness</li>
+<li>C. Laziness</li>
+<li>D. Lack of communication</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>33. During airport procedures, the tour manager should inform members about:</div><ul class='options'>
+<li>A. The airline's annual revenue</li>
+<li>B. Dutiable items and security check procedures</li>
+<li>C. The personal life of the airport manager</li>
+<li>D. How to build a suitcase</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>34. Identifying the right suppliers to deliver quality services is primarily the task of:</div><ul class='options'>
+<li>A. The individual tourist</li>
+<li>B. The tour operator</li>
+<li>C. The local police</li>
+<li>D. The hotel cleaning staff</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>35. If an emergency occurs during a tour, it is recommended to:</div><ul class='options'>
+<li>A. Hide the information from everyone</li>
+<li>B. Involve tour participants in the decision-making process</li>
+<li>C. Cancel the entire company immediately</li>
+<li>D. Let the tourists handle it themselves without help</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>36. "90-day, 60-day, and 30-day reviews" are part of which process?</div><ul class='options'>
+<li>A. Itinerary preparation</li>
+<li>B. Work scheduling and administration</li>
+<li>C. Post-tour profit calculation</li>
+<li>D. Choosing a company name</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>37. Which document lists the exact names of participants accommodated in specific hotel rooms?</div><ul class='options'>
+<li>A. Passenger manifest</li>
+<li>B. Rooming list</li>
+<li>C. Departure bulletin</li>
+<li>D. Post-tour report</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>38. What should a tour manager do if they do not know the answer to a tourist's question?</div><ul class='options'>
+<li>A. Make up a fake answer</li>
+<li>B. Honestly admit they do not know</li>
+<li>C. Ignore the tourist</li>
+<li>D. Start a quarrel</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>39. Detailed information about jetlag and climate-related issues at the destination should be provided:</div><ul class='options'>
+<li>A. After the tour is finished</li>
+<li>B. During the departure procedure at the airport</li>
+<li>C. Only if the tourist asks 10 times</li>
+<li>D. By the hotel waiter</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>40. Booking forms are filed for ________ and then stored after the tour booking stage.</div><ul class='options'>
+<li>A. Cleaning</li>
+<li>B. Audit</li>
+<li>C. Trash</li>
+<li>D. Decoration</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>1. Upon arrival at the destination airport, what is the first priority for the tour manager regarding the group?</div><ul class='options'>
+<li>A. Taking them to the duty-free shop</li>
+<li>B. Ensuring every member easily clears immigration</li>
+<li>C. Finding a restaurant for lunch</li>
+<li>D. Collecting the tour's profit</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>2. Which documents should tour members have ready for verification and stamping at immigration?</div><ul class='options'>
+<li>A. Only their credit cards</li>
+<li>B. Passports, disembarkation cards, and visas</li>
+<li>C. Only the hotel voucher</li>
+<li>D. The tour brochure</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>3. If there are many conveyor belts at the airport, the tour manager's role is to:</div><ul class='options'>
+<li>A. Carry all the luggage themselves</li>
+<li>B. Help members locate the exact belt for their baggage</li>
+<li>C. Leave the members to find it alone</li>
+<li>D. Call the airline to change the belt number</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>4. Duty-free shopping at the arrival point should be managed so that it:</div><ul class='options'>
+<li>A. Lasts for at least three hours</li>
+<li>B. Does not delay the tour's progress</li>
+<li>C. Is avoided completely</li>
+<li>D. Is the only activity of the first day</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>5. After baggage collection, where should the tour manager ask the group to assemble?</div><ul class='options'>
+<li>A. In the middle of a crowded walkway</li>
+<li>B. In a designated, non-crowded area to wait for the transfer</li>
+<li>C. Outside in the parking lot individually</li>
+<li>D. In the pilot's lounge</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>6. Who should the tour manager contact immediately upon arrival to inform them of the group's presence?</div><ul class='options'>
+<li>A. The local police</li>
+<li>B. The ground handling agent or overseas representative</li>
+<li>C. The bus manufacturer</li>
+<li>D. Their own family members</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>7. In a single-center tour, which activity usually occurs immediately after hotel check-in?</div><ul class='options'>
+<li>A. Return transfer to the airport</li>
+<li>B. Day activities or orientation</li>
+<li>C. Post-tour profit calculation</li>
+<li>D. Final night dinner</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>8. Which of the following is considered a common difficulty related to the itinerary?</div><ul class='options'>
+<li>A. Having too much free time</li>
+<li>B. A poorly planned itinerary</li>
+<li>C. Too many photos taken by tourists</li>
+<li>D. Beautiful weather conditions</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>9. How should a tour manager handle a situation where a flight is overbooked?</div><ul class='options'>
+<li>A. Cancel the whole company</li>
+<li>B. Assist members and communicate with the tour operator for solutions</li>
+<li>C. Hide the information from the tourists</li>
+<li>D. Force the airline to build a new plane</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>10. If a tour member's luggage is lost, the tour manager should:</div><ul class='options'>
+<li>A. Ignore the member's complaint</li>
+<li>B. Take immediate steps with the carrier to try and retrieve it</li>
+<li>C. Tell the member to buy all new clothes themselves</li>
+<li>D. Leave the luggage at the airport forever</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>11. What is the recommended attitude for a tour manager when dealing with difficult tour members?</div><ul class='options'>
+<li>A. To be aggressive and loud</li>
+<li>B. To be diplomatic and tactful without hurting feelings</li>
+<li>C. To exclude them from the group immediately</li>
+<li>D. To argue with them in front of others</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>12. In the event of strikes or roadblocks, the tour manager's role is to:</div><ul class='options'>
+<li>A. Join the strike</li>
+<li>B. Make tourists understand the situation and adapt the plan</li>
+<li>C. Abandon the group</li>
+<li>D. Demand the government stop the strike immediately</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>13. When a tour member goes missing, the tour manager should search for them and may inform:</div><ul class='options'>
+<li>A. The local supermarket</li>
+<li>B. The police authorities</li>
+<li>C. The museum curator</li>
+<li>D. No one</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>14. What should a tour manager always carry to handle minor health issues?</div><ul class='options'>
+<li>A. A surgical kit</li>
+<li>B. A stock of common medicines</li>
+<li>C. Nothing</li>
+<li>D. A book on medical history</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>15. If a participant gets seriously ill, who ensures they consult a doctor or get hospitalized?</div><ul class='options'>
+<li>A. The other tourists</li>
+<li>B. The tour manager or overseas representative</li>
+<li>C. The airline pilot</li>
+<li>D. The bus driver</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>16. "Culture shock" can be mitigated if the tour manager:</div><ul class='options'>
+<li>A. Never talks about local culture</li>
+<li>B. Prepares the tourists with information before the tour commences</li>
+<li>C. Forces tourists to stay in the hotel</li>
+<li>D. Only visits familiar fast-food chains</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>17. Which of the following is categorized as a major emergency on a tour?</div><ul class='options'>
+<li>A. A small rain shower</li>
+<li>B. Natural disasters or terrorist activities</li>
+<li>C. A tourist buying too many souvenirs</li>
+<li>D. The hotel being too clean</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>18. In a crisis situation, it is essential for the tour manager to show:</div><ul class='options'>
+<li>A. Panic and fear</li>
+<li>B. Character and leadership qualities</li>
+<li>C. Complete silence</li>
+<li>D. Indifference</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>19. When a problem is beyond the tour manager's control, they must maintain a:</div><ul class='options'>
+<li>A. High-stress level</li>
+<li>B. Calm demeanor</li>
+<li>C. Loud voice</li>
+<li>D. Sense of humor only</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>20. What is the first post-tour activity for a tour manager after returning?</div><ul class='options'>
+<li>A. Going on another holiday</li>
+<li>B. Reporting back on everything that happened and handing over records</li>
+<li>C. Deleting all tour emails</li>
+<li>D. Resigning from the job</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>21. Post-tour, the tour operator must immediately:</div><ul class='options'>
+<li>A. Increase all future prices</li>
+<li>B. Pay all outstanding bills to suppliers</li>
+<li>C. Fire the tour guide</li>
+<li>D. Close the office</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>22. Why are tourist feedback forms collected and analyzed after a tour?</div><ul class='options'>
+<li>A. To sell the information to other companies</li>
+<li>B. To evaluate effectiveness and take future precautions</li>
+<li>C. To use as office decoration</li>
+<li>D. To find out the tourists' private secrets</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>23. Which activity involves the tour manager describing tour events to the operator to evaluate success?</div><ul class='options'>
+<li>A. Market research</li>
+<li>B. Debriefing</li>
+<li>C. Advertising</li>
+<li>D. Booking</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>24. Which overseas representative specifically acts like a host to assist tourists on holiday?</div><ul class='options'>
+<li>A. Transfer representative</li>
+<li>B. Tourist/customer service representative</li>
+<li>C. Security guard</li>
+<li>D. Accountant</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>25. A "Children’s representative" is responsible for:</div><ul class='options'>
+<li>A. Managing the tour's budget</li>
+<li>B. Offering dedicated childcare services</li>
+<li>C. Driving the tour bus</li>
+<li>D. Cooking for the adults</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>26. Who provides different entertainment programs at a resort?</div><ul class='options'>
+<li>A. Transfer representative</li>
+<li>B. Entertainment representative</li>
+<li>C. Immigration officer</li>
+<li>D. Pilot</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>27. A "Transfer representative" primarily:</div><ul class='options'>
+<li>A. Sells hotel rooms</li>
+<li>B. Accompanies tourists during transfers (e.g., airport to hotel)</li>
+<li>C. Translates historical books</li>
+<li>D. Manages the airline's fuel</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>28. Club Med's "Gentils Organisateurs" (GOs) are examples of:</div><ul class='options'>
+<li>A. Government guides</li>
+<li>B. Club representatives</li>
+<li>C. Freelance pilots</li>
+<li>D. Taxi drivers</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>29. A "Mobile resort representative" or courier is similar to a guide because they:</div><ul class='options'>
+<li>A. Only stay in the office</li>
+<li>B. Accompany tourists and provide commentary during trips</li>
+<li>C. Only work at the airport</li>
+<li>D. Do not speak to tourists</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>30. What is the primary goal of "Interpretation" in tourism?</div><ul class='options'>
+<li>A. To increase the price of the tour</li>
+<li>B. To educate tourists about natural, cultural, or historic values</li>
+<li>C. To make the journey as fast as possible</li>
+<li>D. To ignore the environment</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>31. Interpretation is defined as a form of education that concentrates on:</div><ul class='options'>
+<li>A. Only factual dates and numbers</li>
+<li>B. Meanings and relationships using first-hand experience</li>
+<li>C. Only the price of food</li>
+<li>D. The technical specs of the bus engine</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>32. One benefit of interpretation is that it can inspire visitors to:</div><ul class='options'>
+<li>A. Act in inappropriate ways</li>
+<li>B. Act in more appropriate ways regarding conservation</li>
+<li>C. Leave the tour early</li>
+<li>D. Spend all their money in one shop</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>33. How does interpretation help reduce pressure on sensitive sites?</div><ul class='options'>
+<li>A. By forcing everyone to visit at the same time</li>
+<li>B. By encouraging visitors to move to less sensitive or crowded places</li>
+<li>C. By closing the site forever</li>
+<li>D. By increasing the speed of the tour bus</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>34. A tour guide is best defined as a:</div><ul class='options'>
+<li>A. Home-based office worker</li>
+<li>B. Destination-based professional who accompanies tourists on trips</li>
+<li>C. Pilot who stays in the cockpit</li>
+<li>D. Person who only cleans hotel rooms</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>35. According to WFTGA, a tour guide should guide visitors in:</div><ul class='options'>
+<li>A. Only their own native language</li>
+<li>B. The language of the visitors' choice</li>
+<li>C. Silence</li>
+<li>D. A secret code</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>36. A tour guide acting as a "Public Relations (PR) representative" is also known as a:</div><ul class='options'>
+<li>A. Logistics manager</li>
+<li>B. Cultural ambassador</li>
+<li>C. Financial auditor</li>
+<li>D. Police officer</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>37. Which guide role involves promoting eco-friendly practices and environmental awareness?</div><ul class='options'>
+<li>A. Entertainer</li>
+<li>B. Sustainability confirmer</li>
+<li>C. Secretary</li>
+<li>D. Cashier</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>38. Which quality is highly needed for a tour guide to create interest and enliven activities?</div><ul class='options'>
+<li>A. Laziness</li>
+<li>B. Enthusiasm and passion</li>
+<li>C. Arrogance</li>
+<li>D. Lack of communication</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>39. A "Step-on guide" is one who:</div><ul class='options'>
+<li>A. Lives in the tour bus permanently</li>
+<li>B. Joins a coach tour as per demand to perform interpretation</li>
+<li>C. Is the manager of the travel agency</li>
+<li>D. Only works in his own home</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+<div class='question-card'><div class='question'>40. A "Specialist tour guide" focuses on specific fields such as:</div><ul class='options'>
+<li>A. General walking only</li>
+<li>B. Botany, architecture, or marine life</li>
+<li>C. Randomly picking up trash</li>
+<li>D. Watching television</li>
+</ul><button class='btn-show' onclick='toggleAnswer(this)'>Hiện đáp án</button><div class='answer'>B</div></div>
+</body></html>
+
