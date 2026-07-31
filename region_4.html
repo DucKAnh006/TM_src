@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vùng 4: Duyên hải Nam Trung Bộ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --primary: #4f46e5;
+            --accent-1: #10b981; /* Green */
+            --accent-2: #f59e0b; /* Yellow */
+            --accent-3: #ec4899; /* Pink */
+            --accent-4: #8b5cf6; /* Purple */
+            --accent-5: #3b82f6; /* Blue */
+            --accent-6: #ef4444; /* Red */
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .header::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url('data:image/svg+xml;utf8,<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="40" stroke="rgba(255,255,255,0.05)" stroke-width="2" fill="none"/></svg>') repeat;
+            opacity: 0.5;
+            z-index: 1;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .header h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.8rem;
+            margin: 0 0 10px 0;
+            font-weight: 800;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            color: #cbd5e1;
+            margin: 0;
+        }
+
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 24px;
+            border-radius: 9999px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(4px);
+        }
+
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: -40px auto 40px auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .grid-cards {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .info-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+            border-left: 6px solid;
+            transition: transform 0.2s ease;
+        }
+
+        .info-card:hover {
+            transform: translateX(5px);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .card-icon {
+            font-size: 1.8rem;
+            margin-right: 12px;
+        }
+
+        .card-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin: 0;
+            color: var(--text-main);
+        }
+
+        .card-content {
+            font-size: 1.05rem;
+            color: #334155;
+            margin: 0;
+        }
+
+        .c-natural { border-color: var(--accent-1); }
+        .c-cultural { border-color: var(--accent-2); }
+        .c-examples { border-color: var(--primary); }
+        .c-types { border-color: var(--accent-4); }
+        .c-unesco { border-color: var(--accent-5); }
+        .c-specialties { border-color: var(--accent-6); }
+        .c-festivals { border-color: var(--accent-3); }
+
+        .c-natural .card-title { color: var(--accent-1); }
+        .c-cultural .card-title { color: var(--accent-2); }
+        .c-examples .card-title { color: var(--primary); }
+        .c-types .card-title { color: var(--accent-4); }
+        .c-unesco .card-title { color: var(--accent-5); }
+        .c-specialties .card-title { color: var(--accent-6); }
+        .c-festivals .card-title { color: var(--accent-3); }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--text-muted);
+            border-top: 1px solid #e2e8f0;
+            margin-top: 40px;
+        }
+        
+        .pagination {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            padding: 0 10px;
+        }
+        
+        .btn-page {
+            padding: 12px 20px;
+            background: white;
+            color: var(--primary);
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            transition: all 0.2s;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .btn-page:hover {
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            background: #f8fafc;
+            transform: translateY(-2px);
+        }
+
+        /* Styling cho list */
+        ul {
+            list-style-type: none; 
+            padding-left: 0;
+        }
+        ul li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 8px;
+        }
+        ul li::before {
+            content: "•";
+            color: var(--primary);
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1em;
+            position: absolute;
+            left: 0;
+        }
+
+        @media (max-width: 600px) {
+            .header h1 { font-size: 2rem; }
+            .header { padding: 40px 15px; }
+            .nav-buttons { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1>Duyên hải Nam Trung Bộ</h1>
+            <p>Khám phá tài nguyên du lịch vùng</p>
+            <div class="nav-buttons">
+                <a href="tourism_resources.html" class="btn btn-outline">&#11013; Trở về Menu Các Vùng</a>
+                <a href="index.html" class="btn btn-outline">🏠 Trang chủ</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="grid-cards">
+            <!-- Tự nhiên -->
+            <div class="info-card c-natural">
+                <div class="card-header">
+                    <span class="card-icon">🌿</span>
+                    <h2 class="card-title">Tài Nguyên Tự Nhiên</h2>
+                </div>
+                <div class="card-content"><ul style='margin-top: 5px; padding-left: 20px;'><li>Bờ biển đẹp nhất cả nước: Các vịnh biển kín gió, bãi cát dài trắng mịn, nước biển trong xanh (Vịnh Nha Trang, Vịnh Cam Ranh, Lăng Cô).</li><li>Hệ sinh thái biển: Nhiều rạn san hô rực rỡ và các cụm đảo ven bờ hoang sơ, đẹp mắt.</li><li>Khí hậu: Khí hậu nhiệt đới nắng ấm quanh năm, ít chịu ảnh hưởng của bão hơn so với miền Bắc, rất phù hợp cho du lịch biển.</li></ul></div>
+            </div>
+
+            <!-- Nhân văn -->
+            <div class="info-card c-cultural">
+                <div class="card-header">
+                    <span class="card-icon">🏛️</span>
+                    <h2 class="card-title">Tài Nguyên Nhân Văn</h2>
+                </div>
+                <div class="card-content"><ul style='margin-top: 5px; padding-left: 20px;'><li>Văn hóa Chăm Pa: Lưu giữ hệ thống đền tháp Chăm Pa cổ đại tinh xảo và các nét văn hóa đặc sắc của người Chăm.</li><li>Cảng thị cổ: Những thương cảng cổ kính từng là nơi giao thương quốc tế sầm uất (Hội An).</li><li>Văn hóa biển đảo: Cuộc sống, lễ hội và tín ngưỡng gắn liền chặt chẽ với ngư nghiệp và biển cả.</li></ul></div>
+            </div>
+
+            <!-- Ví dụ -->
+            <div class="info-card c-examples">
+                <div class="card-header">
+                    <span class="card-icon">📍</span>
+                    <h2 class="card-title">Ví Dụ Nổi Bật</h2>
+                </div>
+                <div class="card-content"><ul style='margin-top: 5px; padding-left: 20px;'><li>Thành phố biển Nha Trang (Khánh Hòa) - Hòn ngọc của biển Đông.</li><li>Đà Nẵng - Thành phố đáng sống (Bán đảo Sơn Trà, Bà Nà Hills, Ngũ Hành Sơn).</li><li>Phố cổ Hội An & Thánh địa Mỹ Sơn (Quảng Nam).</li><li>Mũi Né (Bình Thuận) - Thủ phủ resort, đồi cát bay.</li><li>Kỳ Co - Eo Gió (Quy Nhơn, Bình Định).</li></ul></div>
+            </div>
+
+            <!-- Loại hình du lịch -->
+            <div class="info-card c-types">
+                <div class="card-header">
+                    <span class="card-icon">🏕️</span>
+                    <h2 class="card-title">Loại Hình Du Lịch Chính</h2>
+                </div>
+                <div class="card-content"><ul style='margin-top: 5px; padding-left: 20px;'><li>Nghỉ dưỡng biển cao cấp (Resort đa dạng).</li><li>Thể thao dưới nước (lặn ngắm san hô, lướt ván diều, dù lượn).</li><li>Du lịch văn hóa - lịch sử (Tháp Chăm, Phố cổ).</li><li>Du lịch MICE và sự kiện quốc tế.</li></ul></div>
+            </div>
+
+            <!-- UNESCO -->
+            <div class="info-card c-unesco">
+                <div class="card-header">
+                    <span class="card-icon">👑</span>
+                    <h2 class="card-title">Di Sản UNESCO</h2>
+                </div>
+                <div class="card-content"><ul style='margin-top: 5px; padding-left: 20px;'><li>Di sản Văn hóa Thế giới: Phố cổ Hội An, Đền tháp Mỹ Sơn.</li><li>Di sản Phi vật thể: Nghệ thuật Bài chòi Trung Bộ.</li><li>Khu dự trữ sinh quyển thế giới: Cù Lao Chàm (Quảng Nam).</li></ul></div>
+            </div>
+
+            <!-- Đặc sản -->
+            <div class="info-card c-specialties">
+                <div class="card-header">
+                    <span class="card-icon">🍲</span>
+                    <h2 class="card-title">Đặc Sản Ẩm Thực</h2>
+                </div>
+                <div class="card-content"><ul style='margin-top: 5px; padding-left: 20px;'><li>Món sợi truyền thống: Mì Quảng, Cao lầu Hội An.</li><li>Món biển: Hải sản tươi sống, bún chả cá Quy Nhơn/Nha Trang, bánh canh chả cá.</li><li>Ăn vặt & Đặc sản khác: Nem nướng Nha Trang, bánh tráng cuốn thịt heo, cơm gà.</li></ul></div>
+            </div>
+
+            <!-- Lễ hội -->
+            <div class="info-card c-festivals">
+                <div class="card-header">
+                    <span class="card-icon">🏮</span>
+                    <h2 class="card-title">Lễ Hội Tiêu Biểu</h2>
+                </div>
+                <div class="card-content"><ul style='margin-top: 5px; padding-left: 20px;'><li>Lễ hội Katê của người Chăm - Lễ hội quan trọng nhất trong năm của đồng bào Chăm.</li><li>Lễ hội Tháp Bà Ponagar (Nha Trang) - Ghi nhớ công ơn Mẹ Xứ Sở.</li><li>Lễ hội Hoa đăng Hội An, Lễ hội pháo hoa quốc tế Đà Nẵng (DIFF).</li></ul></div>
+            </div>
+        </div>
+        
+        <div class="pagination">
+            <a href="region_3.html" class="btn-page">&larr; Vùng Trước</a>
+            <a href="region_5.html" class="btn-page">Vùng Tiếp Theo &rarr;</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Tạo bởi Hệ thống Trắc nghiệm & Ôn tập Kiến thức Du lịch</p>
+    </footer>
+</body>
+</html>
