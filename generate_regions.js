@@ -508,6 +508,38 @@ const generateHTML = (region) => {
             transform: translateY(-2px);
         }
 
+        .region-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px dashed #cbd5e1;
+        }
+
+        .chip {
+            padding: 8px 16px;
+            background: #e2e8f0;
+            color: #475569;
+            border-radius: 9999px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+
+        .chip:hover {
+            background: #cbd5e1;
+            color: #1e293b;
+        }
+
+        .chip.active {
+            background: var(--primary);
+            color: white;
+            box-shadow: 0 2px 4px rgba(79, 70, 229, 0.3);
+        }
+
         /* Styling cho list */
         ul {
             list-style-type: none; 
@@ -617,6 +649,17 @@ const generateHTML = (region) => {
         <div class="pagination">
             ${region.id > 1 ? `<a href="region_${region.id - 1}.html" class="btn-page">&larr; Vùng Trước</a>` : '<div></div>'}
             ${region.id < 7 ? `<a href="region_${region.id + 1}.html" class="btn-page">Vùng Tiếp Theo &rarr;</a>` : '<div></div>'}
+        </div>
+        
+        <div class="region-chips">
+            <span style="width: 100%; text-align: center; color: var(--text-muted); margin-bottom: 10px; font-weight: 600;">Chuyển nhanh đến vùng khác:</span>
+            <a href="region_1.html" class="chip ${region.id === 1 ? 'active' : ''}">1. TD&MN phía Bắc</a>
+            <a href="region_2.html" class="chip ${region.id === 2 ? 'active' : ''}">2. ĐB Sông Hồng</a>
+            <a href="region_3.html" class="chip ${region.id === 3 ? 'active' : ''}">3. Bắc Trung Bộ</a>
+            <a href="region_4.html" class="chip ${region.id === 4 ? 'active' : ''}">4. Nam Trung Bộ</a>
+            <a href="region_5.html" class="chip ${region.id === 5 ? 'active' : ''}">5. Tây Nguyên</a>
+            <a href="region_6.html" class="chip ${region.id === 6 ? 'active' : ''}">6. Đông Nam Bộ</a>
+            <a href="region_7.html" class="chip ${region.id === 7 ? 'active' : ''}">7. ĐB Sông Cửu Long</a>
         </div>
     </div>
 
