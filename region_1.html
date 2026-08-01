@@ -150,6 +150,10 @@
             margin: 0;
         }
 
+        .card-content strong {
+            color: #0f172a;
+        }
+
         .c-natural { border-color: var(--accent-1); }
         .c-cultural { border-color: var(--accent-2); }
         .c-examples { border-color: var(--primary); }
@@ -207,7 +211,6 @@
         ul li {
             position: relative;
             padding-left: 24px;
-            margin-bottom: 8px;
         }
         ul li::before {
             content: "•";
@@ -218,6 +221,7 @@
             margin-left: -1em;
             position: absolute;
             left: 0;
+            font-size: 1.2em;
         }
 
         @media (max-width: 600px) {
@@ -247,7 +251,7 @@
                     <span class="card-icon">🌿</span>
                     <h2 class="card-title">Tài Nguyên Tự Nhiên</h2>
                 </div>
-                <div class="card-content"><ul style='margin-top: 5px; padding-left: 20px;'><li>Địa hình: Đồi núi hiểm trở, nhiều dãy núi cao và đồ sộ nhất Việt Nam (tiêu biểu là dãy Hoàng Liên Sơn).</li><li>Khí hậu: Nhiệt đới gió mùa có một mùa đông lạnh giá, một số vùng núi cao như Sapa, Mẫu Sơn có thể có băng tuyết.</li><li>Cảnh quan: Sở hữu những thửa ruộng bậc thang kỳ vĩ, những cung đường đèo dốc uốn lượn (Tứ đại đỉnh đèo), và các thác nước lớn (Thác Bản Giốc).</li></ul></div>
+                <div class="card-content"><ul style='margin-top: 5px; padding-left: 20px;'><li style='margin-bottom: 12px;'><strong>Địa hình:</strong> Chủ yếu là đồi núi hiểm trở, chia cắt mạnh. Vùng này sở hữu nhiều dãy núi đồ sộ nhất Việt Nam, tiêu biểu là dãy Hoàng Liên Sơn, dãy Trường Sơn Bắc (phần đầu) và dãy Tây Côn Lĩnh.</li><li style='margin-bottom: 12px;'><strong>Khí hậu:</strong> Mang đặc trưng nhiệt đới gió mùa có một mùa đông lạnh giá nhất cả nước. Các đỉnh núi cao (như Sapa, Mẫu Sơn, Phia Oắc) thường xuyên xuất hiện băng tuyết vào mùa đông.</li><li style='margin-bottom: 12px;'><strong>Cảnh quan:</strong> Nổi bật với hệ thống ruộng bậc thang kỳ vĩ trải dài khắp các sườn đồi, những cung đường đèo dốc uốn lượn ngoạn mục (nổi tiếng với Tứ đại đỉnh đèo: Ô Quy Hồ, Mã Pí Lèng, Khau Phạ, Pha Đin), và các thác nước tự nhiên hoành tráng (thác Bản Giốc).</li></ul></div>
             </div>
 
             <!-- Nhân văn -->
@@ -256,7 +260,7 @@
                     <span class="card-icon">🏛️</span>
                     <h2 class="card-title">Tài Nguyên Nhân Văn</h2>
                 </div>
-                <div class="card-content"><ul style='margin-top: 5px; padding-left: 20px;'><li>Dân tộc: Là nơi sinh sống của hơn 30 dân tộc thiểu số (H'Mông, Dao, Tày, Thái, Mường...) với phong tục, trang phục và tập quán vô cùng đa dạng.</li><li>Lịch sử - Cách mạng: Vùng đất chứa đựng nhiều di tích lịch sử cách mạng hào hùng của dân tộc (Chiến trường Điện Biên Phủ, ATK Tân Trào).</li><li>Kiến trúc - Văn hóa: Nổi bật với các bản làng truyền thống, kiến trúc nhà sàn, nhà trình tường và các phiên chợ vùng cao rực rỡ sắc màu.</li></ul></div>
+                <div class="card-content"><ul style='margin-top: 5px; padding-left: 20px;'><li style='margin-bottom: 12px;'><strong>Dân tộc:</strong> Là địa bàn cư trú của hơn 30 dân tộc thiểu số anh em (H'Mông, Dao, Tày, Nùng, Thái, Mường...). Mỗi dân tộc giữ gìn trang phục, tiếng nói, và phong tục tập quán riêng biệt (như tục bắt vợ, tắm lá thuốc).</li><li style='margin-bottom: 12px;'><strong>Lịch sử - Cách mạng:</strong> Vùng đất thiêng liêng chứa đựng hệ thống di tích lịch sử cách mạng hào hùng như Quần thể di tích chiến trường Điện Biên Phủ, Khu di tích quốc gia đặc biệt Tân Trào (Tuyên Quang), ATK Định Hóa (Thái Nguyên).</li><li style='margin-bottom: 12px;'><strong>Kiến trúc - Văn hóa:</strong> Đặc trưng bởi kiến trúc bản làng truyền thống: nhà sàn của người Tày/Thái, nhà trình tường bằng đất của người Hà Nhì, cùng các phiên chợ vùng cao rực rỡ sắc màu thổ cẩm.</li></ul></div>
             </div>
 
             <!-- Ví dụ -->
@@ -265,7 +269,7 @@
                     <span class="card-icon">📍</span>
                     <h2 class="card-title">Ví Dụ Nổi Bật</h2>
                 </div>
-                <div class="card-content"><ul style='margin-top: 5px; padding-left: 20px;'><li>Thị xã Sapa (Lào Cai) - 'Thành phố trong sương' với đỉnh Fansipan.</li><li>Mù Cang Chải (Yên Bái) - Nổi tiếng với danh thắng ruộng bậc thang mùa lúa chín.</li><li>Cao nguyên đá Đồng Văn (Hà Giang) - Cực Bắc Tổ quốc với cột cờ Lũng Cú.</li><li>Thác Bản Giốc (Cao Bằng) - Thác nước tự nhiên lớn nhất khu vực Đông Nam Á.</li></ul></div>
+                <div class="card-content"><ul style='margin-top: 5px; padding-left: 20px;'><li style='margin-bottom: 12px;'><strong>Thị xã Sapa (Lào Cai):</strong> Được mệnh danh là 'Thành phố trong sương', thu hút du khách bởi đỉnh Fansipan (Nóc nhà Đông Dương cao 3.143m), bản Cát Cát, thung lũng Mường Hoa.</li><li style='margin-bottom: 12px;'><strong>Mù Cang Chải (Yên Bái):</strong> Điểm đến lừng danh với hàng ngàn hecta ruộng bậc thang nhuộm vàng mùa lúa chín, đặc biệt là đồi mâm xôi và đèo Khau Phạ.</li><li style='margin-bottom: 12px;'><strong>Cao nguyên đá Đồng Văn (Hà Giang):</strong> Vùng đất cực Bắc Tổ quốc với cảnh quan đá vôi hiểm trở, Cột cờ Lũng Cú thiêng liêng, dinh thự Vua Mèo, và đèo Mã Pí Lèng nhìn xuống dòng sông Nho Quế xanh biếc.</li><li style='margin-bottom: 12px;'><strong>Thác Bản Giốc (Cao Bằng):</strong> Nằm trên đường biên giới, đây là một trong những thác nước xuyên quốc gia tự nhiên lớn nhất và đẹp nhất khu vực Đông Nam Á.</li></ul></div>
             </div>
 
             <!-- Loại hình du lịch -->
@@ -274,7 +278,7 @@
                     <span class="card-icon">🏕️</span>
                     <h2 class="card-title">Loại Hình Du Lịch Chính</h2>
                 </div>
-                <div class="card-content"><ul style='margin-top: 5px; padding-left: 20px;'><li>Du lịch sinh thái và khám phá cảnh quan thiên nhiên.</li><li>Du lịch cộng đồng (Homestay), trải nghiệm cuộc sống người dân bản địa.</li><li>Du lịch mạo hiểm (Trekking, leo núi Fansipan, săn mây).</li><li>Du lịch lịch sử về nguồn.</li></ul></div>
+                <div class="card-content"><ul style='margin-top: 5px; padding-left: 20px;'><li style='margin-bottom: 12px;'><strong>Du lịch sinh thái:</strong> Khám phá cảnh quan thiên nhiên hoang sơ, chiêm ngưỡng núi rừng, thác nước.</li><li style='margin-bottom: 12px;'><strong>Du lịch cộng đồng (Homestay):</strong> Trải nghiệm ăn ở, sinh hoạt và lao động cùng người dân bản địa.</li><li style='margin-bottom: 12px;'><strong>Du lịch mạo hiểm:</strong> Trekking dã ngoại, leo núi chinh phục các đỉnh cao (Fansipan, Bạch Mộc Lương Tử, Tà Xùa), đổ đèo bằng xe máy.</li><li style='margin-bottom: 12px;'><strong>Du lịch về nguồn:</strong> Thăm viếng các chiến trường xưa và thủ đô kháng chiến.</li></ul></div>
             </div>
 
             <!-- UNESCO -->
@@ -283,7 +287,7 @@
                     <span class="card-icon">👑</span>
                     <h2 class="card-title">Di Sản UNESCO</h2>
                 </div>
-                <div class="card-content"><ul style='margin-top: 5px; padding-left: 20px;'><li>Công viên địa chất toàn cầu UNESCO: Cao nguyên đá Đồng Văn (Hà Giang), Công viên địa chất Non Nước Cao Bằng.</li><li>Di sản văn hóa phi vật thể: Hát Xoan (Phú Thọ), Tín ngưỡng thờ cúng Hùng Vương (Phú Thọ).</li><li>Thực hành Then của người Tày, Nùng, Thái.</li></ul></div>
+                <div class="card-content"><ul style='margin-top: 5px; padding-left: 20px;'><li style='margin-bottom: 12px;'><strong>Công viên địa chất toàn cầu Cao nguyên đá Đồng Văn (Hà Giang):</strong> Ghi nhận các giá trị địa chất, địa mạo karst và đa dạng sinh học độc đáo.</li><li style='margin-bottom: 12px;'><strong>Công viên địa chất toàn cầu Non Nước Cao Bằng:</strong> Vùng đất có lịch sử địa chất phong phú, gắn liền với các hóa thạch cổ sinh.</li><li style='margin-bottom: 12px;'><strong>Di sản văn hóa phi vật thể:</strong> Hát Xoan (Phú Thọ) và Tín ngưỡng thờ cúng Hùng Vương.</li><li style='margin-bottom: 12px;'><strong>Thực hành Then của người Tày, Nùng, Thái:</strong> Loại hình nghệ thuật diễn xướng dân gian mang đậm tính tâm linh.</li></ul></div>
             </div>
 
             <!-- Đặc sản -->
@@ -292,7 +296,7 @@
                     <span class="card-icon">🍲</span>
                     <h2 class="card-title">Đặc Sản Ẩm Thực</h2>
                 </div>
-                <div class="card-content"><ul style='margin-top: 5px; padding-left: 20px;'><li>Ẩm thực đặc trưng: Thắng cố, lợn cắp nách, gà đồi nướng, cá suối.</li><li>Món ăn truyền thống: Xôi ngũ sắc, cơm lam, thịt trâu gác bếp, lạp xưởng hun khói.</li><li>Đặc sản mang về: Chè Tân Cương (Thái Nguyên), mận Mộc Châu, táo mèo, rượu ngô.</li></ul></div>
+                <div class="card-content"><ul style='margin-top: 5px; padding-left: 20px;'><li style='margin-bottom: 12px;'><strong>Thắng cố:</strong> Món ăn truyền thống của người H'Mông làm từ nội tạng ngựa, bò, kết hợp với gia vị núi rừng (thảo quả, quế, hồi).</li><li style='margin-bottom: 12px;'><strong>Thịt đặc sản:</strong> Lợn cắp nách (heo lai lợn rừng, thịt chắc), gà đồi nướng mắc khén, thịt trâu gác bếp (ướp hạt dổi, mắc khén rồi sấy khô bằng khói bếp).</li><li style='margin-bottom: 12px;'><strong>Món ăn hàng ngày:</strong> Xôi ngũ sắc (nhuộm từ các loại lá rừng tự nhiên), cơm lam nướng trong ống nứa, cá suối nướng.</li><li style='margin-bottom: 12px;'><strong>Đặc sản làm quà:</strong> Chè Tân Cương (Thái Nguyên) nức tiếng, mận Mộc Châu, đào Sapa, táo mèo khô, rượu ngô.</li></ul></div>
             </div>
 
             <!-- Lễ hội -->
@@ -301,7 +305,7 @@
                     <span class="card-icon">🏮</span>
                     <h2 class="card-title">Lễ Hội Tiêu Biểu</h2>
                 </div>
-                <div class="card-content"><ul style='margin-top: 5px; padding-left: 20px;'><li>Lễ hội Đền Hùng (Phú Thọ) - Giỗ Tổ Hùng Vương mùng 10 tháng 3 Âm lịch.</li><li>Chợ tình: Chợ tình Khau Vai (Hà Giang), Chợ tình Mộc Châu (Sơn La) - Nơi giao lưu tình cảm độc đáo.</li><li>Lễ hội Lồng Tồng (Lễ hội xuống đồng) của đồng bào dân tộc Tày.</li></ul></div>
+                <div class="card-content"><ul style='margin-top: 5px; padding-left: 20px;'><li style='margin-bottom: 12px;'><strong>Lễ hội Đền Hùng (Phú Thọ):</strong> Diễn ra vào mùng 10 tháng 3 Âm lịch hàng năm, là ngày Quốc giỗ tưởng nhớ công lao dựng nước của các Vua Hùng.</li><li style='margin-bottom: 12px;'><strong>Chợ tình Khau Vai (Hà Giang):</strong> Tổ chức vào 27/3 Âm lịch, là phiên chợ độc đáo nơi những người yêu nhau nhưng không đến được với nhau gặp lại để tâm tình.</li><li style='margin-bottom: 12px;'><strong>Chợ tình Mộc Châu (Sơn La):</strong> Diễn ra dịp 2/9 (Tết Độc lập), thu hút đồng bào H'Mông xúng xính váy áo đến hò hẹn.</li><li style='margin-bottom: 12px;'><strong>Lễ hội Lồng Tồng:</strong> (Lễ hội xuống đồng) Lễ hội quan trọng nhất đầu xuân của người Tày, Nùng nhằm cầu mưa thuận gió hòa.</li></ul></div>
             </div>
         </div>
         
